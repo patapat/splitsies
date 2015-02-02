@@ -1,22 +1,18 @@
-# Flux-capacitr
+# TabSplitter
 
-[Heroku link][heroku]
+<!-- [Heroku link][heroku] -->
 
-[heroku]: http://flux-capacitr.herokuapp.com
+<!-- [heroku]: http://flux-capacitr.herokuapp.com -->
 
 ## Minimum Viable Product
-Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
+TabSplitter is a variant clone of Bill-Splitter built on Rails and Backbone. Users can:
 
-- [x] Create accounts
-- [x] Create sessions (log in)
-- [x] Create blogs
-- [x] Create blog posts
-- [x] Tag blog posts
-- [x] View blogs and posts
-- [x] Subscribe to blogs
-- [x] View a feed of subscribed blogs
-- [x] Search for blogs by title
-- [x] Search for posts by tag
+- [ ] Create accounts
+- [ ] Create sessions (log in)
+- [ ] Create tabs (bills)
+- [ ] View all tabs (tab history)
+- [ ] View account (display balance)
+- [ ] Search for friends by email/name
 
 ## Design Docs
 * [View Wireframes][views]
@@ -28,61 +24,43 @@ Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
 ## Implementation Timeline
 
 ### Phase 1: User Authentication, Basic Blogs and Posts (~1 day)
-I will implement user authentication in Rails based on the practices learned at
-App Academy. By the end of this phase, users will be able to create blogs and
-posts using simple text forms in Rails views. The most important part of this
-phase will be pushing the app to Heroku and ensuring that everything works
-before moving on to phase 2.
+I will implement user authentication using Rails. By the end of this phase users will be able to sign up, log in, and create grabs using simple text forms in Rails views. I will also ensure that the application can be properly pushed to Heroku.
 
 [Details][phase-one]
 
-### Phase 2: JSON API and First Backbone Views (~2 days)
-I will add API routes to serve blog and post data as JSON, then add Backbone
-models and collections that fetch data from those routes. By the end of this
-phase, the existing Rails views will have been ported over to Backbone.
+### Phase 2: Backbone Views (~2 days)
+I will add Backbone models and collections that fetch data from the tab routes. By the end of this phase the existing Rails views will have been ported over to Backbone.
 
 [Details][phase-two]
 
-### Phase 3: Editing and Displaying Posts (~2 days)
-I plan to use third-party libraries to add functionality to the `PostForm` and
-`PostShow` views in this phase. First I'll need to add a Markdown editor to the
-`PostForm`, and make sure that the Markdown is properly escaped and formatted in
-the `PostShow` view. I also plan to integrate Filepicker for file upload so
-users can add images to blog posts.
+### Phase 3: Implement Tab Splitting Logic (~1-2 days)
+I plan to offer two main ways of splitting tabs amongst friends, even split and custom split. Each option will require its own views with the associated options available to fill in.
 
 [Details][phase-three]
 
-### Phase 4: User Feeds (~1-2 days)
-I'll start by adding a `feed` route that uses the `current_user`'s
-`subscribed_blogs` association to serve a list of blog posts ordered
-chronologically. On the Backbone side, I'll make a `FeedPosts` collection that
-fetches from the new route, then create a `FeedShow` view that uses the new
-collection. Ultimately, this will be the page users see after logging in.
+### Phase 4: Add Friends to Tab with User Search (~2 days)
+Allow users to add friends to tabs with a user search text field. Each subsequent participant added will generate a new text field to enter another participant.
 
 [Details][phase-four]
 
-### Phase 5: Searching for Blogs and Posts (~2 days)
-I'll need a `search` route that accepts a query in the params. The controller
-action will run two queries: one to find blogs where the `title` matches
-the search term, and another to find posts where one of their associated `Tag`s
-matches the search term. In Backbone, I plan to implement a `SearchResults` view
-that will display matching blogs in one column and matching posts in another.
+### Phase 5: CSS Bells & Whistles (~2-3 days)
+Add user feedback to buttons and views via hover states and loading animation. By the end of this phase the website should feel responsive, fluid, and interactive.
 
 [Details][phase-five]
 
-### Bonus Features (TBD)
-- [ ] Activity history for posts (e.g. likes, reblogs, taggings)
-- [x] Custom urls for blogs
-- [x] 'Like' button and counter for `PostShow` view
-- [x] Pagination of the `FeedShow`, `SearchShow`, and `BlogShow` views
-- [ ] Post types with distinct views (image posts, quote posts, etc)
-- [ ] Reblogging
-- [ ] Support for multiple open sessions
-- [x] User avatars
+### Bonus Features:
+- [ ] Add connections/friends
+- [ ] Implement smart search (higher freq friends at top)
+- [ ] Search for bills by date, participants, and tag/description
+- [ ] View friends' profiles (displays balance w/ option to send reminder)
+- [ ] View a feed of recent activity in network
+- [ ] Email notifications/reminders
+- [ ] Drag and drop to add users
+- [ ] Split tab based on itemization
+- [ ] Penny pass (handles fractions of a cent)
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md
 [phase-three]: ./docs/phases/phase3.md
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
-
