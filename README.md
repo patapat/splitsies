@@ -41,7 +41,7 @@ Allow users to add friends to tabs with a user search text field. Each subsequen
 [Details][phase-three]
 
 ### Phase 4: Email Notifications/Reminders (~1-2 days)
-Set-up automatic email notifications when a new tab is created. Allow for manual notifications to be sent to all users of a single tab, or a single user.
+Set-up automatic email notifications using Sendgrid when a new tab is created. Allow for manual notifications to be sent to all users of a single tab, or a single user.
 
 [Details][phase-four]
 

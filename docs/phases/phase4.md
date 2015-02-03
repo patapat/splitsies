@@ -17,4 +17,4 @@ UsersController (search)
 ### Views
 
 ## Gems/Libraries
-* exception_notification (email notification gem)
+* Sendgrid (emails)
