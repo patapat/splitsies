@@ -1,4 +1,4 @@
-# Phase 4: Add Friends to Tab with User Search
+# Phase 4:
 
 ## Rails
 ### Models
@@ -15,7 +15,6 @@ UsersController (search)
 * SearchFriends
 
 ### Views
-* FriendSearchItem
-* FriendSearchShow (composite view, FriendSearchItem subviews)
 
 ## Gems/Libraries
+* exception_notification (email notification gem)

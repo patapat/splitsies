@@ -1,4 +1,4 @@
-# Phase 2: Backbone Views
+# Phase 2: Backbone Views & Tab Splitting Logic
 
 ## Rails
 ### Models
@@ -20,5 +20,7 @@ TabsController (create, destroy, index, show)
 * TabsIndex
 * TabShow
 * TabForm
+* TabFormEven
+* TabFormCustom
 
 ## Gems/Libraries

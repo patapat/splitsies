@@ -1,9 +1,10 @@
-# Phase 3: Implement Tab Splitting Logic
+# Phase 3: Add Friends to Tab with User Search
 
 ## Rails
 ### Models
 
 ### Controllers
+UsersController (search)
 
 ### Views
 
@@ -12,9 +13,10 @@
 ### Models
 
 ### Collections
+* SearchFriends
 
 ### Views
-* TabFormEven
-* TabFormCustom
+* FriendSearchItem
+* FriendSearchShow (composite view, FriendSearchItem subviews)
 
 ## Gems/Libraries
