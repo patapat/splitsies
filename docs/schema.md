@@ -4,7 +4,7 @@
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-owner_id    | integer   | not null, foreign key (references users)
+owner_id    | integer   | not null, foreign key
 title       | string    | not null
 date        | date      | not null
 total_amount| float     | not null
@@ -22,12 +22,12 @@ session_token   | string    | not null, unique
 column name     | data type | details
 ----------------|-----------|-----------------------
 id              | integer   | not null, primary key
-user_id         | integer   | not null
-tab_id          | integer   | not null
+user_id         | integer   | not null, foreign key
+tab_id          | integer   | not null, foreign key
 
 ## users_friends
 column name     | data type | details
 ----------------|-----------|-----------------------
 id              | integer   | not null, primary key
-user_id         | integer   | not null
-friend_id       | integer   | not null
+user_id         | integer   | not null, foreign key
+friend_id       | integer   | not null, foreign key
