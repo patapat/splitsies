@@ -16,7 +16,10 @@ class User < ActiveRecord::Base
   validates :password_digest, :session_token, presence: true
 
   attr_reader :password
+  has_many :tabs
 
+  # has_many :owed_tabs
+  # has_many :friends
   after_initialize :ensure_session_token
 
   def self.find_by_credentials(email, password)

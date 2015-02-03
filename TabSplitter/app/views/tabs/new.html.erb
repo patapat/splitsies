@@ -1,0 +1,23 @@
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <ul>
+      <li><%= error %></li>
+    </ul>
+  <% end %>
+<% end %>
+
+<h1>Create New Tab</h1>
+
+<form action="/api/tabs" method="post">
+  <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+  <label for="tab_title">Title: </label>
+  <input type="text" name="tab[title]" id="tab_title">
+  <br>
+  <label for="tab_tag">Tag: </label>
+  <input type="text" name="tab[tag]" id="tab_tag">
+  <br>
+  <input type="submit" value="Sign Up">
+</form>

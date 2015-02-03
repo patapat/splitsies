@@ -9,21 +9,16 @@ development:
   encoding: utf8
   database: tabsplitter_development
   pool: 5
-  username:
-  password:
 
 test: &TEST
   adapter: postgresql
   encoding: utf8
   database: tabsplitter_test
   pool: 5
-  username:
-  password:
 
 production:
   adapter: postgresql
   encoding: utf8
   database: tabsplitter_production
   pool: 5
-  username:
-  password:
+  

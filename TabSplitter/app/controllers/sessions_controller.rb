@@ -1,12 +1,11 @@
 class SessionsController < ApplicationController
   def new
-
   end
 
   def create
     @user = User.find_by_credentials(
       params[:user][:email],
-      params[:user][:password_digest]
+      params[:user][:password]
     )
 
     if @user
@@ -15,6 +14,7 @@ class SessionsController < ApplicationController
     else
       flash.now[:errors] = ["Invalid email/password combination."]
       render :new
+    end
   end
 
   def destroy
