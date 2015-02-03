@@ -8,7 +8,8 @@
 
 <h1>Edit Tab</h1>
 
-<form action="/users/<%= current_user.id %>/tabs" method="post">
+<form action="/users/<%= current_user.id %>/tabs/<%= @tab.id %>" method="post">
+  <input name="_method" type="hidden" value="patch">
   <input
     type="hidden"
     name="authenticity_token"

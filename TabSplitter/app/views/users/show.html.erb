@@ -1,5 +1,12 @@
 <h1><%= @user.email %></h1>
 
 <h3>Account Balance: $<%= @user.account_balance %></h3>
+
+<h3>Your Tabs</h3>
+<ul>
+  <% @tabs.each do |tab| %>
+    <li><%= tab.title %></li>
+  <% end %>
+</ul>
+
 <%= link_to "Create New Tab", new_user_tab_url(@user) %>
-<%= link_to "Your Tabs", user_tabs_url(@user) %>
