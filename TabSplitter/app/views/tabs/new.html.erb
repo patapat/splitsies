@@ -8,7 +8,7 @@
 
 <h1>Create New Tab</h1>
 
-<form action="/api/tabs" method="post">
+<form action="/users/<%= current_user.id %>/tabs" method="post">
   <input
     type="hidden"
     name="authenticity_token"
@@ -19,5 +19,14 @@
   <label for="tab_tag">Tag: </label>
   <input type="text" name="tab[tag]" id="tab_tag">
   <br>
-  <input type="submit" value="Sign Up">
+
+  <label for="tab_date">Date: </label>
+  <input type="date" name="tab[date]" id="tab_date">
+  <br>
+
+  <label for="tab_total_amount">Total Amount: </label>
+  <input type="text" name="tab[total_amount]" id="tab_total_amount">
+  <br>
+
+  <input type="submit" value="Create New Tab">
 </form>

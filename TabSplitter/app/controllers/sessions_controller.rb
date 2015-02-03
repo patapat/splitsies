@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  # before_filter :require_log_in
+
   def new
   end
 

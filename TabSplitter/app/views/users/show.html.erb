@@ -1,1 +1,3 @@
 <h3><%= @user.email %></h3>
+<%= link_to "Create New Tab", new_user_tab_url(@user) %>
+<%= link_to "Your Tabs", user_tabs_url(@user) %>

@@ -3,7 +3,7 @@
 # Table name: tabs
 #
 #  id           :integer          not null, primary key
-#  owner_id     :integer          not null
+#  user_id     :integer          not null
 #  title        :string           not null
 #  date         :date             not null
 #  total_amount :float            not null
