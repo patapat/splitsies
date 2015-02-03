@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  # before_action :require_log_in, except: [:new]
+
   def new
     @user = User.new
   end

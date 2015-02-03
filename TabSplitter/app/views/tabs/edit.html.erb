@@ -1,0 +1,32 @@
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <ul>
+      <li><%= error %></li>
+    </ul>
+  <% end %>
+<% end %>
+
+<h1>Edit Tab</h1>
+
+<form action="/users/<%= current_user.id %>/tabs" method="post">
+  <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+  <label for="tab_title">Title: </label>
+  <input type="text" name="tab[title]" id="tab_title" value="<%= @tab.title %>">
+  <br>
+  <label for="tab_tag">Tag: </label>
+  <input type="text" name="tab[tag]" id="tab_tag" value="<%= @tab.tag %>">
+  <br>
+
+  <label for="tab_date">Date: </label>
+  <input type="date" name="tab[date]" id="tab_date" value="<%= @tab.date %>">
+  <br>
+
+  <label for="tab_total_amount">Total Amount: </label>
+  <input type="text" name="tab[total_amount]" id="tab_total_amount" value="<%= @tab.total_amount %>">
+  <br>
+
+  <input type="submit" value="Update Tab">
+</form>

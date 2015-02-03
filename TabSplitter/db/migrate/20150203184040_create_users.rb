@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email, null: false
       t.string :password_digest, null: false
       t.string :session_token, null: false
+      t.decimal :account_balance, default: 0, precision: 4, scale: 2
 
       t.timestamps null: false
     end

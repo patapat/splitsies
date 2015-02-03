@@ -3,10 +3,10 @@
 # Table name: tabs
 #
 #  id           :integer          not null, primary key
-#  user_id     :integer          not null
+#  user_id      :integer          not null
 #  title        :string           not null
 #  date         :date             not null
-#  total_amount :float            not null
+#  total_amount :decimal(4, 2)    default("0")
 #  tag          :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null

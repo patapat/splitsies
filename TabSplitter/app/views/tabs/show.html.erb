@@ -4,3 +4,6 @@
   <li>Tag: <%= @tab.tag %></li>
   <li>Total amount: <%= @tab.total_amount %></li>
 </ul>
+
+<%= button_to "Delete Tab", "/users/#{current_user.id}/tabs/#{@tab.id}", method: :delete %>
+<%= link_to "Edit Tab", edit_user_tab_url(current_user, @tab) %>

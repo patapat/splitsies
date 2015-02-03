@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  # before_filter :require_log_in
+  # before_action :require_log_in, except: [:new]
 
   def new
   end

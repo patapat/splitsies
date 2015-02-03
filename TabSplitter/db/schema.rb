@@ -17,21 +17,24 @@ ActiveRecord::Schema.define(version: 20150203193908) do
   enable_extension "plpgsql"
 
   create_table "tabs", force: true do |t|
-    t.integer  "user_id",      null: false
-    t.string   "title",        null: false
-    t.date     "date",         null: false
-    t.float    "total_amount", null: false
+    t.integer  "user_id",                                            null: false
+    t.string   "title",                                              null: false
+    t.date     "date",                                               null: false
+    t.decimal  "total_amount", precision: 4, scale: 2, default: 0.0
     t.string   "tag"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",                                         null: false
+    t.datetime "updated_at",                                         null: false
   end
 
+  add_index "tabs", ["user_id"], name: "index_tabs_on_user_id", using: :btree
+
   create_table "users", force: true do |t|
-    t.string   "email",           null: false
-    t.string   "password_digest", null: false
-    t.string   "session_token",   null: false
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.string   "email",                                                 null: false
+    t.string   "password_digest",                                       null: false
+    t.string   "session_token",                                         null: false
+    t.decimal  "account_balance", precision: 4, scale: 2, default: 0.0
+    t.datetime "created_at",                                            null: false
+    t.datetime "updated_at",                                            null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
