@@ -25,8 +25,8 @@ TabSplitter is a variant clone of Bill-Splitter built on Rails and Backbone. Use
 
 ## Implementation Timeline
 
-### Phase 1: User Authentication, Basic Blogs and Posts (~1 day)
-I will implement user authentication using Rails. By the end of this phase users will be able to sign up, log in, and create grabs using simple text forms in Rails views. I will also ensure that the application can be properly pushed to Heroku.
+### Phase 1: User Authentication, Basic Tabs, Heroku (~1 day)
+I will implement user authentication using Rails. By the end of this phase users will be able to sign up, log in, and create tabs using simple text forms in Rails views. I will also ensure that the application can be properly pushed to Heroku.
 
 [Details][phase-one]
 
