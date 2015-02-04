@@ -1,4 +1,4 @@
-TabSplitter.Views.TabsIndex = Backbone.View.extend({
+TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
   template: JST['tabs/index'],
 
   render: function () {

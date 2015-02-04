@@ -1,4 +1,4 @@
-TabSplitter.Views.TabShow = Backbone.View.extend({
+TabSplitter.Views.TabShow = Backbone.CompositeView.extend({
   template: JST['tabs/show'],
 
   render: function () {

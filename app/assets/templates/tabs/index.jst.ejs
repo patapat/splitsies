@@ -1,1 +1,8 @@
 <h1>Tabs Index</h1>
+<ul class = 'tabs'>
+  <% tabs.each(function (tab) { %>
+    <li><a href="#/tabs/<%= tab.id %>"><%= tab.escape("title") %></a></li>
+  <% }); %>
+</ul>
+
+<a href="#/tabs/new">Create New Tab</a>

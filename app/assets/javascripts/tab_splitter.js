@@ -9,6 +9,6 @@ window.TabSplitter = {
   }
 };
 
-$(document).ready(function(){
-  // TabSplitter.initialize();
-});
+// $(document).ready(function(){
+//   TabSplitter.initialize();
+// });

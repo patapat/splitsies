@@ -1,8 +1,11 @@
-TabSplitter.Views.TabForm = Backbone.View.extend({
+TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
+  className: "tab-form-main",
+
   template: JST['tabs/form'],
 
   events: {
-    "submit form": "createTab"
+    "submit form": "createTab",
+    "change #tab_total_amount": "update"
   },
 
   render: function () {
@@ -14,16 +17,21 @@ TabSplitter.Views.TabForm = Backbone.View.extend({
 
   createTab: function (event) {
     event.preventDefault();
-  
-    var that = this;
 
-    var formData = this.$el.serialiazeJSON();
+    var $target = $(event.currentTarget);
+    var that = this;
+    var formData = $target.serializeJSON();
+
     this.model.set(formData);
     this.model.save({}, {
       success: function () {
-        that.collection.add(this.model);
-        Backbone.history.navigate("", { trigger: true });
+        that.collection.add(that.model);
+        Backbone.history.navigate("#/tabs/" + that.model.id, { trigger: true });
       }
     });
+  },
+
+  update: function () {
+    $('.amount-owed').html("$" + $('#tab_total_amount').val())
   }
 });
