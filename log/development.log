@@ -11178,3 +11178,109 @@ ORDER BY c.conname
   [1m[36mTab Load (0.3ms)[0m  [1mSELECT "tabs".* FROM "tabs" WHERE "tabs"."user_id" = $1[0m  [["user_id", 1]]
   [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
   [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "tabs" WHERE "tabs"."user_id" = $1[0m  [["user_id", 1]]
+
+
+Started GET "/" for ::1 at 2015-02-03 17:01:18 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "9oLh5P32D7p75wPYIpSBgQ"]]
+Completed 200 OK in 300ms (Views: 270.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2015-02-03 17:01:18 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "9oLh5P32D7p75wPYIpSBgQ"]]
+Completed 200 OK in 94ms (Views: 92.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-03 17:01:18 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-03 17:01:18 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-03 17:01:18 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-03 17:01:18 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-03 17:01:19 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-03 17:01:19 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-03 17:01:19 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-03 17:01:19 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-03 17:01:19 -0800
+
+
+Started GET "/assets/tab_splitter-3c8d4b2872ffc58007dd3ea7739d1189.js?body=1" for ::1 at 2015-02-03 17:01:19 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-03 17:01:19 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-03 17:01:19 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-03 17:01:19 -0800
+
+
+Started GET "/assets/application-88bfc9e97aee7d8fa8e770c3d1dc97de.js?body=1" for ::1 at 2015-02-03 17:01:19 -0800
+
+
+Started GET "/" for ::1 at 2015-02-03 17:01:41 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "9oLh5P32D7p75wPYIpSBgQ"]]
+Completed 200 OK in 148ms (Views: 146.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/tab_splitter-f98c598c74516eb6c010c4f24dd79f43.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/application-37661857108350f731f54511efd9f081.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
