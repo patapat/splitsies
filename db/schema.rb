@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20150203193908) do
     t.integer  "user_id",                                            null: false
     t.string   "title",                                              null: false
     t.date     "date",                                               null: false
-    t.decimal  "total_amount", precision: 4, scale: 2, default: 0.0
+    t.decimal  "total_amount", precision: 6, scale: 2, default: 0.0
     t.string   "tag"
     t.datetime "created_at",                                         null: false
     t.datetime "updated_at",                                         null: false
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20150203193908) do
     t.string   "email",                                                 null: false
     t.string   "password_digest",                                       null: false
     t.string   "session_token",                                         null: false
-    t.decimal  "account_balance", precision: 4, scale: 2, default: 0.0
+    t.decimal  "account_balance", precision: 6, scale: 2, default: 0.0
     t.datetime "created_at",                                            null: false
     t.datetime "updated_at",                                            null: false
   end

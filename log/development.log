@@ -10889,3 +10889,292 @@ Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 a
 
 
 Started GET "/assets/application-385461c6a13642bf5d6276a55ed17b84.js?body=1" for ::1 at 2015-02-03 15:41:40 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'patapat@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "patapat@gmail.com"], ["password_digest", "$2a$10$Nquae60cwyczLMqyFRatQ.iIbwuAqMXyBQnEi0njcP67hMHQD.wzW"], ["session_token", "CBWeZg9bDeUlCQS0UmwrUw"], ["created_at", "2015-02-04 00:34:25.988955"], ["updated_at", "2015-02-04 00:34:25.988955"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'cj@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "cj@gmail.com"], ["password_digest", "$2a$10$7.E.ycel3uyk0lZpfusheeuWAkdlbJbq1pDmVE0ZLrvHdKuuwPcZ6"], ["session_token", "rL_tXIDC4UwBpL2nEsb-nw"], ["created_at", "2015-02-04 00:34:26.070545"], ["updated_at", "2015-02-04 00:34:26.070545"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ned@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "ned@gmail.com"], ["password_digest", "$2a$10$MMH7.AJfFJmf1qgaWCt6sOj/hbGL30uf68ZibBxQdds5nBAj9gyZS"], ["session_token", "C-dKYpc-h7VyqGlWHvAdFw"], ["created_at", "2015-02-04 00:34:26.147278"], ["updated_at", "2015-02-04 00:34:26.147278"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jeff@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "jeff@gmail.com"], ["password_digest", "$2a$10$M5w3HlnEVUCncugDSxNnDuBH0KJhJW096ipMApzjUQ6H0cTaROJLW"], ["session_token", "kJomCZ0D_jOeScqsKjvMDw"], ["created_at", "2015-02-04 00:34:26.225298"], ["updated_at", "2015-02-04 00:34:26.225298"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'david@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "david@gmail.com"], ["password_digest", "$2a$10$zJFh6CmYmHZljE8BGXP8beFOnzPGLAAckc/0xMp18tTDP5F50pikK"], ["session_token", "UyEn1s1iGn4xHei20L7DGg"], ["created_at", "2015-02-04 00:34:26.302661"], ["updated_at", "2015-02-04 00:34:26.302661"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'shawna@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "shawna@gmail.com"], ["password_digest", "$2a$10$zFaL2X.G.M6W4SDkRX1uxOzvRaoViQ0ZcWWYXtGBOJqmhqKM/Ll7C"], ["session_token", "3mRBnN05xuxgybGCZ4SB2Q"], ["created_at", "2015-02-04 00:34:26.379132"], ["updated_at", "2015-02-04 00:34:26.379132"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ryan@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "ryan@gmail.com"], ["password_digest", "$2a$10$ry1QHx19R9IWUX.lv5/KH.Ju1gHZhmxhv0pOapj2ChLQ7xOop7elO"], ["session_token", "ZI_6sTmZ19d29GYH4cSeww"], ["created_at", "2015-02-04 00:34:26.459697"], ["updated_at", "2015-02-04 00:34:26.459697"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'patapat@gmail.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'cj@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ned@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jeff@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'david@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'shawna@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ryan@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "McDonalds"], ["date", "2014-12-12"], ["user_id", 1], ["tag", "dessert"], ["total_amount", "12.07"], ["created_at", "2015-02-04 00:41:36.934572"], ["updated_at", "2015-02-04 00:41:36.934572"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Carls Jr."], ["date", "2015-02-14"], ["user_id", 1], ["tag", "lunch"], ["total_amount", "40.55"], ["created_at", "2015-02-04 00:41:36.937982"], ["updated_at", "2015-02-04 00:41:36.937982"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "Burger King"], ["date", "2014-09-21"], ["user_id", 1], ["tag", "dinner"], ["total_amount", "23.14"], ["created_at", "2015-02-04 00:41:36.940188"], ["updated_at", "2015-02-04 00:41:36.940188"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Wendy's"], ["date", "2015-01-11"], ["user_id", 2], ["tag", "birthday dinner"], ["total_amount", "99.19"], ["created_at", "2015-02-04 00:41:36.942616"], ["updated_at", "2015-02-04 00:41:36.942616"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "Jack In the Box"], ["date", "2015-01-01"], ["user_id", 2], ["tag", "breakfast"], ["total_amount", "1402.0"], ["created_at", "2015-02-04 00:41:36.944815"], ["updated_at", "2015-02-04 00:41:36.944815"]]
+PG::NumericValueOutOfRange: ERROR:  numeric field overflow
+DETAIL:  A field with precision 4, scale 2 must round to an absolute value less than 10^2.
+: INSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36m (122.9ms)[0m  [1mDROP DATABASE IF EXISTS "tabsplitter_test"[0m
+  [1m[35m (244.6ms)[0m  CREATE DATABASE "tabsplitter_test" ENCODING = 'utf8'
+  [1m[36m (129.8ms)[0m  [1mDROP DATABASE IF EXISTS "tabsplitter_test"[0m
+  [1m[35m (246.1ms)[0m  CREATE DATABASE "tabsplitter_test" ENCODING = 'utf8'
+  [1m[36mSQL (1.0ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (12.5ms)[0m  CREATE TABLE "tabs" ("id" serial primary key, "user_id" integer NOT NULL, "title" character varying NOT NULL, "date" date NOT NULL, "total_amount" decimal(6,2) DEFAULT 0.0, "tag" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.0ms)[0m  [1mCREATE  INDEX  "index_tabs_on_user_id" ON "tabs" USING btree ("user_id")[0m
+  [1m[35m (12.8ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "account_balance" decimal(6,2) DEFAULT 0.0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.8ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (13.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150203193908')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150203184040')
+  [1m[36m (123.6ms)[0m  [1mDROP DATABASE IF EXISTS "tabsplitter_test"[0m
+  [1m[35m (253.7ms)[0m  CREATE DATABASE "tabsplitter_test" ENCODING = 'utf8'
+  [1m[36m (127.5ms)[0m  [1mDROP DATABASE IF EXISTS "tabsplitter_test"[0m
+  [1m[35m (251.6ms)[0m  CREATE DATABASE "tabsplitter_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (11.2ms)[0m  CREATE TABLE "tabs" ("id" serial primary key, "user_id" integer NOT NULL, "title" character varying NOT NULL, "date" date NOT NULL, "total_amount" decimal(6,2) DEFAULT 0.0, "tag" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.9ms)[0m  [1mCREATE  INDEX  "index_tabs_on_user_id" ON "tabs" USING btree ("user_id")[0m
+  [1m[35m (6.8ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "account_balance" decimal(6,2) DEFAULT 0.0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (5.8ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (2.4ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.7ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150203193908')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150203184040')
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (8.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'tabs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (10.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'patapat@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "patapat@gmail.com"], ["password_digest", "$2a$10$BqhJSbrW8IoXnEYqpnJRMO6qO62fseUo.jU9dP4snHZXDf/6L8DEW"], ["session_token", "GOqoLcDTAmK5zrIjdCpGxA"], ["created_at", "2015-02-04 00:43:39.186165"], ["updated_at", "2015-02-04 00:43:39.186165"]]
+  [1m[36m (7.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'cj@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "cj@gmail.com"], ["password_digest", "$2a$10$4B7GkSBA5Yku2moDrC05QOMGJPINw4tILV9645SgPRkKi8qPRG7CO"], ["session_token", "x3VysES6QNiNiUuBGGTP0g"], ["created_at", "2015-02-04 00:43:39.282192"], ["updated_at", "2015-02-04 00:43:39.282192"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ned@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "ned@gmail.com"], ["password_digest", "$2a$10$U1bXU8UaJ38zkYml94HwiOtNKTWtKupsAs8cUd118NksrtqHjuXHW"], ["session_token", "VtqqPwNElivzzQumi5KikQ"], ["created_at", "2015-02-04 00:43:39.361919"], ["updated_at", "2015-02-04 00:43:39.361919"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jeff@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "jeff@gmail.com"], ["password_digest", "$2a$10$0P/fvCmxQjk9EF4Z7g/Q5.LJ8enW0Sh5xMT0aNUnnf8Ufi35AeaAK"], ["session_token", "OaNp7Eurmn6wTE9slO5vJA"], ["created_at", "2015-02-04 00:43:39.443596"], ["updated_at", "2015-02-04 00:43:39.443596"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'david@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "david@gmail.com"], ["password_digest", "$2a$10$LOQZlIcDpfPCBeWog80gkuBchLPR.T16WDtFIjfniwlmZc5BW2QjS"], ["session_token", "68bEN8-9fnSrjWzWskhO_g"], ["created_at", "2015-02-04 00:43:39.521513"], ["updated_at", "2015-02-04 00:43:39.521513"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'shawna@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "shawna@gmail.com"], ["password_digest", "$2a$10$78z41Jd5el4LWgfdC6T99ulnpwPRfugmg96txwZVuj./UrLCddmkK"], ["session_token", "wsOqben4r7R_vnflw2tFZw"], ["created_at", "2015-02-04 00:43:39.604791"], ["updated_at", "2015-02-04 00:43:39.604791"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ryan@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "ryan@gmail.com"], ["password_digest", "$2a$10$V4Hw.W61kLsx8fr5kxf85edMDk1d4ZMXsyLeJH5Mulzlsl8a6m3s."], ["session_token", "tigbYcsr8zC_viWccXAUng"], ["created_at", "2015-02-04 00:43:39.687136"], ["updated_at", "2015-02-04 00:43:39.687136"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "McDonalds"], ["date", "2014-12-12"], ["user_id", 1], ["tag", "dessert"], ["total_amount", "12.07"], ["created_at", "2015-02-04 00:43:39.698144"], ["updated_at", "2015-02-04 00:43:39.698144"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "Carls Jr."], ["date", "2015-02-14"], ["user_id", 1], ["tag", "lunch"], ["total_amount", "40.55"], ["created_at", "2015-02-04 00:43:39.700806"], ["updated_at", "2015-02-04 00:43:39.700806"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Burger King"], ["date", "2014-09-21"], ["user_id", 1], ["tag", "dinner"], ["total_amount", "23.14"], ["created_at", "2015-02-04 00:43:39.702807"], ["updated_at", "2015-02-04 00:43:39.702807"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "Wendy's"], ["date", "2015-01-11"], ["user_id", 2], ["tag", "birthday dinner"], ["total_amount", "99.19"], ["created_at", "2015-02-04 00:43:39.706322"], ["updated_at", "2015-02-04 00:43:39.706322"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Jack In the Box"], ["date", "2015-01-01"], ["user_id", 2], ["tag", "breakfast"], ["total_amount", "1402.05"], ["created_at", "2015-02-04 00:43:39.710805"], ["updated_at", "2015-02-04 00:43:39.710805"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "Luckys"], ["date", "2014-12-31"], ["user_id", 7], ["tag", "groceries"], ["total_amount", "55.63"], ["created_at", "2015-02-04 00:43:39.714605"], ["updated_at", "2015-02-04 00:43:39.714605"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT "users".* FROM "users"
+                              ^
+: SELECT "users".* FROM "users"
+  [1m[35mTab Load (1.7ms)[0m  SELECT "tabs".* FROM "tabs"
+PG::UndefinedTable: ERROR:  relation "tabs" does not exist
+LINE 1: SELECT "tabs".* FROM "tabs"
+                             ^
+: SELECT "tabs".* FROM "tabs"
+  [1m[36m (122.9ms)[0m  [1mDROP DATABASE IF EXISTS "tabsplitter_test"[0m
+  [1m[35m (246.6ms)[0m  CREATE DATABASE "tabsplitter_test" ENCODING = 'utf8'
+  [1m[36m (122.9ms)[0m  [1mDROP DATABASE IF EXISTS "tabsplitter_test"[0m
+  [1m[35m (245.1ms)[0m  CREATE DATABASE "tabsplitter_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (6.9ms)[0m  CREATE TABLE "tabs" ("id" serial primary key, "user_id" integer NOT NULL, "title" character varying NOT NULL, "date" date NOT NULL, "total_amount" decimal(4,2) DEFAULT 0.0, "tag" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX  "index_tabs_on_user_id" ON "tabs" USING btree ("user_id")[0m
+  [1m[35m (5.6ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "account_balance" decimal(4,2) DEFAULT 0.0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (2.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150203193908')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150203184040')
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20150203184040)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "account_balance" decimal(6,2) DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150203184040"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Migrating to CreateTabs (20150203193908)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (7.5ms)[0m  CREATE TABLE "tabs" ("id" serial primary key, "user_id" integer NOT NULL, "title" character varying NOT NULL, "date" date NOT NULL, "total_amount" decimal(6,2) DEFAULT 0, "tag" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX  "index_tabs_on_user_id" ON "tabs"  ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150203193908"]]
+  [1m[36m (3.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'tabs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'patapat@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "patapat@gmail.com"], ["password_digest", "$2a$10$YQvt6p1hGgSPZObl/I1iZOlpTAXSp5wmNUKjuoj7vPBifK7qd9uqe"], ["session_token", "3QJIAI6BAgs7S_kM2K6s9g"], ["created_at", "2015-02-04 00:45:53.351707"], ["updated_at", "2015-02-04 00:45:53.351707"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'cj@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "cj@gmail.com"], ["password_digest", "$2a$10$4UCsHDhfn9kn3WQEnCGxfO4zkrnlFsk28/lVbbFAMDIZMA3/AF08i"], ["session_token", "i2OLe1_Q8a49sQZIYyXlOA"], ["created_at", "2015-02-04 00:45:53.439010"], ["updated_at", "2015-02-04 00:45:53.439010"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ned@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "ned@gmail.com"], ["password_digest", "$2a$10$fwMYZmH64klKXLHQdOy5Ke5xwf7p5vdnuUv5dqTregkOwrQ8dl9A6"], ["session_token", "-HAjVJr-_Xo02WsJ7JAOXA"], ["created_at", "2015-02-04 00:45:53.520285"], ["updated_at", "2015-02-04 00:45:53.520285"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jeff@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "jeff@gmail.com"], ["password_digest", "$2a$10$YuN7SzZLKZ.ydGRjkWEO/u03L.jkKn0Z5mSF3onSf5ZI3/KQ/iD7q"], ["session_token", "pShOFrbOTgJPKBqjrnL4kw"], ["created_at", "2015-02-04 00:45:53.608518"], ["updated_at", "2015-02-04 00:45:53.608518"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'david@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "david@gmail.com"], ["password_digest", "$2a$10$qpno13Gdvf9rSyalK8U7fuIgtYHNpchsOwiPCXOSwNcy6W0ChS1xK"], ["session_token", "4seP0xePshUeibrF4gEMqg"], ["created_at", "2015-02-04 00:45:53.688419"], ["updated_at", "2015-02-04 00:45:53.688419"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'shawna@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "shawna@gmail.com"], ["password_digest", "$2a$10$N9N7cSDbLpUBjwZV7nEaHOVhlY1I1A9EjA7huaYu/X1rL6teXgZAq"], ["session_token", "_bkBBoQf5XO9uxcdR73zLg"], ["created_at", "2015-02-04 00:45:53.773879"], ["updated_at", "2015-02-04 00:45:53.773879"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ryan@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["email", "ryan@gmail.com"], ["password_digest", "$2a$10$S/MRM5kFU2ozzGFrMoEW5e5gzaaw.NHadU5u3.C1eQGxIVX.4/0pK"], ["session_token", "8OQkgHHpqkALAtqwbAX1Aw"], ["created_at", "2015-02-04 00:45:53.862266"], ["updated_at", "2015-02-04 00:45:53.862266"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "McDonalds"], ["date", "2014-12-12"], ["user_id", 1], ["tag", "dessert"], ["total_amount", "12.07"], ["created_at", "2015-02-04 00:45:53.874028"], ["updated_at", "2015-02-04 00:45:53.874028"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "Carls Jr."], ["date", "2015-02-14"], ["user_id", 1], ["tag", "lunch"], ["total_amount", "40.55"], ["created_at", "2015-02-04 00:45:53.877029"], ["updated_at", "2015-02-04 00:45:53.877029"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Burger King"], ["date", "2014-09-21"], ["user_id", 1], ["tag", "dinner"], ["total_amount", "23.14"], ["created_at", "2015-02-04 00:45:53.879530"], ["updated_at", "2015-02-04 00:45:53.879530"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "Wendy's"], ["date", "2015-01-11"], ["user_id", 2], ["tag", "birthday dinner"], ["total_amount", "99.19"], ["created_at", "2015-02-04 00:45:53.881858"], ["updated_at", "2015-02-04 00:45:53.881858"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Jack In the Box"], ["date", "2015-01-01"], ["user_id", 2], ["tag", "breakfast"], ["total_amount", "1402.05"], ["created_at", "2015-02-04 00:45:53.884181"], ["updated_at", "2015-02-04 00:45:53.884181"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tabs" ("title", "date", "user_id", "tag", "total_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "Luckys"], ["date", "2014-12-31"], ["user_id", 7], ["tag", "groceries"], ["total_amount", "55.63"], ["created_at", "2015-02-04 00:45:53.887055"], ["updated_at", "2015-02-04 00:45:53.887055"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mTab Load (0.7ms)[0m  SELECT "tabs".* FROM "tabs"
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTab Load (0.3ms)[0m  [1mSELECT "tabs".* FROM "tabs" WHERE "tabs"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "tabs" WHERE "tabs"."user_id" = $1[0m  [["user_id", 1]]
