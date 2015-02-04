@@ -1,7 +1,7 @@
 TabSplitter.Collections.Tabs = Backbone.Collection.extend({
   url: "api/tabs",
 
-  model: TabSpliiter.Models.Tab,
+  model: TabSplitter.Models.Tab,
 
   getOrFetch: function (id) {
     var tab = this.get(id)

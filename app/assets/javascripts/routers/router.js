@@ -1,6 +1,6 @@
 TabSplitter.Routers.Router = Backbone.Router.extend({
   initialize: function (options) {
-    this.root$el = options.$rootEl;
+    this.$rootEl = options.$rootEl;
   },
 
   routes: {
@@ -50,7 +50,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     });
 
     this._swapView(editView);
-  }
+  },
 
   _swapView: function (view) {
     this._currentView && this._currentView.remove();

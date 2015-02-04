@@ -11284,3 +11284,2616 @@ Started GET "/assets/application-37661857108350f731f54511efd9f081.js?body=1" for
 
 
 Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-03 17:01:41 -0800
+
+
+Started GET "/session/new" for ::1 at 2015-02-04 09:15:27 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Load (12.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "9oLh5P32D7p75wPYIpSBgQ"]]
+Completed 200 OK in 533ms (Views: 515.3ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/session/new" for ::1 at 2015-02-04 09:15:28 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "9oLh5P32D7p75wPYIpSBgQ"]]
+Completed 200 OK in 127ms (Views: 125.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/tab_splitter-7a61636f1dfd0aff5ff149ace3a157a3.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/collections/tabs-ffdafd2db8b5f8815efa13fc9642341f.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-3808441ad60feb9b4a818c14d1eef062.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/routers/router-e653b415cc1875ba31960b80554971ac.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started GET "/assets/application-a37e4f7b873cc862daf014e3b5f0d74f.js?body=1" for ::1 at 2015-02-04 09:15:28 -0800
+
+
+Started POST "/session" for ::1 at 2015-02-04 09:15:41 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"+WTRbBp1A5xn/zPGAGhcUbEr/escJI/D3ET1pcV1+Y349VymhY2eN3xLoK8F1rLrywawYNGNJImtuX6H5adcMg==", "user"=>{"email"=>"jeff", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "jeff"]]
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "9oLh5P32D7p75wPYIpSBgQ"]]
+Completed 200 OK in 141ms (Views: 130.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:15:41 -0800
+
+
+Started POST "/session" for ::1 at 2015-02-04 09:15:49 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Fk+7hzZnrRLvDT+A04W4KxA8o1psIZv7kvBSYKzCo10X3jZNqZ8wufS5rOnWO1aRahHu0aGIMLHjDdlCjBAG4g==", "user"=>{"email"=>"jeff@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "jeff@gmail.com"]]
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mUser Exists (3.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'jeff@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (5.9ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "XssQF5gQ5WlsEb6sT5RCUw"], ["updated_at", "2015-02-04 17:15:49.987824"], ["id", 4]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 124ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/users/4" for ::1 at 2015-02-04 09:15:50 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "XssQF5gQ5WlsEb6sT5RCUw"]]
+  [1m[35mTab Load (0.8ms)[0m  SELECT "tabs".* FROM "tabs" WHERE "tabs"."user_id" = $1  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 179ms (Views: 144.2ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:15:50 -0800
+
+
+Started GET "/users/4/tabs/new" for ::1 at 2015-02-04 09:15:53 -0800
+Processing by TabsController#new as HTML
+  Parameters: {"user_id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "XssQF5gQ5WlsEb6sT5RCUw"]]
+  Rendered tabs/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 141ms (Views: 139.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/4/tabs" for ::1 at 2015-02-04 09:16:32 -0800
+Processing by TabsController#create as HTML
+  Parameters: {"authenticity_token"=>"pZJaqfSHOTZzPi/3o5nPVwMus5OUji1xuBIpM8rD4EekA9dja3+knWiKvJ6mJyHteQP+GFknhjvJ76IR6hFF+A==", "tab"=>{"title"=>"Homeskillet", "tag"=>"lunch", "date"=>"2015-02-04", "total_amount"=>"44.07"}, "user_id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "XssQF5gQ5WlsEb6sT5RCUw"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "tabs" ("title", "date", "total_amount", "tag", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "Homeskillet"], ["date", "2015-02-04"], ["total_amount", "44.07"], ["tag", "lunch"], ["user_id", 4], ["created_at", "2015-02-04 17:16:32.867949"], ["updated_at", "2015-02-04 17:16:32.867949"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered tabs/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 152ms (Views: 130.5ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:33 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:16:47 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "XssQF5gQ5WlsEb6sT5RCUw"]]
+Completed 200 OK in 134ms (Views: 132.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:47 -0800
+
+
+Started GET "/users/4/tabs" for ::1 at 2015-02-04 09:16:54 -0800
+Processing by TabsController#index as HTML
+  Parameters: {"user_id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "XssQF5gQ5WlsEb6sT5RCUw"]]
+  [1m[35mTab Load (0.4ms)[0m  SELECT "tabs".* FROM "tabs" WHERE "tabs"."user_id" = $1  [["user_id", 4]]
+  Rendered tabs/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 140ms (Views: 137.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:55 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:16:59 -0800
+
+
+Started GET "/users/4/tabs" for ::1 at 2015-02-04 09:17:04 -0800
+Processing by TabsController#index as HTML
+  Parameters: {"user_id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "XssQF5gQ5WlsEb6sT5RCUw"]]
+  [1m[35mTab Load (0.6ms)[0m  SELECT "tabs".* FROM "tabs" WHERE "tabs"."user_id" = $1  [["user_id", 4]]
+  Rendered tabs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 127ms (Views: 123.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/tab_splitter-7a61636f1dfd0aff5ff149ace3a157a3.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/collections/tabs-ffdafd2db8b5f8815efa13fc9642341f.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-3808441ad60feb9b4a818c14d1eef062.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/routers/router-e653b415cc1875ba31960b80554971ac.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/assets/application-a37e4f7b873cc862daf014e3b5f0d74f.js?body=1" for ::1 at 2015-02-04 09:17:04 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:18:45 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "XssQF5gQ5WlsEb6sT5RCUw"]]
+Completed 200 OK in 201ms (Views: 200.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/tab_splitter-7a61636f1dfd0aff5ff149ace3a157a3.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/collections/tabs-ffdafd2db8b5f8815efa13fc9642341f.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/routers/router-e653b415cc1875ba31960b80554971ac.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/assets/application-7eb0fce69d2b0d8ce3b2ca8dd5f72f2d.js?body=1" for ::1 at 2015-02-04 09:18:45 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:25:59 -0800
+
+ActionController::RoutingError - uninitialized constant StaticPagesController:
+  actionpack (4.2.0.rc1) lib/action_dispatch/routing/route_set.rb:62:in `rescue in controller'
+  actionpack (4.2.0.rc1) lib/action_dispatch/routing/route_set.rb:57:in `controller'
+  actionpack (4.2.0.rc1) lib/action_dispatch/routing/route_set.rb:38:in `serve'
+  actionpack (4.2.0.rc1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.rc1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.rc1) lib/action_dispatch/routing/route_set.rb:800:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/rack/browser_monitoring.rb:23:in `traced_call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.2.0.rc1) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.2.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.2.0.rc1) lib/active_record/migration.rb:378:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.2.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc1) lib/rails/application.rb:164:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+   () Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/d0dbb0c6bb52c694/variables" for ::1 at 2015-02-04 09:25:59 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:27:16 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "XssQF5gQ5WlsEb6sT5RCUw"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 170ms (Views: 152.9ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/tab_splitter-7a61636f1dfd0aff5ff149ace3a157a3.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/collections/tabs-ffdafd2db8b5f8815efa13fc9642341f.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/routers/router-e653b415cc1875ba31960b80554971ac.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started GET "/assets/application-7eb0fce69d2b0d8ce3b2ca8dd5f72f2d.js?body=1" for ::1 at 2015-02-04 09:27:16 -0800
+
+
+Started DELETE "/session" for ::1 at 2015-02-04 09:28:13 -0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LmqyYbfuuPZmNPNp/SUK7tOSb8LKUGAzq2j4ZV/B72sv+z+rKBYlXX2AYAD4m+RUqb8iSQf5y3nalXNHfxNK1A=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "XssQF5gQ5WlsEb6sT5RCUw"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'jeff@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "4nnrgw21Uo3NVu2GaFeyQg"], ["updated_at", "2015-02-04 17:28:13.864394"], ["id", 4]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/session/new" for ::1 at 2015-02-04 09:28:13 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (8.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 157ms (Views: 147.3ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/tab_splitter-7a61636f1dfd0aff5ff149ace3a157a3.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/collections/tabs-ffdafd2db8b5f8815efa13fc9642341f.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/routers/router-e653b415cc1875ba31960b80554971ac.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/assets/application-7eb0fce69d2b0d8ce3b2ca8dd5f72f2d.js?body=1" for ::1 at 2015-02-04 09:28:14 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:28:20 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/session/new" for ::1 at 2015-02-04 09:28:20 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 155ms (Views: 153.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/tab_splitter-7a61636f1dfd0aff5ff149ace3a157a3.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/collections/tabs-ffdafd2db8b5f8815efa13fc9642341f.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/routers/router-e653b415cc1875ba31960b80554971ac.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started GET "/assets/application-7eb0fce69d2b0d8ce3b2ca8dd5f72f2d.js?body=1" for ::1 at 2015-02-04 09:28:20 -0800
+
+
+Started POST "/session" for ::1 at 2015-02-04 09:28:28 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"vV9W92Hx6O34N4S57yTOOLsRY8jHrz/Rr7VeT2OW2lS8zts9/gl1RuODF9DqmiCCwTwuQwoGlJveSNVtQ0R/6w==", "user"=>{"email"=>"patapat@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "patapat@gmail.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'patapat@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"], ["updated_at", "2015-02-04 17:28:28.984736"], ["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 91ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/1" for ::1 at 2015-02-04 09:28:28 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  [1m[35mTab Load (0.5ms)[0m  SELECT "tabs".* FROM "tabs" WHERE "tabs"."user_id" = $1  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 161ms (Views: 151.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/tab_splitter-7a61636f1dfd0aff5ff149ace3a157a3.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/collections/tabs-ffdafd2db8b5f8815efa13fc9642341f.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/routers/router-e653b415cc1875ba31960b80554971ac.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/assets/application-7eb0fce69d2b0d8ce3b2ca8dd5f72f2d.js?body=1" for ::1 at 2015-02-04 09:28:29 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:28:48 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 141ms (Views: 139.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/tab_splitter-7a61636f1dfd0aff5ff149ace3a157a3.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/collections/tabs-ffdafd2db8b5f8815efa13fc9642341f.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/routers/router-e653b415cc1875ba31960b80554971ac.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/application-7eb0fce69d2b0d8ce3b2ca8dd5f72f2d.js?body=1" for ::1 at 2015-02-04 09:28:48 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:54 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:54 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:28:54 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:28:54 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:29:20 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 263ms (Views: 261.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/tab_splitter-317d9effa96f9e103258daa0186a11c2.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/collections/tabs-ffdafd2db8b5f8815efa13fc9642341f.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/routers/router-e653b415cc1875ba31960b80554971ac.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/application-c26ec983ce5fe805d94bfd9a6c5f6649.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:29:21 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:29:51 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 218ms (Views: 214.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/tab_splitter-317d9effa96f9e103258daa0186a11c2.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/routers/router-e653b415cc1875ba31960b80554971ac.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/assets/application-6c009572ebf8acb74ef6729f0133f606.js?body=1" for ::1 at 2015-02-04 09:29:52 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:30:05 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 211ms (Views: 208.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/tab_splitter-317d9effa96f9e103258daa0186a11c2.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/routers/router-0894ee7b836bb345c78b6a8df1365477.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/assets/application-14000466f3ae37a4d288df5a207e118e.js?body=1" for ::1 at 2015-02-04 09:30:06 -0800
+
+
+Started GET "/api/tabs" for ::1 at 2015-02-04 09:30:06 -0800
+
+ActionController::RoutingError (No route matches [GET] "/api/tabs"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.2.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc1) lib/rails/application.rb:164:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.text.erb (6.5ms)
+
+
+Started GET "/" for ::1 at 2015-02-04 09:30:22 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 216ms (Views: 213.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:30:22 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/tab_splitter-317d9effa96f9e103258daa0186a11c2.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/assets/application-f198d5390abd02790619ed09bb2c9b81.js?body=1" for ::1 at 2015-02-04 09:30:23 -0800
+
+
+Started GET "/api/tabs" for ::1 at 2015-02-04 09:30:23 -0800
+
+ActionController::RoutingError (No route matches [GET] "/api/tabs"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.2.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc1) lib/rails/application.rb:164:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.text.erb (1.3ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.text.erb (7.9ms)
+
+
+Started GET "/" for ::1 at 2015-02-04 09:32:47 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 237ms (Views: 235.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/tab_splitter-317d9effa96f9e103258daa0186a11c2.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/application-6a4c1089feafe6e5a8562442a98cf314.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:32:47 -0800
+
+
+Started GET "/api/tabs" for ::1 at 2015-02-04 09:32:47 -0800
+
+ActionController::RoutingError (No route matches [GET] "/api/tabs"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.2.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc1) lib/rails/application.rb:164:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.text.erb (6.8ms)
+
+
+Started GET "/" for ::1 at 2015-02-04 09:33:21 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 219ms (Views: 217.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:33:21 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:33:21 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:33:21 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:33:21 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:33:21 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/tab_splitter-a7598ae76b94ba18f0eec365eb8643f2.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/tabs/form-df7a4e7f7d3593ca2f3498ebfe199810.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/assets/application-9515d314fca76f07c9ef44e9df5b0de7.js?body=1" for ::1 at 2015-02-04 09:33:22 -0800
+
+
+Started GET "/api/tabs" for ::1 at 2015-02-04 09:33:22 -0800
+
+ActionController::RoutingError (No route matches [GET] "/api/tabs"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.2.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc1) lib/rails/application.rb:164:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.text.erb (4.6ms)
+
+
+Started GET "/" for ::1 at 2015-02-04 09:34:29 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 239ms (Views: 237.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/tab_splitter-a7598ae76b94ba18f0eec365eb8643f2.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/assets/application-9e7350c5bf5104f1b2cd6a8e05e5e7ab.js?body=1" for ::1 at 2015-02-04 09:34:29 -0800
+
+
+Started GET "/api/tabs" for ::1 at 2015-02-04 09:34:29 -0800
+
+ActionController::RoutingError (No route matches [GET] "/api/tabs"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.2.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc1) lib/rails/application.rb:164:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.text.erb (5.6ms)
+
+
+Started GET "/" for ::1 at 2015-02-04 09:34:55 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 229ms (Views: 224.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/tab_splitter-10c1d722e154fbaf0b7cca259f6c53d1.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/assets/application-42a9e1c74a9f7054a970525c7d77d6b4.js?body=1" for ::1 at 2015-02-04 09:34:55 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:35:09 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 224ms (Views: 221.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/tab_splitter-ac7169940b1647d5a362b686282ef7fa.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/application-078a4d9d3072e833184f48ca58c2c8d3.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:35:10 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:35:21 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 207ms (Views: 205.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tab_splitter-464a3752afa1e120b66a46283b4f8b04.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/assets/application-eb43ac7b102f377f9086f6761f5ff4d1.js?body=1" for ::1 at 2015-02-04 09:35:21 -0800
+
+
+Started GET "/api/tabs" for ::1 at 2015-02-04 09:35:21 -0800
+
+ActionController::RoutingError (No route matches [GET] "/api/tabs"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.2.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc1) lib/rails/application.rb:164:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.text.erb (6.5ms)
+
+
+Started GET "/tabs/new" for ::1 at 2015-02-04 09:36:57 -0800
+
+ActionController::RoutingError (No route matches [GET] "/tabs/new"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.2.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc1) lib/rails/application.rb:164:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (10.5ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (69.4ms)
+
+
+Started DELETE "/session" for ::1 at 2015-02-04 09:37:11 -0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ul+XD4PY5BFwQcN5jSClthKPmFAPOyHOWifRifRZElhTzhrFHCB5umv1UBCInksMaKLV28KSioQr2lqr1Iu35w=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "oFUUeMcMA6ENkBQ5SXKCTA"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'patapat@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "RLao6dclkL2J_K-1csev-Q"], ["updated_at", "2015-02-04 17:37:11.628813"], ["id", 1]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 9ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/session/new" for ::1 at 2015-02-04 09:37:11 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 341ms (Views: 339.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/tab_splitter-14f1c73bfcc8e4169296041ca22442c9.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/assets/application-de26bf031094ce08508a724c2cad023c.js?body=1" for ::1 at 2015-02-04 09:37:12 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 09:37:14 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/session/new" for ::1 at 2015-02-04 09:37:14 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 110ms (Views: 109.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:15 -0800
+
+
+Started POST "/session" for ::1 at 2015-02-04 09:37:21 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"L9BLopmaz/qSOT6McJzGNp/Laza8+su5MsU/R0zx74suQcZoBmJSUYmNreV1IiiM5eYmvXFTYPNDOLRlbCNKNA==", "user"=>{"email"=>"pat", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "pat"]]
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 113ms (Views: 110.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:22 -0800
+
+
+Started POST "/session" for ::1 at 2015-02-04 09:37:26 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"AMmux0Y/jpbZkx+WwGkxk+KTU+T4cG+vz/+VqW7p+WgBWCMN2ccTPcInjP/F198pmL4ebzXZxOW+Ah6LTjtc1w==", "user"=>{"email"=>"patapat@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "patapat@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'patapat@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "8TVN2-j6uPnFJ1PUM0pi4g"], ["updated_at", "2015-02-04 17:37:26.433673"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 84ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/1" for ::1 at 2015-02-04 09:37:26 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "8TVN2-j6uPnFJ1PUM0pi4g"]]
+  [1m[36mTab Load (0.4ms)[0m  [1mSELECT "tabs".* FROM "tabs" WHERE "tabs"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 124ms (Views: 120.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:37:26 -0800
+
+
+Started GET "/users/1" for ::1 at 2015-02-04 09:40:08 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "8TVN2-j6uPnFJ1PUM0pi4g"]]
+  [1m[35mTab Load (0.4ms)[0m  SELECT "tabs".* FROM "tabs" WHERE "tabs"."user_id" = $1  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 218ms (Views: 215.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:40:08 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:40:08 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:40:08 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:40:08 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:40:08 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/tab_splitter-14f1c73bfcc8e4169296041ca22442c9.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/tabs/show-9b3d3dc3ea885f39be04ec74380163a7.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started GET "/assets/application-d30ec954e345ebc58f2fb8861d19774f.js?body=1" for ::1 at 2015-02-04 09:40:09 -0800
+
+
+Started DELETE "/session" for ::1 at 2015-02-04 09:42:12 -0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+AcUJ4Ab442Dieoqr2VxMRUqUhWzDqSOIvxCgZtELNH5lpntH+N+Jpg9eUOq25+Lbwcfnn6nD8RTAcmju5aJbg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "8TVN2-j6uPnFJ1PUM0pi4g"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'patapat@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "vyLZ02iIUsHJOfzbsJv6og"], ["updated_at", "2015-02-04 17:42:12.624660"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 21ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/session/new" for ::1 at 2015-02-04 09:42:12 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 149ms (Views: 147.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:42:12 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:42:12 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:42:12 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/tab_splitter-14f1c73bfcc8e4169296041ca22442c9.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:42:13 -0800
+
+
+Started POST "/session" for ::1 at 2015-02-04 09:42:18 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"236oSONX+oSlvSjv3ox0dA+aE1qqF77vzCOdoVojTbza7yWCfK9nL74Ju4bbMprOdbde0We+FaW93haDevHoAw==", "user"=>{"email"=>"patapat@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "patapat@gmail.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'patapat@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "TZW86Wmyr8cs3H0rsHW1_A"], ["updated_at", "2015-02-04 17:42:18.462837"], ["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 94ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2015-02-04 09:42:18 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "TZW86Wmyr8cs3H0rsHW1_A"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 153ms (Views: 150.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/tab_splitter-14f1c73bfcc8e4169296041ca22442c9.js?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/tabs/form-f23b3d40864db86a05de1c3c64b598dd.js?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/tabs/index-03700a2a138f5a26a8d73e6bf987bcfb.js?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/models/tab-689db77c0facde11ca4ec06c48f05806.js?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/collections/tabs-7e01a235d624fb24a30c17823a80a0f0.js?body=1" for ::1 at 2015-02-04 09:42:18 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-692dad3b39477be0cb002b00fe157984.js?body=1" for ::1 at 2015-02-04 09:42:19 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-965abec4ab26e5666e021d26947c557c.js?body=1" for ::1 at 2015-02-04 09:42:19 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-649b6892b1fe2231c8c3ca54683e8d73.js?body=1" for ::1 at 2015-02-04 09:42:19 -0800
+
+
+Started GET "/assets/routers/router-3c9c1e4460a3c84a5a217969595100b7.js?body=1" for ::1 at 2015-02-04 09:42:19 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:42:19 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:42:19 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 09:42:19 -0800
+
+
+Started GET "/api/tabs" for ::1 at 2015-02-04 09:42:19 -0800
+
+ActionController::RoutingError (No route matches [GET] "/api/tabs"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.2.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.2.0.rc1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.2.0.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0.rc1) lib/rails/application.rb:164:in `call'
+  newrelic_rpm (3.9.9.275) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrick/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.text.erb (6.6ms)

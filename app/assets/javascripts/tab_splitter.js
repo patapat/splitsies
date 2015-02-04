@@ -4,11 +4,11 @@ window.TabSplitter = {
   Views: {},
   Routers: {},
   initialize: function() {
-    new TabSplitter.Routers.Router({ $('#main')});
+    new TabSplitter.Routers.Router({ $rootEl: $('#main')});
     Backbone.history.start();
   }
 };
 
 $(document).ready(function(){
-  TabSplitter.initialize();
+  // TabSplitter.initialize();
 });
