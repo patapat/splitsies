@@ -3,12 +3,14 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
 
   events: {
     "submit form": "createTab"
+
   },
 
   render: function () {
     var content = this.template({ tab: this.model })
     this.$el.html(content);
 
+  
     return this;
   },
 
@@ -18,7 +20,7 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     var $target = $(event.currentTarget);
     var that = this;
     var formData = $target.serializeJSON();
-    
+
     this.model.set(formData);
     this.model.save({}, {
       success: function () {

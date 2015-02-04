@@ -29055,3 +29055,4727 @@ Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at
 
 
 Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 13:58:40 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:18:56 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 331ms (Views: 329.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/tabs/form_even-902a6fa59208cd805f1311f885690204.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-82631549ff4f9601969b673eb300d759.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-faddf2fb3a0ca2421ce89a44e2553b5f.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-cb9026bc20f7f148b77eae5cda5f7f39.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/assets/application-0f556f1658ada30a3ea57f954a9950e2.js?body=1" for ::1 at 2015-02-04 14:18:57 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:19:15 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 263ms (Views: 260.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/tabs/form_even-902a6fa59208cd805f1311f885690204.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-d9c23093d29790e850ef4f459fc1549e.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-faddf2fb3a0ca2421ce89a44e2553b5f.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-cb9026bc20f7f148b77eae5cda5f7f39.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/assets/application-f058e2dc8012ad78f75a134dc111a411.js?body=1" for ::1 at 2015-02-04 14:19:15 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:19:59 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 317ms (Views: 315.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:19:59 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:19:59 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:19:59 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:19:59 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:19:59 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/tabs/form_even-902a6fa59208cd805f1311f885690204.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-e7e98845f5cb2cf49f2cb3c69028f0e1.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-faddf2fb3a0ca2421ce89a44e2553b5f.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-a18500edc6eeb0e8647dcd6833389ece.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/assets/application-a00648260c6628e9ba62c2e18bf73f4e.js?body=1" for ::1 at 2015-02-04 14:20:00 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:21:40 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 304ms (Views: 302.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/tabs/form_even-902a6fa59208cd805f1311f885690204.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-e7e98845f5cb2cf49f2cb3c69028f0e1.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-1403d1d1f1e9d82a975e21023ec3ac9d.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-a18500edc6eeb0e8647dcd6833389ece.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/assets/application-dd2b86f4a7b4753c77751caf8dfece2b.js?body=1" for ::1 at 2015-02-04 14:21:41 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:22:20 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 200ms (Views: 196.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/tabs/form_even-902a6fa59208cd805f1311f885690204.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-e7e98845f5cb2cf49f2cb3c69028f0e1.js?body=1" for ::1 at 2015-02-04 14:22:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-1403d1d1f1e9d82a975e21023ec3ac9d.js?body=1" for ::1 at 2015-02-04 14:22:21 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-a18500edc6eeb0e8647dcd6833389ece.js?body=1" for ::1 at 2015-02-04 14:22:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:22:21 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:22:21 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:22:21 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:22:21 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:22:21 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:22:21 -0800
+
+
+Started GET "/assets/application-dd2b86f4a7b4753c77751caf8dfece2b.js?body=1" for ::1 at 2015-02-04 14:22:21 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:22:36 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 346ms (Views: 342.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/tabs/form_even-902a6fa59208cd805f1311f885690204.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-773be8e9676e7261a03336fc6cb032e0.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-e7e98845f5cb2cf49f2cb3c69028f0e1.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/application-956c9a6257a8929d5479493533a3bba5.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-a18500edc6eeb0e8647dcd6833389ece.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:22:37 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:22:43 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 186ms (Views: 184.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/tabs/form_even-902a6fa59208cd805f1311f885690204.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-e7e98845f5cb2cf49f2cb3c69028f0e1.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-773be8e9676e7261a03336fc6cb032e0.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-a18500edc6eeb0e8647dcd6833389ece.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/assets/application-956c9a6257a8929d5479493533a3bba5.js?body=1" for ::1 at 2015-02-04 14:22:44 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:23:40 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 287ms (Views: 284.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/tabs/form_even-cd4f5b0fe7257533c3948f56aaafbcfe.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:23:40 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-e7e98845f5cb2cf49f2cb3c69028f0e1.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-a18500edc6eeb0e8647dcd6833389ece.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-773be8e9676e7261a03336fc6cb032e0.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/assets/application-385124d27cffab716fcaeeb93ccdc198.js?body=1" for ::1 at 2015-02-04 14:23:41 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:23:53 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 186ms (Views: 184.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/tabs/form_even-cd4f5b0fe7257533c3948f56aaafbcfe.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-e7e98845f5cb2cf49f2cb3c69028f0e1.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-773be8e9676e7261a03336fc6cb032e0.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-a18500edc6eeb0e8647dcd6833389ece.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/assets/application-385124d27cffab716fcaeeb93ccdc198.js?body=1" for ::1 at 2015-02-04 14:23:53 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:24:28 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 189ms (Views: 187.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:24:28 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:24:28 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/tabs/form_even-cd4f5b0fe7257533c3948f56aaafbcfe.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-e7e98845f5cb2cf49f2cb3c69028f0e1.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-773be8e9676e7261a03336fc6cb032e0.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-a18500edc6eeb0e8647dcd6833389ece.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/assets/application-385124d27cffab716fcaeeb93ccdc198.js?body=1" for ::1 at 2015-02-04 14:24:29 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:24:45 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 326ms (Views: 323.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/tabs/form-9e989387c8359b95684be14071dc73fc.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/tabs/form_even-cd4f5b0fe7257533c3948f56aaafbcfe.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-e7e98845f5cb2cf49f2cb3c69028f0e1.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d52b3b83f40bf7b56d77fa2114833c5d.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/application-d653fe7e1a1a58e479d935952c84d5ef.js?body=1" for ::1 at 2015-02-04 14:24:45 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:24:46 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:25:09 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 298ms (Views: 296.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/tabs/form-c8fed8feeedd36ae37158ef1ba3f323f.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/tabs/form_even-cd4f5b0fe7257533c3948f56aaafbcfe.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-e7e98845f5cb2cf49f2cb3c69028f0e1.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d52b3b83f40bf7b56d77fa2114833c5d.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/assets/application-9e225d57cf99cea3501e9c124dbdd2c5.js?body=1" for ::1 at 2015-02-04 14:25:10 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:25:34 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 261ms (Views: 259.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/tabs/form-c8fed8feeedd36ae37158ef1ba3f323f.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/tabs/form_even-cd4f5b0fe7257533c3948f56aaafbcfe.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/application-a208a4b93ebf1d31cb8ead19e02230ed.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:25:34 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:25:35 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-d9c23093d29790e850ef4f459fc1549e.js?body=1" for ::1 at 2015-02-04 14:25:35 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:25:35 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d52b3b83f40bf7b56d77fa2114833c5d.js?body=1" for ::1 at 2015-02-04 14:25:35 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:25:35 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:25:35 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:25:35 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:25:35 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:25:35 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:25:35 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:26:01 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 294ms (Views: 291.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/views/tabs/tab_form_custom-448a4b37744d868618d0b282206f66e3.js?body=1" for ::1 at 2015-02-04 14:26:01 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:26:01 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:26:01 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:26:01 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:26:01 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:26:01 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:26:01 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:26:01 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:26:01 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/tabs/form-c8fed8feeedd36ae37158ef1ba3f323f.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/application-01fb8274e5c627a3664ebffb7c82443b.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/tabs/form_even-cd4f5b0fe7257533c3948f56aaafbcfe.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d52b3b83f40bf7b56d77fa2114833c5d.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:26:02 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:27:19 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 290ms (Views: 288.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/tabs/form_even-cd4f5b0fe7257533c3948f56aaafbcfe.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:27:19 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-9feb4d2496510d52b2e5a23944a15de8.js?body=1" for ::1 at 2015-02-04 14:27:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d52b3b83f40bf7b56d77fa2114833c5d.js?body=1" for ::1 at 2015-02-04 14:27:20 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:27:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:27:20 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:27:20 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:27:20 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:27:20 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:27:20 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:27:20 -0800
+
+
+Started GET "/assets/application-179a4102ec8d0884a2ffdf25aaa4cdb1.js?body=1" for ::1 at 2015-02-04 14:27:20 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:35:10 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 401ms (Views: 399.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/tabs/form_even-cd4f5b0fe7257533c3948f56aaafbcfe.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-84c8efa5d64f68be32ad9026499769b5.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-ca2b3cf929a3a0d5d32933cfeb0a629d.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d52b3b83f40bf7b56d77fa2114833c5d.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/assets/application-a30b46eba4c7c8fc3a4016c57f11dcd5.js?body=1" for ::1 at 2015-02-04 14:35:11 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:35:20 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 243ms (Views: 240.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:35:20 -0800
+
+
+Started GET "/assets/tabs/form_custom-5aebf8d608cb5fedbb25f462862dc9ca.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/tabs/form_even-cd4f5b0fe7257533c3948f56aaafbcfe.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-717fae0ba3debea619aa106a604d6829.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/application-00a2e95db8569af8816a22c5a2d7139a.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d52b3b83f40bf7b56d77fa2114833c5d.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-ca2b3cf929a3a0d5d32933cfeb0a629d.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:35:21 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:37:19 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 280ms (Views: 278.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/tabs/form_custom-374ba3e8f55e29fb5eb8525eefe2566f.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/tabs/form_even-c227c35e8d35ea13867974d3d8ce6ac7.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:37:19 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-85a664ad8dd1f5088fa846f15d3a05ff.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-ca2b3cf929a3a0d5d32933cfeb0a629d.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d52b3b83f40bf7b56d77fa2114833c5d.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/assets/application-d8ef104e1dfb1ae77087445fd065fdde.js?body=1" for ::1 at 2015-02-04 14:37:20 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:37:32 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 302ms (Views: 300.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/tabs/form_even-c227c35e8d35ea13867974d3d8ce6ac7.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-85a664ad8dd1f5088fa846f15d3a05ff.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-ca2b3cf929a3a0d5d32933cfeb0a629d.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d52b3b83f40bf7b56d77fa2114833c5d.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/application-a1b4ef9291e8810a0a148847376f458e.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:37:33 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:37:42 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 268ms (Views: 266.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs/form_even-0248bc102bb91e78c0d4e0dcd5f598d7.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-85a664ad8dd1f5088fa846f15d3a05ff.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d52b3b83f40bf7b56d77fa2114833c5d.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-ca2b3cf929a3a0d5d32933cfeb0a629d.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/assets/application-1e9f516afbe510f2617d93e93bdd5cae.js?body=1" for ::1 at 2015-02-04 14:37:43 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:38:51 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 272ms (Views: 269.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-f44782a05b99b5d42c40658e2a7fe15d.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/tabs/form_even-0248bc102bb91e78c0d4e0dcd5f598d7.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-85a664ad8dd1f5088fa846f15d3a05ff.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/assets/application-bdb940b8d84b42592163777c7f7fb106.js?body=1" for ::1 at 2015-02-04 14:38:52 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:46:43 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 295ms (Views: 291.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-462dea663fe5b24e65cb5eb59bb9f659.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/assets/application-794e2790a69370d5ee2857cbffb0c6fd.js?body=1" for ::1 at 2015-02-04 14:46:44 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:47:12 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 262ms (Views: 260.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-fa539e286ca285a2426e891edb6099fc.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:47:12 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:47:13 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:47:13 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:47:13 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:47:13 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:47:13 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:47:13 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:47:13 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:47:13 -0800
+
+
+Started GET "/assets/application-3c761084915a96f8af66921b85941a12.js?body=1" for ::1 at 2015-02-04 14:47:13 -0800
+
+
+Started POST "/api/tabs" for ::1 at 2015-02-04 14:47:21 -0800
+Processing by Api::TabsController#create as JSON
+  Parameters: {"tab"=>{"title"=>"", "tag"=>"", "date"=>"", "total_amount"=>""}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+Completed 422 Unprocessable Entity in 27ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/tabs" for ::1 at 2015-02-04 14:47:21 -0800
+Processing by Api::TabsController#create as JSON
+  Parameters: {"tab"=>{"title"=>"", "tag"=>"", "date"=>"", "total_amount"=>""}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-02-04 14:47:55 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 237ms (Views: 235.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-e421ada9b01346aad6f6ffce807b74a5.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started GET "/assets/application-c845609c5f558cd0665ab7e9ff1ed099.js?body=1" for ::1 at 2015-02-04 14:47:56 -0800
+
+
+Started POST "/api/tabs" for ::1 at 2015-02-04 14:48:00 -0800
+Processing by Api::TabsController#create as JSON
+  Parameters: {"tab"=>{"title"=>"", "tag"=>"", "date"=>"", "total_amount"=>""}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 422 Unprocessable Entity in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-02-04 14:48:37 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 253ms (Views: 251.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-6dad979a1eae8d7c6bf4f63a743232dd.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/assets/application-0167592d9039426b4f504da7eb2ceea4.js?body=1" for ::1 at 2015-02-04 14:48:38 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:48:54 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 236ms (Views: 233.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-b589fcfffd90d295c34cf23bfcdb7c92.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/assets/application-93b4d42174ec3cf1d4029e38af0fc011.js?body=1" for ::1 at 2015-02-04 14:48:54 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:49:20 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 238ms (Views: 235.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-218ff9a99e626466ef029c0e996c66e2.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/assets/application-87859b41bf97afb47aeb942f6c3542a9.js?body=1" for ::1 at 2015-02-04 14:49:21 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:49:26 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 174ms (Views: 172.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-218ff9a99e626466ef029c0e996c66e2.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/assets/application-87859b41bf97afb47aeb942f6c3542a9.js?body=1" for ::1 at 2015-02-04 14:49:26 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:50:09 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 248ms (Views: 244.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-ffd08c3441ed9d2cea7780c1695583ef.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/application-abadfd537f8a22d19c978534f767d07d.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:50:10 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:51:26 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 235ms (Views: 233.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-4deb4aea3d0f62762b71b78f8b220897.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/assets/application-466d854c51bd9143b6e12577172f8045.js?body=1" for ::1 at 2015-02-04 14:51:27 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:51:39 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 234ms (Views: 231.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-e9d2a5e71f5269791fab6738963b24f8.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/assets/application-60a9303d88c0358bb764a6f399e18330.js?body=1" for ::1 at 2015-02-04 14:51:40 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:52:19 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 240ms (Views: 238.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/tabs/form_custom-c198b13c354e6c3439167018959cb9a4.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/tabs/form_even-660bb11db54f0caa6ce54dbb05da423e.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-0a2a0f746cb521d177ed8bc3984b2f7e.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/application-0fe5d1e17085fa8ed849f013ee714b66.js?body=1" for ::1 at 2015-02-04 14:52:19 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:52:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:52:20 -0800
+
+
+Started GET "/assets/views/tabs/tab-ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:52:20 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:52:20 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:52:20 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:52:20 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:52:20 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:52:20 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:52:20 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:54:16 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 270ms (Views: 268.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-0a2a0f746cb521d177ed8bc3984b2f7e.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/assets/application-7580a631046fcc34eaf9f7a718087acc.js?body=1" for ::1 at 2015-02-04 14:54:17 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:54:34 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 282ms (Views: 280.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/views/tabs/tab_form-986351f62964e935624662c30dfb9313.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/application-0719aa34d43da6280a243637439b8504.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:54:35 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:54:52 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 236ms (Views: 235.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:54:52 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:54:52 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:54:52 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:54:52 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:54:52 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-0a2a0f746cb521d177ed8bc3984b2f7e.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/assets/application-7580a631046fcc34eaf9f7a718087acc.js?body=1" for ::1 at 2015-02-04 14:54:53 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:55:47 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 249ms (Views: 247.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-0ca1a83c6c7698c580aa15b1ececf367.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/assets/application-031d8965f2c2b599863669202e6b0875.js?body=1" for ::1 at 2015-02-04 14:55:47 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 14:59:32 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 276ms (Views: 273.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-437e107983eff92663c5962eb46b959c.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/assets/application-f3623b0b81fa95feb72b2c3cde99dabe.js?body=1" for ::1 at 2015-02-04 14:59:33 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 15:00:06 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 248ms (Views: 246.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/views/tabs/tab_form-cc2c180d41e981f37cba0c7ced750f60.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/assets/application-fd07123d3cc661143cc21d432b676aac.js?body=1" for ::1 at 2015-02-04 15:00:07 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 15:00:36 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 252ms (Views: 250.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-e3b03c84d1201c256717fc402b209a6a.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/application-7d814143c39a8fe564dac3a1804e18ef.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:00:36 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 15:00:50 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 254ms (Views: 252.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-12a93b3652ebdecc6ff0beef8b3b616e.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/assets/application-0c12fafbc85f24c88813f7e0cf1e5180.js?body=1" for ::1 at 2015-02-04 15:00:51 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 15:01:12 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 244ms (Views: 242.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-7fda93ea5eaa57a71335668102ec9b26.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/assets/application-b224b922ba401d1e6b208d09f18af6cf.js?body=1" for ::1 at 2015-02-04 15:01:13 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 15:01:27 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 250ms (Views: 247.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-a85cce1213eff91f7cd071d72df1b24c.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 15:01:27 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/assets/application-ad1dfae7cf083806f48b5690f3eb8529.js?body=1" for ::1 at 2015-02-04 15:01:28 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 15:01:56 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 256ms (Views: 254.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-e39c6a3d97c673244a5fe7af1c289465.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/assets/application-4ce6940fe6c9f2eb8f71837932388f17.js?body=1" for ::1 at 2015-02-04 15:01:57 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 15:07:00 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 291ms (Views: 289.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-842dd952d9582fd11f022353dd45af90.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/assets/application-5f6c06ae04d117da5682cef6cbd20575.js?body=1" for ::1 at 2015-02-04 15:07:01 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 15:07:39 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 270ms (Views: 266.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-a34e21ddf175c3562b67d76fb2d4ed6d.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/application-6b7461e23ec3bb832026fa41067dc3d8.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:07:39 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 15:10:10 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 269ms (Views: 267.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-48e2a0dfc17882f607ca9d89464cca35.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/application-df71d0f2f7f62947940b6a21eba9cfb8.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:10:11 -0800
+
+
+Started GET "/" for ::1 at 2015-02-04 15:11:51 -0800
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Dds8-LRMZ-PTe5xxm-Uh0g"]]
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 260ms (Views: 258.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/jquery.serializejson-953cf6d8a520ba6ddedec462c7aba00e.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/jquery_ujs-c5940c7532618d551ab8f85cea97d045.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/tabs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/jquery-5c8e9a5f2706a5ae36c57c9b8b1693b8.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/underscore-073e2def0b35872f7ba83786c10c42c0.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/backbone-52182cc8f9ebd6911dd082e647cce3e5.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_form-7b453daf029af2dc64b20783eab80f85.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/tab_splitter-7a8b361eecb0f5c401591eeb8b279b92.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/tabs/add_ower-c439ee787954da91811be728d4bb81a0.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/tabs/form-d11a83fcf386efb0cef12f1fcc20381f.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/tabs/form_custom-14fa06d38fff5afc3009cc8bdf93af83.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/tabs/form_even-b2da3fdabd666e830b894c8e61c6f860.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/tabs/index-b4514651af5c3ddf84773fb1382a2ef6.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/tabs/show-6c323b02e105dc037939467c946fbaa4.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/users/show-216aab3ae9268d6d4ded466b6d7de3dd.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/utils/composite_view-c53cba8de44f170f064e6c862b2bb98e.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/models/tab-e2dc34d7b9a79c47f9c770d1d930e81a.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/collections/tabs-b138f53d2772ad81d9e74be6cf65b9c3.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_custom-fbcffbff5b606d0458e88cc1de13b1d4.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_form_even-d92429a619d3259ba61269c9a5c93e70.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_ower-84254e43458d313e543170fee054a602.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/views/tabs/tab_show-da22ed8af8a313d2fea33242f75c37dd.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/views/tabs/tabs_index-ba2ead893b355d8134a074ca48023346.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/routers/router-126beb0ef2164e7f0629f217a6a78d5a.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/tabs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
+
+
+Started GET "/assets/application-1c5b5841f740572f6a800fbd1805e6f5.js?body=1" for ::1 at 2015-02-04 15:11:52 -0800
