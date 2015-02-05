@@ -47,7 +47,7 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   },
 
   updateOwers: function (event) {
-    var email = $('#tab-ower').val()
+    var email = $('#tab-ower').val();
     var $liName = $("<li>" + $('#tab-ower').val()+ "</li><input type='text' class='each-amount'>");
     $('#custom-ower').append($liName);
     $('#tab-ower').val("");
