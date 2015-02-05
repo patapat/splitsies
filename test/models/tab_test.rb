@@ -6,7 +6,7 @@
 #  user_id      :integer          not null
 #  title        :string           not null
 #  date         :date             not null
-#  total_amount :decimal(4, 2)    default("0")
+#  total_amount :decimal(6, 2)    default("0")
 #  tag          :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null

@@ -6,7 +6,7 @@
 #  email           :string           not null
 #  password_digest :string           not null
 #  session_token   :string           not null
-#  account_balance :decimal(4, 2)    default("0")
+#  account_balance :decimal(6, 2)    default("0")
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #
@@ -17,10 +17,19 @@ class User < ActiveRecord::Base
   validates :password_digest, :session_token, presence: true
 
   attr_reader :password
-  has_many :tabs
 
-  # has_many :owed_tabs
-  # has_many :friends
+  has_many :tabs
+  
+  has_many :users_tabs
+  has_many :owed_tabs,
+            through: :users_tabs,
+            source: :tab
+
+  has_many :users_friends
+  has_many :friends,
+            through: :users_friends,
+            source: :friend
+
   after_initialize :ensure_session_token
 
   def self.find_by_credentials(email, password)

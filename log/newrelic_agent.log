@@ -162,3 +162,112 @@
 [02/04/15 11:36:52 -0800 Patricks-MBP.local (58095)] INFO : Doing deferred dependency-detection before Rack startup
 [02/04/15 11:37:25 -0800 Patricks-MBP.local (58095)] ERROR : Unknown license key
 [02/04/15 11:37:25 -0800 Patricks-MBP.local (58095)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[02/04/15 16:41:30 -0800 Patricks-MBP.local (58095)] INFO : Starting Agent shutdown
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] WARN : No configuration file found. Working directory = /Users/patrick/Desktop/FinalProjectProposal
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] WARN : Looked in these locations (based on defaults): /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/.newrelic/newrelic.yml, /Users/patrick/newrelic.yml
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Environment: development
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : No known dispatcher detected.
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Application: development
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Installing ActiveJob instrumentation
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Installing ActiveRecord 4 instrumentation
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Installing Net instrumentation
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Installing deferred Rack instrumentation
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Installing Rack::Builder middleware instrumentation
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Installing Rails 3+ middleware instrumentation
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Installing Rails 4 Controller instrumentation
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Installing Rails 4 view instrumentation
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Installing Rails 4 Error instrumentation
+[02/04/15 16:43:23 -0800 Patricks-MBP.local (60789)] INFO : Finished instrumentation
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] WARN : No configuration file found. Working directory = /Users/patrick/Desktop/FinalProjectProposal
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] WARN : Looked in these locations (based on defaults): /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/.newrelic/newrelic.yml, /Users/patrick/newrelic.yml
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Environment: development
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : No known dispatcher detected.
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Application: development
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Installing ActiveJob instrumentation
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Installing ActiveRecord 4 instrumentation
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Installing Net instrumentation
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Installing deferred Rack instrumentation
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Installing Rack::Builder middleware instrumentation
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Installing Rails 3+ middleware instrumentation
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Installing Rails 4 Controller instrumentation
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Installing Rails 4 view instrumentation
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Installing Rails 4 Error instrumentation
+[02/04/15 16:44:08 -0800 Patricks-MBP.local (60812)] INFO : Finished instrumentation
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] WARN : No configuration file found. Working directory = /Users/patrick/Desktop/FinalProjectProposal
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] WARN : Looked in these locations (based on defaults): /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/.newrelic/newrelic.yml, /Users/patrick/newrelic.yml
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Environment: development
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : No known dispatcher detected.
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Application: development
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Installing ActiveJob instrumentation
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Installing ActiveRecord 4 instrumentation
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Installing Net instrumentation
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Installing deferred Rack instrumentation
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Installing Rack::Builder middleware instrumentation
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Installing Rails 3+ middleware instrumentation
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Installing Rails 4 Controller instrumentation
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Installing Rails 4 view instrumentation
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Installing Rails 4 Error instrumentation
+[02/04/15 17:18:29 -0800 Patricks-MBP.local (61228)] INFO : Finished instrumentation
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] WARN : No configuration file found. Working directory = /Users/patrick/Desktop/FinalProjectProposal
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] WARN : Looked in these locations (based on defaults): /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/.newrelic/newrelic.yml, /Users/patrick/newrelic.yml
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Environment: development
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : No known dispatcher detected.
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Application: development
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Installing ActiveJob instrumentation
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Installing ActiveRecord 4 instrumentation
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Installing Net instrumentation
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Installing deferred Rack instrumentation
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Installing Rack::Builder middleware instrumentation
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Installing Rails 3+ middleware instrumentation
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Installing Rails 4 Controller instrumentation
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Installing Rails 4 view instrumentation
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Installing Rails 4 Error instrumentation
+[02/04/15 17:29:39 -0800 Patricks-MBP.local (61356)] INFO : Finished instrumentation
+[02/04/15 17:30:53 -0800 Patricks-MBP.local (61373)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/15 17:30:53 -0800 Patricks-MBP.local (61373)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/15 17:30:53 -0800 Patricks-MBP.local (61373)] WARN : No configuration file found. Working directory = /Users/patrick/Desktop/FinalProjectProposal
+[02/04/15 17:30:53 -0800 Patricks-MBP.local (61373)] WARN : Looked in these locations (based on defaults): /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/.newrelic/newrelic.yml, /Users/patrick/newrelic.yml
+[02/04/15 17:30:53 -0800 Patricks-MBP.local (61373)] INFO : Environment: development
+[02/04/15 17:30:53 -0800 Patricks-MBP.local (61373)] INFO : No known dispatcher detected.
+[02/04/15 17:30:53 -0800 Patricks-MBP.local (61373)] INFO : Application: development
+[02/04/15 17:30:53 -0800 Patricks-MBP.local (61373)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/04/15 17:30:54 -0800 Patricks-MBP.local (61373)] INFO : Installing ActiveJob instrumentation
+[02/04/15 17:30:54 -0800 Patricks-MBP.local (61373)] INFO : Installing ActiveRecord 4 instrumentation
+[02/04/15 17:30:54 -0800 Patricks-MBP.local (61373)] INFO : Installing Net instrumentation
+[02/04/15 17:30:54 -0800 Patricks-MBP.local (61373)] INFO : Installing deferred Rack instrumentation
+[02/04/15 17:30:54 -0800 Patricks-MBP.local (61373)] INFO : Installing Rack::Builder middleware instrumentation
+[02/04/15 17:30:54 -0800 Patricks-MBP.local (61373)] INFO : Installing Rails 3+ middleware instrumentation
+[02/04/15 17:30:54 -0800 Patricks-MBP.local (61373)] INFO : Installing Rails 4 Controller instrumentation
+[02/04/15 17:30:54 -0800 Patricks-MBP.local (61373)] INFO : Installing Rails 4 view instrumentation
+[02/04/15 17:30:54 -0800 Patricks-MBP.local (61373)] INFO : Installing Rails 4 Error instrumentation
+[02/04/15 17:30:54 -0800 Patricks-MBP.local (61373)] INFO : Finished instrumentation
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] WARN : No configuration file found. Working directory = /Users/patrick/Desktop/FinalProjectProposal
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] WARN : Looked in these locations (based on defaults): /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/.newrelic/newrelic.yml, /Users/patrick/newrelic.yml
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Environment: development
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : No known dispatcher detected.
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Application: development
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Installing ActiveJob instrumentation
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Installing ActiveRecord 4 instrumentation
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Installing Net instrumentation
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Installing deferred Rack instrumentation
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Installing Rack::Builder middleware instrumentation
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Installing Rails 3+ middleware instrumentation
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Installing Rails 4 Controller instrumentation
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Installing Rails 4 view instrumentation
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Installing Rails 4 Error instrumentation
+[02/04/15 17:31:17 -0800 Patricks-MBP.local (61380)] INFO : Finished instrumentation

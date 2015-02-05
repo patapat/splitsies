@@ -6,7 +6,7 @@
 #  email           :string           not null
 #  password_digest :string           not null
 #  session_token   :string           not null
-#  account_balance :decimal(4, 2)    default("0")
+#  account_balance :decimal(6, 2)    default("0")
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #
