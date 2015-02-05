@@ -13,8 +13,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
   template: JST['tabs/form'],
 
   events: {
-    "submit .new-form": "createTab",
-    "submit .edit-form": "updateTab",
+    "submit form": "createOrUpdateTab",
     "change #tab_total_amount": "updateAmount",
     "change #tab-ower": function (e) {
       this.updateOwers(e);
@@ -29,7 +28,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     return this;
   },
 
-  createTab: function (event) {
+  createOrUpdateTab: function (event) {
     event.preventDefault();
 
     var $target = $(event.currentTarget);
@@ -37,29 +36,12 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     var formData = $target.serializeJSON();
 
     this.model.set(formData.tab);
-    debugger;
 
     this.model.save({}, {
-      success: function () {
-        that.collection.add(that.model);
-        Backbone.history.navigate("#/tabs/" + that.model.id, { trigger: true });
-      }
-    });
-  },
-
-  updateTab: function (event) {
-    event.preventDefault()
-
-    var $target = $(event.currentTarget);
-    var that = this;
-    var formData = $target.serializeJSON();
-
-    this.model.set(formData.tab);
-    debugger;
-    
-    this.model.save({}, {
-      success: function () {
-        debugger;
+      success: function (response, data, options) {
+        if (!that.collection.contains(that.model)) {
+          that.collection.add(that.model);
+        }
         Backbone.history.navigate("#/tabs/" + that.model.id, { trigger: true });
       }
     });
