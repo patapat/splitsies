@@ -44,7 +44,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
   },
 
   updateAmount: function (event) {
-    var numOwers = $(".ower-name li").length;
+    var numOwers = $(".even-ower li").length;
     var totalAmount = $('#tab_total_amount').val();
     var amountEach = totalAmount / numOwers;
     if (numOwers === 0) {
@@ -56,7 +56,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
 
   updateOwers: function (event) {
     var $liName = $("<li>" + $('#tab-ower').val()+ "</li>");
-    $('.ower-name').append($liName);
+    $('.even-ower').append($liName);
     $('#tab-ower').val("");
   }
 
