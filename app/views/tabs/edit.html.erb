@@ -1,11 +1,3 @@
-<% if flash[:errors] %>
-  <% flash[:errors].each do |error| %>
-    <ul>
-      <li><%= error %></li>
-    </ul>
-  <% end %>
-<% end %>
-
 <h1>Edit Tab</h1>
 
 <form action="/users/<%= current_user.id %>/tabs/<%= @tab.id %>" method="post">

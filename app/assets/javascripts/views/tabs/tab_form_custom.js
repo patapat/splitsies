@@ -2,7 +2,6 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   template: JST['tabs/form_custom'],
 
   events: {
-    "submit form": "createTab",
     "change #tab_total_amount": "updateAmount",
     "change #tab-ower": "updateOwers",
     "change .each-amount": "updateAmount"
@@ -13,22 +12,6 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     this.$el.html(content);
 
     return this;
-  },
-
-  createTab: function (event) {
-    event.preventDefault();
-
-    var $target = $(event.currentTarget);
-    var that = this;
-    var formData = $target.serializeJSON();
-
-    this.model.set(formData);
-    this.model.save({}, {
-      success: function () {
-        that.collection.add(that.model);
-        Backbone.history.navigate("", { trigger: true });
-      }
-    });
   },
 
   updateAmount: function (event) {

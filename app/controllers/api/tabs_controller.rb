@@ -37,20 +37,20 @@ module Api
       render json: @tabs
     end
 
-    # def edit
-    #   @tab = Tab.find(params[:id])
-    # end
-    #
-    # def update
-    #   @tab = Tab.find(params[:id])
-    #
-    #   if @tab.update(tab_params)
-    #     redirect_to user_tabs_url(current_user)
-    #   else
-    #     flash.now[:errors] = @tab.errors.full_messages
-    #     render :edit
-    #   end
-    # end
+    def edit
+      @tab = Tab.find(params[:id])
+    end
+
+    def update
+      @tab = Tab.find(params[:id])
+
+      if @tab.update(tab_params)
+        render json: @tab
+      else
+        flash.now[:errors] = @tab.errors.full_messages
+        render :edit
+      end
+    end
 
     private
     def tab_params

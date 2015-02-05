@@ -10,6 +10,8 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     "tabs/new-custom": "newCustom",
     "tabs/:id": "show",
     "tabs/:id/edit": "edit",
+    "tabs/:id/edit-even": "editEven",
+    "tabs/:id/edit-custom": "editCustom"
   },
 
   index: function () {
@@ -46,7 +48,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
   },
 
   newEven: function () {
-    this.new()
+    this.new();
     var tab = new TabSplitter.Models.Tab();
 
     var newEvenView = new TabSplitter.Views.TabFormEven({
@@ -58,7 +60,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
   },
 
   newCustom: function () {
-    this.new()
+    this.new();
     var tab = new TabSplitter.Models.Tab();
 
     var newCustomView = new TabSplitter.Views.TabFormCustom({
@@ -80,6 +82,30 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     this._swapView(editView);
   },
 
+  editEven: function (id) {
+    this.edit(id);
+    var tab = TabSplitter.Collections.tabs.getOrFetch(id);
+
+    var editEvenView = new TabSplitter.Views.TabFormEven({
+      model: tab,
+      collection: TabSplitter.Collections.tabs
+    });
+
+    this._swapFormView(editEvenView);
+  },
+
+  editCustom: function (id) {
+    this.edit(id);
+    var tab = TabSplitter.Collections.tabs.getOrFetch(id);
+
+    var editCustomView = new TabSplitter.Views.TabFormCustom({
+      model: tab,
+      collection: TabSplitter.Collections.tabs
+    });
+
+    this._swapFormView(editCustomView);
+  },
+
   _swapView: function (view) {
     this._currentView && this._currentView.remove();
     this._currentView = view;
@@ -87,9 +113,6 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
   },
 
   _swapFormView: function (view) {
-    // this._currentView && this._currentView.remove();
-    // this._currentView = view;
-
     $("#tab-type-main").html(view.render().$el);
   }
 })

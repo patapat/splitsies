@@ -1,26 +1,26 @@
 <h1>Even Split Tab</h1>
-<form class="form-even">
+<form class="<%= tab.id ? 'edit-form' : 'new-form' %>">
 
   <label for="tab_title">Title: </label>
-  <input type="text" name="tab[title]" id="tab_title">
+  <input type="text" name="tab[title]" id="tab_title" value="<%=tab.escape('title') %>">
   <br>
   <label for="tab_tag">Tag: </label>
-  <input type="text" name="tab[tag]" id="tab_tag">
+  <input type="text" name="tab[tag]" id="tab_tag" value="<%=tab.escape('tag') %>">
   <br>
 
   <label for="tab_date">Date: </label>
-  <input type="date" name="tab[date]" id="tab_date">
+  <input type="date" name="tab[date]" id="tab_date" value="<%=tab.escape('date') %>">
   <br>
 
   <label for="tab_total_amount">Total Amount: </label>
-  <input type="text" name="tab[total_amount]" id="tab_total_amount">
+  <input type="text" name="tab[total_amount]" id="tab_total_amount" value="<%=tab.escape('total_amount') %>">
   <br>
 
   <label for="tab-ower">Tab Ower: </label>
   <input type="text" id="tab-ower">
   <br>
 
-  <input type="submit" value="Create New Tab">
+  <input type="submit" value="<%= tab.id ? 'Update Tab' : 'Create New Tab' %>">
 </form>
 
 

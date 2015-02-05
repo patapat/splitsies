@@ -1,4 +1,4 @@
-<h1>Create New Tab</h1>
-<a href="#/tabs/new-even">Even</a>
-<a href="#/tabs/new-custom">Custom</a>
+<h1><%= tab.id ? "Edit Tab" : "Create New Tab" %></h1>
+<%= tab.id ? '<a href="#/tabs/' + tab.id + '/edit-even">Even</a>' : '<a href="#/tabs/new-even">Even</a>' %>
+<%= tab.id ? '<a href="#/tabs/' + tab.id + '/edit-custom">Custom</a>' : '<a href="#/tabs/new-custom">Custom</a>' %>
 <div id="tab-type-main"></div>
