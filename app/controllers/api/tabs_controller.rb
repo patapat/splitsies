@@ -1,6 +1,7 @@
-
 module Api
   class TabsController < ApplicationController
+    before_action :require_log_in
+
     def new
       render json: {}
     end

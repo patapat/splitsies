@@ -294,3 +294,54 @@
 [02/04/15 23:33:16 -0800 Patricks-MBP.local (63486)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
 [02/05/15 10:57:45 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: The action 'update' could not be found for Api::TabsController
 [02/05/15 10:59:35 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: The action 'update' could not be found for Api::TabsController
+[02/05/15 12:01:19 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/05/15 12:57:55 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/05/15 12:57:55 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/05/15 13:00:26 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/05/15 13:19:20 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Unable to autoload constant UsersController, expected /Users/patrick/Desktop/FinalProjectProposal/app/controllers/users_controller.rb to define it
+[02/05/15 14:39:20 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template api/users/new, application/new with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/05/15 15:31:20 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template api/users/new, application/new with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/05/15 15:43:54 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: param is missing or the value is empty: user
+[02/05/15 15:44:20 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: param is missing or the value is empty: user
+[02/05/15 15:46:35 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: param is missing or the value is empty: user
+[02/05/15 15:47:22 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: param is missing or the value is empty: user
+[02/05/15 16:28:13 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: param is missing or the value is empty: user
+[02/05/15 16:32:48 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: param is missing or the value is empty: user
+[02/05/15 16:32:55 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template api/users/new, application/new with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/05/15 16:34:51 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template api/users/new, application/new with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/05/15 16:35:01 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template api/users/new, application/new with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/05/15 16:35:43 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template api/users/new, application/new with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/05/15 16:36:38 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template api/users/new, application/new with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+

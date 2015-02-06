@@ -1,7 +1,7 @@
 TabSplitter.Collections.Users = Backbone.Collection.extend({
-  model: TabSplitter.Models.User,
-
   url: "api/users",
+  
+  model: TabSplitter.Models.User,
 
   getOrFetch: function (id) {
     var user = this.get(id)

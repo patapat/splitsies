@@ -7,6 +7,10 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     "change .each-amount": "updateAmount"
   },
 
+  initialize: function () {
+    this.listenTo(this.model, 'sync', this.render);
+  },
+
   render: function () {
     var content = this.template({ tab: this.model })
     this.$el.html(content);
@@ -20,13 +24,13 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
 
     allPaidAmounts.each(function() {
       if ($(this).val() !== "") {
-        totalPaid += parseInt($(this).val());
+        totalPaid += parseFloat($(this).val()).toFixed(2);
       }
     });
 
     var initialTotal = $('#tab_total_amount').val();
     var amountLeft = initialTotal - totalPaid;
-    $('#custom-total').html("$" + amountLeft);
+    $('#custom-total').html("$" + amountLeft.toFixed(2));
   },
 
   updateOwers: function (event) {

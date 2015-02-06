@@ -4,8 +4,8 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
      if(e.keyCode == 13){
         $(this).trigger('enter');
      }
-
    });
+
   },
 
   className: "tab-form-main",
@@ -38,7 +38,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     this.model.set(formData.tab);
 
     this.model.save({}, {
-      success: function (response, data, options) {
+      success: function () {
         if (!that.collection.contains(that.model)) {
           that.collection.add(that.model);
         }
@@ -49,13 +49,13 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
 
   updateAmount: function (event) {
     var numOwers = $(".even-ower li").length;
-    var totalAmount = $('#tab_total_amount').val();
+    var totalAmount = $('#tab_total_amount').val().toFixed(2);
     var amountEach = totalAmount / numOwers;
     if (numOwers === 0) {
       amountEach = totalAmount;
     }
 
-    $('.amount-owed').html("$" + amountEach);
+    $('.amount-owed').html("$" + amountEach.toFixed(2));
   },
 
   updateOwers: function (event) {

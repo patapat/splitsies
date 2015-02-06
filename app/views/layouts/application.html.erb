@@ -5,10 +5,19 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
+    <script src='https://platform.venmo.com/sdk.js'></script>
   </head>
   <body>
     <% if logged_in? %>
-      <%= button_to "Log Out", session_url, method: :delete %><%= link_to "All Tabs", "#" %>
+      <script>window.CURRENT_USER = {
+        "id": <%= current_user.id %>,
+        "email": "<%= current_user.email %>",
+        "account_balance": <%= current_user.account_balance %>
+      }</script>
+      <!-- <iframe style="width: 120px; height: 33px" scrolling="no" frameborder="0" src="https://platform.venmo.com/#payment-widget?recipient_id=1366807004839936586"></iframe> -->
+      <a class="venmo-pay-button" data-recipient-id="1366807004839936586" data-amount=".5"></a>
+      <br>
+      <%= button_to "Log Out", session_url, method: :delete %><%= link_to "All Tabs", "" %>
     <% end %>
   <%= yield %>
 

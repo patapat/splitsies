@@ -9,6 +9,7 @@ TabSplitter.Collections.Tabs = Backbone.Collection.extend({
 
     if (!tab) {
       tab = new TabSplitter.Models.Tab({ id: id });
+      
       tab.fetch({
         success: function () {
           that.add(tab);

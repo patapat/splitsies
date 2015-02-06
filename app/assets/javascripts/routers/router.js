@@ -11,7 +11,26 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     "tabs/:id": "show",
     "tabs/:id/edit": "edit",
     "tabs/:id/edit-even": "editEven",
-    "tabs/:id/edit-custom": "editCustom"
+    "tabs/:id/edit-custom": "editCustom",
+    "users/new": "userNew",
+    "users/:id": "userShow"
+  },
+
+  userNew: function () {
+    var user = new TabSplitter.Models.User();
+    var newUserView = new TabSplitter.Views.UserForm({
+      model: user,
+      collection: TabSplitter.Collections.users
+      });
+
+    this._swapView(newUserView);
+  },
+
+  userShow: function (id) {
+    var user = TabSplitter.Collections.users.getOrFetch(id);
+    var userView = new TabSplitter.Views.UserShow({ model: user });
+
+    this._swapView(userView);
   },
 
   index: function () {
