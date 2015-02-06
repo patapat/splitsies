@@ -345,3 +345,7 @@
   * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
   * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
 
+[02/06/15 09:45:51 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tab with 'id'=5
+[02/06/15 09:46:07 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tab with 'id'=50
+[02/06/15 09:46:08 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tab with 'id'=5
+[02/06/15 09:46:11 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tab with 'id'=5

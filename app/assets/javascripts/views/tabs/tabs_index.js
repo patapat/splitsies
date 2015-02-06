@@ -1,11 +1,15 @@
 TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
   template: JST['tabs/index'],
 
+  initialize: function () {
+    this.listenTo(this.collection, "remove sync add change:title", this.render)
+  },
+
   render: function () {
     var content = this.template({ tabs: this.collection })
     this.$el.html(content);
     this.addSearchResults();
-    
+
     return this;
   },
 
@@ -17,8 +21,8 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
           collection: TabSplitter.Collections.users
         });
 
-        that.addSubview($('.search'), searchView);
+        $('.search').html(searchView.render().$el);
       }
-    })
+    });
   }
 })

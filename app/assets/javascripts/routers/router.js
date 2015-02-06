@@ -47,12 +47,17 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
 
   show: function (id) {
     var tab = TabSplitter.Collections.tabs.getOrFetch(id);
+    var that = this;
 
-    var showView = new TabSplitter.Views.TabShow({
-      model: tab
+    TabSplitter.Collections.tabs.fetch({
+      success: function () {
+        var showView = new TabSplitter.Views.TabShow({
+          model: tab,
+          collection: TabSplitter.Collections.tabs
+        });
+        that._swapView(showView);
+      }
     });
-
-    this._swapView(showView);
   },
 
   new: function () {

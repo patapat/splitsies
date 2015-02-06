@@ -17,3 +17,11 @@
 li {
   list-style: none;
 }
+
+.checked {
+  font-weight: bold;
+}
+
+#search-results {
+  max-width: 50%;
+}
