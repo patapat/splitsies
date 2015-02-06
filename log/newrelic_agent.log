@@ -349,3 +349,95 @@
 [02/06/15 09:46:07 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tab with 'id'=50
 [02/06/15 09:46:08 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tab with 'id'=5
 [02/06/15 09:46:11 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Tab with 'id'=5
+[02/06/15 11:36:13 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template api/users/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/06/15 11:36:13 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template api/users/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/patrick/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/patrick/Desktop/FinalProjectProposal/app/views"
+
+[02/06/15 11:36:17 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/show.json.jbuilder:5: syntax error, unexpected ':', expecting keyword_end
+    json.extract! friend :email, :account_balance, :cre...
+                          ^
+/Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/show.json.jbuilder:5: syntax error, unexpected ',', expecting :: or '[' or '.'
+...riend :email, :account_balance, :created_at, :updated_at
+...                               ^
+[02/06/15 11:39:04 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `email' for #<User::ActiveRecord_Relation:0x007fd11756ec90>
+[02/06/15 12:00:10 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ':', expecting keyword_end
+...    json.extract! friend, :id :email, :account_balance, :cre...
+...                               ^
+/Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ',', expecting :: or '[' or '.'
+..., :id :email, :account_balance, :created_at, :updated_at
+...                               ^
+[02/06/15 12:00:10 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ':', expecting keyword_end
+...    json.extract! friend, :id :email, :account_balance, :cre...
+...                               ^
+/Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ',', expecting :: or '[' or '.'
+..., :id :email, :account_balance, :created_at, :updated_at
+...                               ^
+[02/06/15 12:00:54 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ':', expecting keyword_end
+...    json.extract! friend, :id :email, :account_balance, :cre...
+...                               ^
+/Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ',', expecting :: or '[' or '.'
+..., :id :email, :account_balance, :created_at, :updated_at
+...                               ^
+[02/06/15 12:00:54 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ':', expecting keyword_end
+...    json.extract! friend, :id :email, :account_balance, :cre...
+...                               ^
+/Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ',', expecting :: or '[' or '.'
+..., :id :email, :account_balance, :created_at, :updated_at
+...                               ^
+[02/06/15 12:01:04 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ':', expecting keyword_end
+...    json.extract! friend, :id :email, :account_balance, :cre...
+...                               ^
+/Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ',', expecting :: or '[' or '.'
+..., :id :email, :account_balance, :created_at, :updated_at
+...                               ^
+[02/06/15 12:01:04 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ':', expecting keyword_end
+...    json.extract! friend, :id :email, :account_balance, :cre...
+...                               ^
+/Users/patrick/Desktop/FinalProjectProposal/app/views/api/users/index.json.jbuilder:5: syntax error, unexpected ',', expecting :: or '[' or '.'
+..., :id :email, :account_balance, :created_at, :updated_at
+...                               ^
+[02/06/15 13:42:45 -0800 Patricks-MBP.local (63486)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: param is missing or the value is empty: users_friend
+[02/06/15 13:46:22 -0800 Patricks-MBP.local (63486)] INFO : Starting Agent shutdown
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Starting the New Relic agent in "development" environment.
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] WARN : No configuration file found. Working directory = /Users/patrick/Desktop/FinalProjectProposal
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] WARN : Looked in these locations (based on defaults): /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/.newrelic/newrelic.yml, /Users/patrick/newrelic.yml
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Environment: development
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : No known dispatcher detected.
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Application: development
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Installing ActiveJob instrumentation
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Installing ActiveRecord 4 instrumentation
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Installing Net instrumentation
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Installing deferred Rack instrumentation
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Installing Rack::Builder middleware instrumentation
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Installing Rails 3+ middleware instrumentation
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Installing Rails 4 Controller instrumentation
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Installing Rails 4 view instrumentation
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Installing Rails 4 Error instrumentation
+[02/06/15 13:47:27 -0800 Patricks-MBP.local (78201)] INFO : Finished instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Starting the New Relic agent in "development" environment.
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] WARN : No configuration file found. Working directory = /Users/patrick/Desktop/FinalProjectProposal
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] WARN : Looked in these locations (based on defaults): /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/config/newrelic.yml, /Users/patrick/Desktop/FinalProjectProposal/newrelic.yml, /Users/patrick/.newrelic/newrelic.yml, /Users/patrick/newrelic.yml
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Environment: development
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Dispatcher: webrick
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Application: development
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Installing ActiveJob instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Installing ActiveRecord 4 instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Installing Net instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Installing deferred Rack instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Installing Rack::Builder middleware instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Installing Rails 3+ middleware instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Installing Rails 4 Controller instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Installing Rails 4 view instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Installing Rails 4 Error instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Finished instrumentation
+[02/06/15 13:47:53 -0800 Patricks-MBP.local (78218)] INFO : Doing deferred dependency-detection before Rack startup
+[02/06/15 13:47:55 -0800 Patricks-MBP.local (78218)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/06/15 13:47:55 -0800 Patricks-MBP.local (78218)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.

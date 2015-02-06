@@ -3,6 +3,8 @@ TabSplitter.Views.UserShow = Backbone.CompositeView.extend({
 
   initialize: function () {
     this.listenTo(this.model, 'sync', this.render);
+    this.friends = this.model.friends();
+    this.tabs = this.model.tabs();
   },
 
   render: function () {

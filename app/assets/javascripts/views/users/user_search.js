@@ -1,9 +1,15 @@
 TabSplitter.Views.UserSearch = Backbone.View.extend({
   template: JST['users/search'],
 
+  initialize: function () {
+    this.friendCollection = TabSplitter.Collections.usersFriends
+    this.listenTo(this.friendCollection, "add remove sync", this.render);
+  },
+
   events: {
     'keyup #search-field': "updateResults",
-    'click .search-items': "selectUser"
+    'click .search-items': "selectUser",
+    'click button': "addUser"
   },
 
   render: function () {
@@ -37,6 +43,32 @@ TabSplitter.Views.UserSearch = Backbone.View.extend({
   },
 
   addUser: function (event) {
-    
+    event.preventDefault();
+    $('.checked').each(function (index) {
+      var newFriend = new TabSplitter.Models.UsersFriend()
+      var forcedFriend = new TabSplitter.Models.UsersFriend()
+      newFriend.set({
+        "user_id": CURRENT_USER.id,
+        "friend_id": $(this).data('id')
+      });
+
+      forcedFriend.set({
+        "user_id": $(this).data('id'),
+        "friend_id": CURRENT_USER.id
+      });
+
+      newFriend.save({}, {
+        success: function () {
+          TabSplitter.Collections.usersFriends.add(newFriend);
+        }
+      });
+
+      forcedFriend.save({}, {
+        success: function () {
+          TabSplitter.Collections.usersFriends.add(newFriend);
+          Backbone.history.navigate("users/" + CURRENT_USER.id, { trigger: true });
+        }
+      });
+    });
   }
 })

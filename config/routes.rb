@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     resources :tabs
     resources :users, only: [:new, :create, :show, :index]
-    resources :users_friends, only: [:create, :destroy]
-    resources :users_tabs, only: [:create, :destroy]
+    resources :users_friends, only: [:create, :destroy, :show, :index]
+    resources :users_tabs, only: [:create, :destroy, :show, :index]
   end
 end
