@@ -1,9 +1,10 @@
-TabSplitter.Views.UserSearch = Backbone.View.extend({
+TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
   template: JST['users/search'],
 
   initialize: function () {
     this.friendCollection = TabSplitter.Collections.usersFriends
     this.listenTo(this.friendCollection, "add remove sync", this.render);
+    this.listenTo(this.collection, "add remove sync", this.renderUsers);
   },
 
   events: {
@@ -15,8 +16,24 @@ TabSplitter.Views.UserSearch = Backbone.View.extend({
   render: function () {
     var content = this.template({ users: this.collection });
     this.$el.html(content);
+    this.renderUsers();
 
     return this;
+  },
+
+  renderUsers: function () {
+    var that = this;
+    var currentFriends = [CURRENT_USER.id]
+    this.collection.get(CURRENT_USER.id).friends().each(function (friend) {
+      currentFriends.push(friend.id)
+    });
+    var users = this.collection;
+    users.each(function (user) {
+      var userItemView = new TabSplitter.Views.SearchItem({ model: user });
+      if (currentFriends.indexOf(user.id) === -1) {
+        that.addSubview('#search-items', userItemView);
+      }
+    })
   },
 
   updateResults: function () {
@@ -47,6 +64,7 @@ TabSplitter.Views.UserSearch = Backbone.View.extend({
     $('.checked').each(function (index) {
       var newFriend = new TabSplitter.Models.UsersFriend()
       var forcedFriend = new TabSplitter.Models.UsersFriend()
+
       newFriend.set({
         "user_id": CURRENT_USER.id,
         "friend_id": $(this).data('id')

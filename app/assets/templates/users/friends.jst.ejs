@@ -1,0 +1,5 @@
+<ul id="friends-list">
+  <% friends.each(function (friend) { %>
+    <li><%= friend.escape('email') %></li>
+  <% }); %>
+</ul>
