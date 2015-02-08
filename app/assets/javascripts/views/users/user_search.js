@@ -3,8 +3,8 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
 
   initialize: function () {
     this.friendCollection = TabSplitter.Collections.usersFriends
-    this.listenTo(this.friendCollection, "add remove sync", this.render);
-    this.listenTo(this.collection, "add remove sync", this.renderUsers);
+    this.listenTo(this.friendCollection, "add remove", this.render);
+    this.listenTo(this.collection, "add remove", this.renderUsers);
   },
 
   events: {
@@ -27,9 +27,11 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
     this.collection.get(CURRENT_USER.id).friends().each(function (friend) {
       currentFriends.push(friend.id)
     });
+
     var users = this.collection;
     users.each(function (user) {
       var userItemView = new TabSplitter.Views.SearchItem({ model: user });
+      // debugger
       if (currentFriends.indexOf(user.id) === -1) {
         that.addSubview('#search-items', userItemView);
       }
@@ -61,6 +63,7 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
 
   addUser: function (event) {
     event.preventDefault();
+    var that = this;
     $('.checked').each(function (index) {
       var newFriend = new TabSplitter.Models.UsersFriend()
       var forcedFriend = new TabSplitter.Models.UsersFriend()
@@ -77,14 +80,16 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
 
       newFriend.save({}, {
         success: function () {
+
+          var friend = that.collection.get(newFriend.get('friend_id'));
+          that.collection.get(CURRENT_USER.id).friends().add(friend);
           TabSplitter.Collections.usersFriends.add(newFriend);
         }
       });
 
       forcedFriend.save({}, {
         success: function () {
-          TabSplitter.Collections.usersFriends.add(newFriend);
-          Backbone.history.navigate("users/" + CURRENT_USER.id, { trigger: true });
+          // TabSplitter.Collections.usersFriends.add(newFriend);
         }
       });
     });
