@@ -16,6 +16,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "custom-dashboard";
 
 li {
   list-style: none;
@@ -23,8 +24,4 @@ li {
 
 .checked {
   font-weight: bold;
-}
-
-#search-results {
-  max-width: 50%;
 }

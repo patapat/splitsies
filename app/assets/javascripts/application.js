@@ -11,12 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require jquery.serializejson
 //= require underscore
 //= require backbone
 //= require tab_splitter
-//= require bootstrap
 //= require_tree ../templates
 //= require_tree ./utils
 //= require_tree ./models
