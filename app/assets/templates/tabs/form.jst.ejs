@@ -1,4 +1,4 @@
-<h1><%= tab.id ? "Edit " + tab.escape('title') : "Create New Tab" %></h1>
-<%= tab.id ? '<a href="#/tabs/' + tab.id + '/edit-even">Even</a>' : '<a href="#/tabs/new-even">Even</a>' %>
-<%= tab.id ? '<a href="#/tabs/' + tab.id + '/edit-custom">Custom</a>' : '<a href="#/tabs/new-custom">Custom</a>' %>
+<h1 class="page-header"><%= tab.id ? "Edit " + tab.escape('title') : "Create New Tab" %></h1>
+<%= tab.id ? '<a href="#/tabs/' + tab.id + '/edit-even" class="btn btn-default" role="button">Even</a>' : '<a href="#/tabs/new-even" class="btn btn-default" role="button">Even</a>' %>
+<%= tab.id ? '<a href="#/tabs/' + tab.id + '/edit-custom" class="btn btn-default" role="button">Custom</a>' : '<a href="#/tabs/new-custom" class="btn btn-default" role="button">Custom</a>' %>
 <div id="tab-type-main"></div>

@@ -65,31 +65,30 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
     event.preventDefault();
     var that = this;
     $('.checked').each(function (index) {
-      var newFriend = new TabSplitter.Models.UsersFriend()
-      var forcedFriend = new TabSplitter.Models.UsersFriend()
+      var newFriendship = new TabSplitter.Models.UsersFriend()
+      var forcedFriendship = new TabSplitter.Models.UsersFriend()
 
-      newFriend.set({
+      newFriendship.set({
         "user_id": CURRENT_USER.id,
         "friend_id": $(this).data('id')
       });
 
-      forcedFriend.set({
+      forcedFriendship.set({
         "user_id": $(this).data('id'),
         "friend_id": CURRENT_USER.id
       });
 
-      newFriend.save({}, {
+      newFriendship.save({}, {
         success: function () {
-
-          var friend = that.collection.get(newFriend.get('friend_id'));
+          var friend = that.collection.get(newFriendship.get('friend_id'));
           that.collection.get(CURRENT_USER.id).friends().add(friend);
-          TabSplitter.Collections.usersFriends.add(newFriend);
+          TabSplitter.Collections.usersFriends.add(newFriendship);
         }
       });
 
-      forcedFriend.save({}, {
+      forcedFriendship.save({}, {
         success: function () {
-          // TabSplitter.Collections.usersFriends.add(newFriend);
+          TabSplitter.Collections.usersFriends.add(forcedFriendship);
         }
       });
     });

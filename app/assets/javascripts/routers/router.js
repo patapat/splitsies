@@ -13,7 +13,12 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     "tabs/:id/edit-even": "editEven",
     "tabs/:id/edit-custom": "editCustom",
     "users/new": "userNew",
-    "users/:id": "userShow"
+    "users/:id": "userShow",
+    "account": "account"
+  },
+
+  account: function () {
+    
   },
 
   userNew: function () {

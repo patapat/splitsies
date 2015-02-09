@@ -3,7 +3,16 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
 
   events: {
     "change #tab_total_amount": "updateAmount",
-    "change #tab-ower": "updateOwers",
+    'click .glyphicon-plus': "putFriendInTab",
+    'click .glyphicon-minus': "removeFriendFromTab",
+    'keypress #tab-ower-field': function (e) {
+      var code = e.keyCode || e.which;
+      if (code == 13) {
+        this.updateAmount(e);
+        this.enterPressInput(e);
+        this.updateOwers(e)
+      }
+    },
     "change .each-amount": "updateAmount"
   },
 
@@ -14,8 +23,37 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   render: function () {
     var content = this.template({ tab: this.model })
     this.$el.html(content);
+    this.renderFriends();
 
     return this;
+  },
+
+  renderFriends: function () {
+    var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
+    var friendView = new TabSplitter.Views.UserFriends({
+      model: currentUser,
+      collection: TabSplitter.Collections.usersFriends
+    });
+
+    this.addSubview("#tab-friends", friendView);
+  },
+
+  enterPressInput: function (event) {
+    console.log("ENTER");
+  },
+
+  putFriendInTab: function (event) {
+    var $iconTarget = $(event.currentTarget);
+    var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
+    $('#custom-ower').append($target.addClass('tab-ower'));
+    $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-minus');
+  },
+
+  removeFriendFromTab: function (event) {
+    var $iconTarget = $(event.currentTarget);
+    var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
+    $('#tab-friends').append($target.removeClass('tab-ower'));
+    $iconTarget.addClass("glyphicon-plus").removeClass('glyphicon-minus');
   },
 
   updateAmount: function (event) {
@@ -34,9 +72,10 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   },
 
   updateOwers: function (event) {
-    var email = $('#tab-ower').val();
-    var $liName = $("<li>" + $('#tab-ower').val()+ "</li><input type='text' class='each-amount'>");
-    $('#custom-ower').append($liName);
-    $('#tab-ower').val("");
+    var $target = $('#tab-friends').find('li:visible:first');
+    var $iconTarget = $('[data-icon-id=' + $target.data('id') + ']');
+    $('#custom-ower').append($target.addClass('tab-ower'));
+    $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-minus');
+    $('#tab-ower-field').val("");
   }
 });

@@ -2,8 +2,6 @@ TabSplitter.Views.UserFriends = Backbone.View.extend({
   template: JST['users/friends'],
 
   initialize: function () {
-    console.log(this.collection);
-    console.log(this.model.friends());
     this.listenTo(this.model.friends(), "add remove reset sync", this.render);
   },
 

@@ -1,7 +1,7 @@
 /*!
   SerializeJSON jQuery plugin.
   https://github.com/marioizquierdo/jquery.serializeJSON
-  version 2.4.1 (Oct, 2014)
+  version 2.4.2 (Oct, 2014)
 
   Copyright (c) 2014 Mario Izquierdo
   Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
@@ -214,7 +214,7 @@
       if (opts == null) opts = {};
       f = $.serializeJSON;
 
-      selector = 'input[type=checkbox][name]:not(:checked)';
+      selector = 'input[type=checkbox][name]:not(:checked,[disabled])';
       $uncheckedCheckboxes = $form.find(selector).add($form.filter(selector));
       $uncheckedCheckboxes.each(function (i, el) {
         $el = $(el);

@@ -1,5 +1,54 @@
-<h1>Tabs Index</h1>
-<ul class = 'tabs'>
+<h1 class="page-header">Your Tabs</h1>
+
+<div class="row placeholders">
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+    <h4>Label</h4>
+    <span class="text-muted">Something else</span>
+  </div>
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+    <h4>Label</h4>
+    <span class="text-muted">Something else</span>
+  </div>
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+    <h4>Label</h4>
+    <span class="text-muted">Something else</span>
+  </div>
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+    <h4>Label</h4>
+    <span class="text-muted">Something else</span>
+  </div>
+</div>
+
+<h2 class="sub-header">Section title</h2>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Title</th>
+        <th>Total</th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% tabs.each (function (tab) { %>
+        <tr>
+          <td><%= tab.escape('date') %></td>
+          <td><%= tab.escape('title') %></td>
+          <td>$<%= tab.escape('total_amount') %></td>
+          <td><%= tab.escape('tag') %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>
+
+<ul class='tabs'>
   <% tabs.each(function (tab) { %>
     <li><a href="#/tabs/<%= tab.id %>"><%= tab.escape("title") %></a></li>
   <% }); %>

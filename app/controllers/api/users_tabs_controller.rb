@@ -1,7 +1,7 @@
 module Api
   class UsersTabsController < ApplicationController
     def index
-      @users_tabs = UsersTab.all
+      @users_tabs = current_user.owed_tabs
       render json: @users_tabs
     end
 
