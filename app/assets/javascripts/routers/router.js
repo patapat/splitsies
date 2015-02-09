@@ -18,7 +18,16 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
   },
 
   account: function () {
-    
+    var that = this;
+    TabSplitter.Collections.tabs.fetch({
+      success: function () {
+        var indexView = new TabSplitter.Views.TabsIndex({
+          collection: TabSplitter.Collections.tabs
+        });
+
+        that._swapView(indexView);
+      }
+    });
   },
 
   userNew: function () {

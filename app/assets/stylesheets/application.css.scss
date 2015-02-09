@@ -28,8 +28,15 @@ li {
 
 .glyphicon-plus {
   color: green;
+  cursor: pointer;
 }
 
 .glyphicon-minus {
   color: red;
+  cursor: pointer;
+}
+
+.glyphicon-remove-circle {
+  color: gray;
+  cursor: pointer
 }

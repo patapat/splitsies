@@ -4,7 +4,7 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   events: {
     "change #tab_total_amount": "updateAmount",
     'click .glyphicon-plus': "putFriendInTab",
-    'click .glyphicon-minus': "removeFriendFromTab",
+    'click .glyphicon-remove-circle': "removeFriendFromTab",
     'keypress #tab-ower-field': function (e) {
       var code = e.keyCode || e.which;
       if (code == 13) {
@@ -46,14 +46,14 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
     $('#custom-ower').append($target.addClass('tab-ower'));
-    $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-minus');
+    $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
   },
 
   removeFriendFromTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
     $('#tab-friends').append($target.removeClass('tab-ower'));
-    $iconTarget.addClass("glyphicon-plus").removeClass('glyphicon-minus');
+    $iconTarget.addClass("glyphicon-plus").removeClass('glyphicon-remove-circle');
   },
 
   updateAmount: function (event) {
@@ -75,7 +75,7 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     var $target = $('#tab-friends').find('li:visible:first');
     var $iconTarget = $('[data-icon-id=' + $target.data('id') + ']');
     $('#custom-ower').append($target.addClass('tab-ower'));
-    $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-minus');
+    $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     $('#tab-ower-field').val("");
   }
 });

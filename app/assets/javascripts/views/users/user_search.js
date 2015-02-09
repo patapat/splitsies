@@ -31,7 +31,7 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
     var users = this.collection;
     users.each(function (user) {
       var userItemView = new TabSplitter.Views.SearchItem({ model: user });
-      // debugger
+      
       if (currentFriends.indexOf(user.id) === -1) {
         that.addSubview('#search-items', userItemView);
       }

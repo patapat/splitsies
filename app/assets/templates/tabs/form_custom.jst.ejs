@@ -24,8 +24,10 @@
   <input type="submit" value="<%= tab.id ? 'Update Tab' : 'Create New Tab' %>">
 </form>
 
-<h3>Name<h3>
-<div id="custom-ower"></div>
+<h3>Name</h3>
+<div id="custom-ower">
+<li class="friend-item tab-ower" data-id="<%= CURRENT_USER.id %>"><span data-icon-id="<%= CURRENT_USER.id %>" class="glyphicon glyphicon-remove-circle"></span> <%= CURRENT_USER.email %></li>
+</div>
 
-<h3>Total Amount Remaining<h3>
+<h3>Total Amount Remaining</h3>
 <div id="custom-total"></div>

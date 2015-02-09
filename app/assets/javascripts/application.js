@@ -12,11 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.serializejson
 //= require underscore
 //= require backbone
 //= require bootstrap-sprockets
 //= require bootstrap
+//= require jquery.serializejson
 //= require tab_splitter
 //= require_tree ../templates
 //= require_tree ./utils

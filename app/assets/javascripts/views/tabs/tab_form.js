@@ -43,6 +43,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
 
     var $target = $(event.currentTarget);
     var that = this;
+    debugger;
     var formData = $target.serializeJSON();
 
     this.model.set(formData.tab);
