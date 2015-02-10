@@ -17,6 +17,7 @@
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require jquery.serializejson
+//= require jquery.dataTables
 //= require tab_splitter
 //= require_tree ../templates
 //= require_tree ./utils

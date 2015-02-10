@@ -4,13 +4,14 @@ window.TabSplitter = {
   Views: {},
   Routers: {},
   initialize: function() {
-    new TabSplitter.Routers.Router({ $rootEl: $('#main')});
-    Backbone.history.start();
     var sidebarView = new TabSplitter.Views.Sidebar();
     $('#sidebar-nav').append(sidebarView.render().$el);
+    new TabSplitter.Routers.Router({ $rootEl: $('#main') });
+    Backbone.history.start();
   }
 };
 
-// $(document).ready(function(){
-//   TabSplitter.initialize();
-// });
+$(document).ready(function(){
+  $('#tabsTable').dataTable()
+  // TabSplitter.initialize();
+});

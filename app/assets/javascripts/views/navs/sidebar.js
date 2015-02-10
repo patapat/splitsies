@@ -1,8 +1,12 @@
 TabSplitter.Views.Sidebar = Backbone.CompositeView.extend({
   template: JST['navs/sidebar'],
 
+  initialize: function (options) {
+
+  },
+
   events: {
-    "click li": "activateSidebarItem"
+    "click li": "removeOldActive"
   },
 
   render: function () {
@@ -12,9 +16,10 @@ TabSplitter.Views.Sidebar = Backbone.CompositeView.extend({
     return this;
   },
 
-  activateSidebarItem: function (event) {
+  removeOldActive: function (event) {
     var $target = $(event.currentTarget);
     $(".active").removeClass("active");
     $target.addClass("active");
   }
+
 });

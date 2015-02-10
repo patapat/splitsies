@@ -42,6 +42,11 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
         $('#latest-activity').append(indexView.render().$el);
       }
     });
+
+    // var sidebarView = new TabSplitter.Views.Sidebar({ $selector: $('#account')});
+    // $('#sidebar-nav').append(sidebarView.render().$el);
+
+    $('#account').addClass("active");
   },
 
 
@@ -52,6 +57,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
       collection: TabSplitter.Collections.users
       });
 
+
     this._swapView(newUserView);
   },
 
@@ -59,6 +65,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     var user = TabSplitter.Collections.users.getOrFetch(id);
     var userView = new TabSplitter.Views.UserShow({ model: user });
 
+    $('#cj').addClass("active");
     this._swapView(userView);
   },
 
@@ -97,6 +104,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
       collection: TabSplitter.Collections.tabs
     });
 
+    $('#tabs').addClass("active");
     this._swapView(newView);
     this.newEven();
   },

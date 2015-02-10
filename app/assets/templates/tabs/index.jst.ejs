@@ -1,39 +1,21 @@
+<% var thumb = "down" %>
+<% if (paid) { %>
+  <% thumb = "up" %>
+<% } %>
+
 <h1 class="page-header">Your Tabs</h1>
 
-<div class="row placeholders">
-  <div class="col-xs-6 col-sm-3 placeholder">
-    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-    <h4>Label</h4>
-    <span class="text-muted">Something else</span>
-  </div>
-  <div class="col-xs-6 col-sm-3 placeholder">
-    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-    <h4>Label</h4>
-    <span class="text-muted">Something else</span>
-  </div>
-  <div class="col-xs-6 col-sm-3 placeholder">
-    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-    <h4>Label</h4>
-    <span class="text-muted">Something else</span>
-  </div>
-  <div class="col-xs-6 col-sm-3 placeholder">
-    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-    <h4>Label</h4>
-    <span class="text-muted">Something else</span>
-  </div>
-</div>
-
 <h2 class="sub-header">Latest Activity</h2>
-<div class="table-responsive">
-  <table class="table table-striped">
+<div id="tabsTable" class="table-responsive">
+  <table class="table table-striped" data-sort-name="title" data-sort-order="desc">
     <thead>
       <tr>
         <th>&nbsp;</th>
-        <th>Date</th>
-        <th>Title</th>
-        <th>Total</th>
-        <th>Tags</th>
-        <th>Details</th>
+        <th data-align="left" data-sortable="true">Date</th>
+        <th data-align="left" data-sortable="true">Title</th>
+        <th data-align="left" data-sortable="true">Total</th>
+        <th data-align="left" data-sortable="true">Tags</th>
+        <th data-align="left" data-sortable="true">Status</th>
       </tr>
     </thead>
 
@@ -45,22 +27,7 @@
           <td class="tab-row-item"><%= tab.escape('title') %></td>
           <td class="tab-row-item">$<%= tab.escape('total_amount') %></td>
           <td class="tab-row-item"><%= tab.escape('tag') %></td>
-          <td><div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#tab<%= tab.id %>" aria-expanded="true" aria-controls="tab<%= tab.id %>">
-                    Collapsible Group Item #<%= tab.id %>
-                  </a>
-                </h4>
-              </div>
-              <div id="tab<%= tab.id %>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                  <%= tab.escape('title') %>
-                </div>
-              </div>
-            </div>
-          </td>
+          <td><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
         </tr>
       <% }); %>
     </tbody>
