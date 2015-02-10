@@ -1,6 +1,7 @@
 module Api
   class UsersController < ApplicationController
     before_action :require_log_in, only: [:show]
+    wrap_parameters(:user, include: [:email, :password])
 
     def new
       render json: {}
@@ -19,7 +20,7 @@ module Api
         render json: {}
       else
         flash.now[:errors] = @user.errors.full_messages
-        render json: {}
+        render json: @user.errors.full_messages, status: 422
       end
     end
 

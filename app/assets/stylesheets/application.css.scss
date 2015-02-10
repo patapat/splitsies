@@ -17,6 +17,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "custom-dashboard";
+// @import "custom-cover";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
 li {
   list-style: none;
@@ -58,4 +68,14 @@ li {
 #tab-friends {
   height: 60px;
   overflow-y: scroll;
+}
+
+.backdrop {
+  margin-top: -20px;
+  height: 1000px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  display: block;
+  background-image: url('http://www.cisi.org/cisiweb2/images/default-source/S-IR/euroslarge.jpg');
 }

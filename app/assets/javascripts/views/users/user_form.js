@@ -6,7 +6,7 @@ TabSplitter.Views.UserForm = Backbone.View.extend({
   },
 
   render: function () {
-    var content = this.template();
+    var content = this.template();''
     this.$el.html(content);
 
     return this;
@@ -20,14 +20,14 @@ TabSplitter.Views.UserForm = Backbone.View.extend({
     var formData = $target.serializeJSON();
 
     this.model.set(formData.user);
-    debugger;
+
     this.model.save({}, {
       success: function () {
 
         if (!that.collection.contains(that.model)) {
           that.collection.add(that.model);
         }
-        Backbone.history.navigate("", { trigger: true });
+        Backbone.history.navigate("account", { trigger: true });
       }
     });
   }

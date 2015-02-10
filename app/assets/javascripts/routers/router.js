@@ -27,6 +27,11 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     }
   },
 
+  homepage: function () {
+    var homepageView = new TabSplitter.Views.Homepage();
+
+  },
+
   account: function () {
     var that = this;
     var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
@@ -51,6 +56,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
 
 
   userNew: function () {
+
     var user = new TabSplitter.Models.User();
     var newUserView = new TabSplitter.Views.UserForm({
       model: user,
