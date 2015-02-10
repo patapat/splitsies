@@ -14,7 +14,7 @@ end
 
 json.userTabs do
   json.array! @user.users_tabs do |users_tab|
-    json.extract! users_tab, :id, :amount_owed, :paid, :created_at, :updated_at
+    json.extract! users_tab, :id, :tab_id, :amount_owed, :paid, :created_at, :updated_at
   end
 end
 

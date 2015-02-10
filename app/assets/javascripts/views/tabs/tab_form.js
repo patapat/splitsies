@@ -28,7 +28,11 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
         return false;
       }
     },
-    'keyup #tab-ower-field': "updateResults"
+    'keyup #tab-ower-field': "updateResults",
+    'click #new-even': "renderNewEven",
+    'click #new-custom': "renderNewCustom",
+    'click #edit-even': "renderEditEven",
+    'click #edit-custom': "renderEditCustom"
   },
 
   render: function () {
@@ -36,6 +40,50 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     this.$el.html(content);
 
     return this;
+  },
+
+  renderNewEven: function () {
+    var tab = new TabSplitter.Models.Tab();
+
+    var newEvenView = new TabSplitter.Views.TabFormEven({
+      model: tab,
+      collection: TabSplitter.Collections.tabs
+    });
+
+    this._swapFormView(newEvenView);
+  },
+
+  renderNewCustom: function () {
+    var tab = new TabSplitter.Models.Tab();
+
+    var newCustomView = new TabSplitter.Views.TabFormCustom({
+      model: tab,
+      collection: TabSplitter.Collections.tabs
+    });
+
+    this._swapFormView(newCustomView);
+  },
+
+  renderEditEven: function () {
+    var tab = TabSplitter.Collections.tabs.getOrFetch(this.model.id);
+
+    var editEvenView = new TabSplitter.Views.TabFormEven({
+      model: tab,
+      collection: TabSplitter.Collections.tabs
+    });
+
+    this._swapFormView(editEvenView);
+  },
+
+  renderEditCustom: function () {
+    var tab = TabSplitter.Collections.tabs.getOrFetch(this.model.id);
+
+    var editCustomView = new TabSplitter.Views.TabFormCustom({
+      model: tab,
+      collection: TabSplitter.Collections.tabs
+    });
+
+    this._swapFormView(editCustomView);
   },
 
   createOrUpdateTab: function (event) {
@@ -126,5 +174,10 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     } else {
       $target.addClass("checked");
     }
+  },
+
+  _swapFormView: function (view) {
+    $("#tab-type-main").html(view.render().$el);
   }
+
 });

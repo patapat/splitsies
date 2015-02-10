@@ -45,14 +45,14 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   putFriendInTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
-    $('#custom-ower').append($target.addClass('tab-ower'));
+    $('#custom-ower').append($target.addClass('tab-ower').removeClass('friend-item').removeClass("checked"));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
   },
 
   removeFriendFromTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
-    $('#tab-friends').append($target.removeClass('tab-ower'));
+    $('#tab-friends').append($target.removeClass('tab-ower').addClass('friend-item'));
     $iconTarget.addClass("glyphicon-plus").removeClass('glyphicon-remove-circle');
   },
 

@@ -7,4 +7,4 @@ TabSplitter.Views.NavBar = Backbone.CompositeView.extend({
 
     return this;
   }
-})
+});

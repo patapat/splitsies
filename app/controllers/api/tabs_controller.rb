@@ -40,6 +40,7 @@ module Api
 
     def edit
       @tab = Tab.find(params[:id])
+      render json: @tab
     end
 
     def update

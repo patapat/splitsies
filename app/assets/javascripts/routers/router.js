@@ -19,7 +19,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
 
   checkBalance: function () {
     var $balance = $("#account-balance");
-    
+
     if ($balance.val() >= 0) {
       $balance.addClass("positive");
     } else {
@@ -98,10 +98,10 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     });
 
     this._swapView(newView);
+    this.newEven();
   },
 
   newEven: function () {
-    this.new();
     var tab = new TabSplitter.Models.Tab();
 
     var newEvenView = new TabSplitter.Views.TabFormEven({
@@ -133,10 +133,10 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     });
 
     this._swapView(editView);
+    this.editEven(id);
   },
 
   editEven: function (id) {
-    this.edit(id);
     var tab = TabSplitter.Collections.tabs.getOrFetch(id);
 
     var editEvenView = new TabSplitter.Views.TabFormEven({

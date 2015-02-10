@@ -9,7 +9,7 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
 
   events: {
     'keyup #search-field': "updateResults",
-    // 'click .search-items': "selectUser",
+    'click .search-items': "selectUser",
     'click button': "addUser"
   },
 
