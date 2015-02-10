@@ -5,3 +5,21 @@ json.friends do
     json.extract! friend, :id, :email, :account_balance, :created_at, :updated_at
   end
 end
+
+json.tabs do
+  json.array! @user.tabs do |tab|
+    json.extract! tab, :id, :title, :date, :total_amount, :tag, :created_at, :updated_at
+  end
+end
+
+json.userTabs do
+  json.array! @user.users_tabs do |users_tab|
+    json.extract! users_tab, :id, :amount_owed, :paid, :created_at, :updated_at
+  end
+end
+
+json.owedTabs do
+  json.array! @user.owed_tabs do |owed_tab|
+    json.extract! owed_tab, :id, :title, :date, :total_amount, :tag, :created_at, :updated_at
+  end
+end

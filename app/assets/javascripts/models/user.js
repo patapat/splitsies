@@ -16,6 +16,14 @@ TabSplitter.Models.User = Backbone.Model.extend({
     return this._tabs;
   },
 
+  owedTabs: function () {
+    if (!this._tabs) {
+      this._tabs = new TabSplitter.Collections.UsersTabs([], { user: this });
+    }
+
+    return this._tabs;
+  },
+
   parse: function (response) {
     if (response.friends) {
       this.friends().set(response.friends, { parse: true });
@@ -23,6 +31,9 @@ TabSplitter.Models.User = Backbone.Model.extend({
     } else if (response.tabs) {
       this.tabs().set(response.tabs, { parse: true });
       delete response.tabs;
+    } else if (response.owedTabs) {
+      this.owedTabs().set(response.owedTabs, { parse: true });
+      delete response.owedTabs;
     }
 
     return response;

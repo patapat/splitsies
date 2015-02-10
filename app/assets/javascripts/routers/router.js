@@ -17,18 +17,33 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     "account": "account"
   },
 
+  checkBalance: function () {
+    var $balance = $("#account-balance");
+    
+    if ($balance.val() >= 0) {
+      $balance.addClass("positive");
+    } else {
+      $balance.addClass("negative");
+    }
+  },
+
   account: function () {
     var that = this;
+    var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
+    var accountView = new TabSplitter.Views.Account({ model: currentUser })
     TabSplitter.Collections.tabs.fetch({
       success: function () {
         var indexView = new TabSplitter.Views.TabsIndex({
           collection: TabSplitter.Collections.tabs
         });
 
-        that._swapView(indexView);
+        that._swapView(accountView);
+        that.checkBalance();
+        $('#latest-activity').append(indexView.render().$el);
       }
     });
   },
+
 
   userNew: function () {
     var user = new TabSplitter.Models.User();

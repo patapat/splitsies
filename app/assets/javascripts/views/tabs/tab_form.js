@@ -43,23 +43,46 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
 
     var $target = $(event.currentTarget);
     var that = this;
-    debugger;
     var formData = $target.serializeJSON();
 
     this.model.set(formData.tab);
 
     this.model.save({}, {
       success: function () {
+        var needNewTab = false;
         if (!that.collection.contains(that.model)) {
           that.collection.add(that.model);
+          needNewTab = true;
         }
-        $('.on-tab').each(function (index) {
-          var newTab = new TabSplitter.Models.UsersTab();
-          newTab.set({
+        $('.tab-ower').each(function (index) {
+          var id = $(this).data('id');
+          if (CURRENT_USER.id === id) {
+            return;
+          }
+          debugger;
+          if (needNewTab) {
+            var newTab = new TabSplitter.Models.UsersTab();
+          } else {
+            var newTab = TabSplitter.Collections.usersTabs.getOrFetch(that.model.id);
+          }
+          var user = TabSplitter.Collections.users.getOrFetch(id);
+          var amountEach = parseFloat($('.amount-owed').text().replace(/\$/g, ''));
 
+          newTab.set({
+            "user_id": user.id,
+            "tab_id": that.model.id,
+            "amount_owed": amountEach
+          });
+
+          newTab.save({}, {
+            success: function () {
+              debugger;
+              if (!TabSplitter.Collections.usersTabs.contains(newTab)) {
+                TabSplitter.Collections.usersTabs.add(newTab);
+              }
+            }
           });
         });
-
 
         Backbone.history.navigate("#/tabs/" + that.model.id, { trigger: true });
       }

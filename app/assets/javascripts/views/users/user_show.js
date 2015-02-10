@@ -10,7 +10,7 @@ TabSplitter.Views.UserShow = Backbone.CompositeView.extend({
   render: function () {
     var content = this.template({ user: this.model });
     this.$el.html(content);
-    
+
     this.addSearchResults();
     this.renderFriends();
 
@@ -19,6 +19,7 @@ TabSplitter.Views.UserShow = Backbone.CompositeView.extend({
 
   addSearchResults: function () {
     var that = this;
+
     TabSplitter.Collections.users.fetch({
       success: function () {
         var searchView = new TabSplitter.Views.UserSearch({

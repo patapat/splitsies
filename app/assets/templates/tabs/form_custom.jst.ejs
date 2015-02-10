@@ -1,33 +1,41 @@
-<h1>Custom Split Tab</h1>
-<form class="<%= tab.id ? 'edit-form' : 'new-form' %>">
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span6">
+      <h1>Custom Split Tab</h1>
+      <form class="<%= tab.id ? 'edit-form' : 'new-form' %>">
 
-  <label for="tab_title">Title: </label>
-  <input type="text" name="tab[title]" id="tab_title" value="<%= tab.escape('title') %>">
-  <br>
-  <label for="tab_tag">Tag: </label>
-  <input type="text" name="tab[tag]" id="tab_tag" value="<%=tab.escape('tag') %>">
-  <br>
+        <label for="tab_title">Title: </label>
+        <input type="text" name="tab[title]" id="tab_title" value="<%= tab.escape('title') %>">
+        <br>
+        <label for="tab_tag">Tag: </label>
+        <input type="text" name="tab[tag]" id="tab_tag" value="<%=tab.escape('tag') %>">
+        <br>
 
-  <label for="tab_date">Date: </label>
-  <input type="date" name="tab[date]" id="tab_date" value="<%=tab.escape('date') %>">
-  <br>
+        <label for="tab_date">Date: </label>
+        <input type="date" name="tab[date]" id="tab_date" value="<%=tab.escape('date') %>">
+        <br>
 
-  <label for="tab_total_amount">Total Amount: </label>
-  <input type="text" name="tab[total_amount]" id="tab_total_amount" value="<%=tab.escape('total_amount') %>">
-  <br>
+        <label for="tab_total_amount">Total Amount: </label>
+        <input type="text" name="tab[total_amount]" id="tab_total_amount" value="<%=tab.escape('total_amount') %>">
+        <br>
 
-  <label for="tab-ower">Tab Ower: </label>
-  <input type="text" id="tab-ower-field">
-  <div id="tab-friends"></div>
-  <br>
+        <label for="tab-ower">Tab Ower: </label>
+        <input type="text" id="tab-ower-field">
+        <div id="tab-friends"></div>
+        <br>
 
-  <input type="submit" value="<%= tab.id ? 'Update Tab' : 'Create New Tab' %>">
-</form>
+        <input type="submit" value="<%= tab.id ? 'Update Tab' : 'Create New Tab' %>">
+      </form>
+    </div>
 
-<h3>Name</h3>
-<div id="custom-ower">
-<li class="friend-item tab-ower" data-id="<%= CURRENT_USER.id %>"><span data-icon-id="<%= CURRENT_USER.id %>" class="glyphicon glyphicon-remove-circle"></span> <%= CURRENT_USER.email %></li>
+    <div class="span6">
+      <h3>Name</h3>
+      <div id="custom-ower">
+      <li class="friend-item tab-ower" data-id="<%= CURRENT_USER.id %>"><span data-icon-id="<%= CURRENT_USER.id %>" class="glyphicon glyphicon-remove-circle"></span> <%= CURRENT_USER.email %></li>
+      </div>
+
+      <h3>Total Amount Remaining</h3>
+      <div id="custom-total"></div>
+    </div>
+  </div>
 </div>
-
-<h3>Total Amount Remaining</h3>
-<div id="custom-total"></div>

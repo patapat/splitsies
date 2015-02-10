@@ -38,5 +38,19 @@ li {
 
 .glyphicon-remove-circle {
   color: gray;
-  cursor: pointer
+  cursor: pointer;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.glyphicon-chevron-right,
+.glyphicon-chevron-down,
+.tab-row-item {
+  cursor: pointer;
 }

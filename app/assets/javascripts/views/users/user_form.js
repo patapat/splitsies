@@ -23,7 +23,7 @@ TabSplitter.Views.UserForm = Backbone.View.extend({
     debugger;
     this.model.save({}, {
       success: function () {
-        debugger;
+
         if (!that.collection.contains(that.model)) {
           that.collection.add(that.model);
         }

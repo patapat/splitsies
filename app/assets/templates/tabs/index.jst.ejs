@@ -23,25 +23,44 @@
   </div>
 </div>
 
-<h2 class="sub-header">Section title</h2>
+<h2 class="sub-header">Latest Activity</h2>
 <div class="table-responsive">
   <table class="table table-striped">
     <thead>
       <tr>
+        <th>&nbsp;</th>
         <th>Date</th>
         <th>Title</th>
         <th>Total</th>
         <th>Tags</th>
+        <th>Details</th>
       </tr>
     </thead>
 
     <tbody>
       <% tabs.each (function (tab) { %>
-        <tr>
-          <td><%= tab.escape('date') %></td>
-          <td><%= tab.escape('title') %></td>
-          <td>$<%= tab.escape('total_amount') %></td>
-          <td><%= tab.escape('tag') %></td>
+        <tr id="tab-row-<%= tab.id %>">
+          <td><span class="glyphicon glyphicon-chevron-right" data-id="<%= tab.id %>"></span></td>
+          <td class="tab-row-item"><%= tab.escape('date') %></td>
+          <td class="tab-row-item"><%= tab.escape('title') %></td>
+          <td class="tab-row-item">$<%= tab.escape('total_amount') %></td>
+          <td class="tab-row-item"><%= tab.escape('tag') %></td>
+          <td><div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#tab<%= tab.id %>" aria-expanded="true" aria-controls="tab<%= tab.id %>">
+                    Collapsible Group Item #<%= tab.id %>
+                  </a>
+                </h4>
+              </div>
+              <div id="tab<%= tab.id %>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <%= tab.escape('title') %>
+                </div>
+              </div>
+            </div>
+          </td>
         </tr>
       <% }); %>
     </tbody>

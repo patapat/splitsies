@@ -2,7 +2,7 @@ module Api
   class UsersFriendsController < ApplicationController
     def index
       @users_friends = current_user.friends
-      render json: @users_friends
+      render :index
     end
 
     def show
