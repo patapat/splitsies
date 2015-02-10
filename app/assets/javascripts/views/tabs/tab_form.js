@@ -13,7 +13,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
   template: JST['tabs/form'],
 
   events: {
-    "submit form": "createOrUpdateTab",
+    // "submit form": "createOrUpdateTab",
     "keyup .new-form": function(e) {
       var code = e.keyCode || e.which;
       if (code  == 13) {

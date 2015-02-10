@@ -18,12 +18,12 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
   },
 
   checkBalance: function () {
-    var $balance = $("#account-balance");
-
-    if ($balance.val() >= 0) {
-      $balance.addClass("positive");
+    var balance = CURRENT_USER.account_balance;
+    var $target = $('#account-balance');
+    if (balance >= 0) {
+      $target.addClass("positive");
     } else {
-      $balance.addClass("negative");
+      $target.addClass("negative");
     }
   },
 
@@ -50,7 +50,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
 
     // var sidebarView = new TabSplitter.Views.Sidebar({ $selector: $('#account')});
     // $('#sidebar-nav').append(sidebarView.render().$el);
-
+    $(".active").removeClass("active");
     $('#account').addClass("active");
   },
 
@@ -71,6 +71,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     var user = TabSplitter.Collections.users.getOrFetch(id);
     var userView = new TabSplitter.Views.UserShow({ model: user });
 
+    $(".active").removeClass("active");
     $('#cj').addClass("active");
     this._swapView(userView);
   },
@@ -110,6 +111,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
       collection: TabSplitter.Collections.tabs
     });
 
+    $(".active").removeClass("active");
     $('#tabs').addClass("active");
     this._swapView(newView);
     this.newEven();

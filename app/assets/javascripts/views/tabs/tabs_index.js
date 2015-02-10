@@ -47,7 +47,9 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
     $iconTarget.removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-right');
   },
 
-  tabShow: function () {
-    console.log("tab show")
+  tabShow: function (event) {
+    var $target = $(event.currentTarget);
+    var id = $target.data('row-id');
+    Backbone.history.navigate("tabs/" + id, { trigger: true })
   }
 })

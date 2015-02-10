@@ -36,16 +36,3 @@ module Api
     end
   end
 end
-
-
-{
-  email: 'ned',
-  friends: [
-    {
-      email: 'david'
-    },
-    {
-      email: 'jack'
-    }
-  ]
-}

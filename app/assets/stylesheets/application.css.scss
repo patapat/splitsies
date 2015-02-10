@@ -23,9 +23,10 @@ html, body {
   height: 100%;
 }
 
-body {
+.backdrop {
+  height: 100%;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 li {
@@ -53,6 +54,7 @@ li {
 
 .positive {
   color: green;
+  weight: bold;
 }
 
 .negative {
@@ -78,4 +80,28 @@ li {
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   display: block;
   background-image: url('http://www.cisi.org/cisiweb2/images/default-source/S-IR/euroslarge.jpg');
+}
+
+input {
+  color: black;
+}
+
+#login-form {
+}
+
+.form-wrap {
+  width: 50%
+}
+
+.forget {
+  color: black;
+}
+
+.navbar {
+  // background-color: lighten(blue, 10%);
+}
+
+.glyphicon-pencil {
+  color: ;
+  height: 50%;
 }

@@ -7,19 +7,33 @@
     <% end %>
   <% end %>
 
-  <h1>Log in</h1>
+  <section id="login">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-wrap">
+            <h1>Sign In</h1>
+            <form role="form" id="login-form" autocomplete="off" action="<%= session_url %>" method="post">
+              <div class="form-group">
+                <input
+                  type="hidden"
+                  name="authenticity_token"
+                  value="<%= form_authenticity_token %>">
 
-  <form action="<%= session_url %>" method="post">
-    <input
-      type="hidden"
-      name="authenticity_token"
-      value="<%= form_authenticity_token %>">
-    <label for="user_email">Email: </label>
-    <input type="text" name="user[email]" id="user_email">
-    <br>
-    <label for="user_password">Password: </label>
-    <input type="password" name="user[password]" id="user_password">
-    <br>
-    <input type="submit" value="Log in">
-  </form>
+                <label for="user_email" class="sr-only">Email</label>
+                <input type="text" name="user[email]" id="user_email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="user_password" class="sr-only">Password</label>
+                <input type="password" name="user[password]" id="user_password" class="form-control" placeholder="Password">
+              </div>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+            </form>
+            <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
+            <hr>
+          </div>
+        </div> <!-- /.col-xs-12 -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </section>
 </div>

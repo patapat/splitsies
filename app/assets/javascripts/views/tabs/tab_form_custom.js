@@ -2,6 +2,7 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   template: JST['tabs/form_custom'],
 
   events: {
+    "submit form": "createOrUpdateTab",
     "change #tab_total_amount": "updateAmount",
     'click .glyphicon-plus': "putFriendInTab",
     'click .glyphicon-remove-circle': "removeFriendFromTab",
@@ -77,5 +78,56 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     $('#custom-ower').append($target.addClass('tab-ower'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     $('#tab-ower-field').val("");
+  },
+
+  createOrUpdateTab: function (event) {
+    event.preventDefault();
+
+    var $target = $(event.currentTarget);
+    var that = this;
+    var formData = $target.serializeJSON();
+
+    this.model.set(formData.tab);
+
+    this.model.save({}, {
+      success: function () {
+        var needNewTab = false;
+        if (!that.collection.contains(that.model)) {
+          that.collection.add(that.model);
+          needNewTab = true;
+        }
+        $('.tab-ower').each(function (index) {
+          var id = $(this).data('id');
+          if (CURRENT_USER.id === id) {
+            return;
+          }
+          debugger;
+          if (needNewTab) {
+            var newTab = new TabSplitter.Models.UsersTab();
+          } else {
+            var newTab = TabSplitter.Collections.usersTabs.getOrFetch(that.model.id);
+          }
+          var user = TabSplitter.Collections.users.getOrFetch(id);
+          var amountEach = parseFloat($('.amount-owed').text().replace(/\$/g, ''));
+
+          newTab.set({
+            "user_id": user.id,
+            "tab_id": that.model.id,
+            "amount_owed": amountEach
+          });
+
+          newTab.save({}, {
+            success: function () {
+              debugger;
+              if (!TabSplitter.Collections.usersTabs.contains(newTab)) {
+                TabSplitter.Collections.usersTabs.add(newTab);
+              }
+            }
+          });
+        });
+
+        Backbone.history.navigate("#/tabs/" + that.model.id, { trigger: true });
+      }
+    });
   }
 });
