@@ -22,7 +22,7 @@
         "email": "<%= current_user.email %>",
         "account_balance": <%= current_user.account_balance %>
       }</script>
-      <%= button_to "Log Out", session_url, method: :delete %>
+      <!-- <%= button_to "Log Out", session_url, method: :delete %> -->
       <!-- <a class="venmo-pay-button" data-recipient-id="1366807004839936586" data-amount=".5"></a> -->
 
       <!-- <%= button_to "Log Out", session_url, method: :delete %><%= link_to "All Tabs", "" %> -->
@@ -48,7 +48,7 @@
               <li><a href="#">Tabs</a></li>
               <li><a href="#">Settings</a></li>
               <li><a href="http://www.fiddler.io/">Help</a></li>
-              <li><a href="#"><%= button_to "Log Out", session_url, method: :delete %></a></li>
+              <li><%= link_to "Log Out", session_url, method: :delete %></li>
             <% else %>
               <li><a href="">Home</a></li>
               <li><a href="/help">About</a></li>
