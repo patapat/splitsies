@@ -12,7 +12,7 @@
         <br>
 
         <label for="tab_date">Date: </label>
-        <input type="date" name="tab[date]" id="tab_date" value="<%=tab.escape('date') %>">
+        <input type="date" name="tab[date]" id="tab_date" value="<%=tab.id ? tab.escape('date') : currentDate %>">
         <br>
 
         <label for="tab_total_amount">Total Amount: </label>

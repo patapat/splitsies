@@ -2,6 +2,7 @@
 <% if (paid) { %>
   <% thumb = "up" %>
 <% } %>
+<a href="#/tabs/new">Create New Tab</a>
 
 <h1 class="page-header">Your Tabs</h1>
 
@@ -33,13 +34,5 @@
     </tbody>
   </table>
 </div>
-
-<ul class='tabs'>
-  <% tabs.each(function (tab) { %>
-    <li><a href="#/tabs/<%= tab.id %>"><%= tab.escape("title") %></a></li>
-  <% }); %>
-</ul>
-
-<a href="#/tabs/new">Create New Tab</a>
 
 <div class="search"></div>

@@ -1,6 +1,8 @@
 TabSplitter.Collections.Tabs = Backbone.Collection.extend({
   url: "api/tabs",
 
+  comparator: "date",
+
   model: TabSplitter.Models.Tab,
 
   getOrFetch: function (id) {
@@ -9,7 +11,7 @@ TabSplitter.Collections.Tabs = Backbone.Collection.extend({
 
     if (!tab) {
       tab = new TabSplitter.Models.Tab({ id: id });
-      
+
       tab.fetch({
         success: function () {
           that.add(tab);

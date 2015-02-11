@@ -4,7 +4,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
   },
 
   routes: {
-    "": "index",
+    "": "account",
     "tabs/new": "new",
     "tabs/new-even": "newEven",
     "tabs/new-custom": "newCustom",
@@ -122,7 +122,8 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
 
     var newEvenView = new TabSplitter.Views.TabFormEven({
       model: tab,
-      collection: TabSplitter.Collections.tabs
+      collection: TabSplitter.Collections.tabs,
+      currentDate: this.date
     });
 
     this._swapFormView(newEvenView);
@@ -134,7 +135,8 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
 
     var newCustomView = new TabSplitter.Views.TabFormCustom({
       model: tab,
-      collection: TabSplitter.Collections.tabs
+      collection: TabSplitter.Collections.tabs,
+      currentDate: this.date
     });
 
     this._swapFormView(newCustomView);
