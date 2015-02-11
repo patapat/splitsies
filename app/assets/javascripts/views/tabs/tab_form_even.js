@@ -73,20 +73,23 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
   putFriendInTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
+    var id = $target.data('id');
     $('.even-ower').append($target.css("font-size", "24px").addClass('tab-ower').removeClass("friend-item").removeClass("checked"));
-
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
+    this.renderAmountField(id);
   },
 
   removeFriendFromTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
+    var id = $target.data('id');
     $('#tab-friends').append($target.css("font-size", "").removeClass('tab-ower').addClass("friend-item"));
     $iconTarget.addClass("glyphicon-plus").removeClass('glyphicon-remove-circle');
+    $('[data-each-id="' + id + '"]').remove();
   },
 
   renderAmountField: function (id) {
-    $('.amount-each').append($('<input type="text" class="form-control amount-each-field" data-each-id="'+ id + '">'));
+    $('.amount-each').append($('<li style="font-size:24px" class="amount-each-field" data-each-id="'+ id + '"></li>'));
   },
 
   updateAmount: function (event) {
@@ -100,16 +103,33 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     if (isNaN(amountEach)) {
       amountEach = 0;
     }
+    this.ensureAccurateSum();
+    $('.amount-each-field').html("$" + amountEach.toFixed(2));
+  },
 
-    $('.amount-owed').html("$" + amountEach.toFixed(2));
+  ensureAccurateSum: function () {
+    var numOwers = $('.amount-each-field').length
+    var actualTotal = parseFloat($("#tab_total_amount").val()).toFixed(2);
+    var dumbSplitTotal = ((actualTotal / numOwers).toFixed(2) * numOwers);
+    debugger;
+    if (dumbSplitTotal > actualTotal) {
+      $('.amount-each-field').each(function (amountStr) {
+        debugger;
+        var parsedStr = $(this).text().replace(/\$/g, '');
+        // var amount = parseFloat(amountStr.replace(/\$/g, ''));
+      });
+    }
+
   },
 
   updateOwers: function (event) {
     var $target = $('#tab-friends').find('li:visible:first');
-    var $iconTarget = $('[data-icon-id=' + $target.data('id') + ']');
+    var id = $target.data('id')
+    var $iconTarget = $('[data-icon-id=' + id + ']');
     $('.even-ower').append($target.css("font-size", "24px").addClass('tab-ower'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     $('#tab-ower-field').val("");
+    this.renderAmountField(id);
   },
 
   createOrUpdateTab: function (event) {
