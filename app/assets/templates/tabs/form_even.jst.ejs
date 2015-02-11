@@ -1,41 +1,83 @@
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="col-sm-6">
-      <h1>Even Split Tab</h1>
-      <form class="<%= tab.id ? 'edit-form' : 'new-form' %>">
-
-        <label for="tab_title">Title: </label>
-        <input type="text" name="tab[title]" id="tab_title" value="<%= tab.escape('title') %>">
+    <div class="col-sm-4">
+      <form class="form-horizontal <%= tab.id ? 'edit-form' : 'new-form' %>" role="form">
         <br>
-        <label for="tab_tag">Tag: </label>
-        <input type="text" name="tab[tag]" id="tab_tag" value="<%=tab.escape('tag') %>">
-        <br>
+        <fieldset>
+          <!-- Form Name -->
+          <legend><h1>Even Split Tab</h1></legend>
 
-        <label for="tab_date">Date: </label>
-        <input type="date" name="tab[date]" id="tab_date" value="<%=tab.id ? tab.escape('date') : currentDate %>">
-        <br>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="tab_title">Title</label>
+            <div class="col-sm-10">
+              <input type="text" name="tab[title]" id="tab_title" value="<%= tab.escape('title') %>" class="form-control" placeholder="Title">
+            </div>
+          </div>
 
-        <label for="tab_total_amount">Total Amount: </label>
-        <input type="text" name="tab[total_amount]" id="tab_total_amount" value="<%=tab.escape('total_amount') %>">
-        <br>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="tab_total_amount">Total</label>
+            <div class="col-sm-4">
+              <input type="text" name="tab[total_amount]" placeholder="Total" id="tab_total_amount" class="form-control" value="<%=tab.escape('total_amount') %>">
+            </div>
+            <label class="col-sm-1 control-label" for="tab_date">Date</label>
+            <div class="col-sm-5">
+              <input type="date" name="tab[date]" class="form-control" id="tab_date" value="<%= tab.id ? tab.escape('date') : currentDate %>">
+            </div>
+          </div>
 
-        <input type="submit" value="<%= tab.id ? 'Update Tab' : 'Create New Tab' %>">
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Notes</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" placeholder="Notes" name="tab[tag]"><%= tab.escape('tag') %></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="tab_title">Owers</label>
+            <div class="col-sm-10">
+              <input type="text" id="tab-ower-field" class="form-control" placeholder="Search friends...">
+              <div id="tab-friends"></div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <div class="col-sm-9 even-ower">
+              <h4>Owers</h4>
+              <li style="font-size:24px"class="tab-ower" data-id="<%= CURRENT_USER.id %>"><span data-icon-id="<%= CURRENT_USER.id %>" class="glyphicon glyphicon-remove-circle"></span> <%= CURRENT_USER.email %></li>
+            </div>
+            <div class="col-sm-3 amount-each">
+              <h4>Amount</h4>
+              <input type="text" class="form-control" value="">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="pull-right">
+                <button type="submit" class="btn btn-primary"><%= tab.id ? 'Update Tab' : 'Create Tab' %></button>
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
       </form>
     </div>
 
-    <div class="col-sm-6">
-      <input type="text" id="tab-ower-field" placeholder="Search friends...">
-      <div id="tab-friends"></div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <!-- <input type="text" id="tab-ower-field" placeholder="Search friends..."> -->
+      <!-- <div id="tab-friends"></div> -->
       <br>
 
-      <h3>Name</h3>
-      <div class="even-ower">
-      <li class="tab-ower" data-id="<%= CURRENT_USER.id %>"><span data-icon-id="<%= CURRENT_USER.id %>" class="glyphicon glyphicon-remove-circle"></span> <%= CURRENT_USER.email %></li>
-      </div>
-
       <h3>Amount Each</h3>
-      <div class="amount-owed">
-      </div>
+      <div class="amount-owed">$<%= tab.id ? tab.escape('total_amount') : (0).toFixed(2) %></div> <!-- placeholder -->
     </div>
   </div>
 </div>

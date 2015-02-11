@@ -2,7 +2,10 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   template: JST['tabs/form_custom'],
 
   events: {
-    "submit form": "createOrUpdateTab",
+    "submit form": function (e) {
+      this.createOrUpdateTab(e);
+      this.renderLoadingButton(e);
+    },
     "change #tab_total_amount": "updateAmount",
     'click .glyphicon-plus': "putFriendInTab",
     'click .glyphicon-remove-circle': "removeFriendFromTab",
@@ -11,7 +14,7 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
       if (code == 13) {
         this.updateAmount(e);
         this.enterPressInput(e);
-        this.updateOwers(e)
+        this.updateOwers(e);
       }
     },
     "change .each-amount": "updateAmount"
@@ -68,15 +71,29 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   putFriendInTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
-    $('#custom-ower').append($target.addClass('tab-ower').removeClass('friend-item').removeClass("checked"));
+    var id = $target.data('id');
+    $('#custom-ower').append($target.css("font-size", "24px").addClass('tab-ower').removeClass('friend-item checked'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
+    this.renderAmountField(id);
+  },
+
+  renderLoadingButton: function (event) {
+    var $button = $('.btn-primary');
+    var $animate = $('<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>')
+    $button.text(" Loading...").prepend($animate);
   },
 
   removeFriendFromTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
-    $('#tab-friends').append($target.removeClass('tab-ower').addClass('friend-item'));
+    var id = $target.data('id');
+    $('#tab-friends').append($target.css("font-size", "").removeClass('tab-ower').addClass('friend-item'));
     $iconTarget.addClass("glyphicon-plus").removeClass('glyphicon-remove-circle');
+    $('[data-each-id="' + id + '"]').remove();
+  },
+
+  renderAmountField: function (id) {
+    $('.amount-each').append($('<input type="text" class="form-control amount-each-field" data-each-id="'+ id + '">'));
   },
 
   updateAmount: function (event) {
@@ -97,9 +114,11 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   updateOwers: function (event) {
     var $target = $('#tab-friends').find('li:visible:first');
     var $iconTarget = $('[data-icon-id=' + $target.data('id') + ']');
-    $('#custom-ower').append($target.addClass('tab-ower'));
+    var id = $target.data('id');
+    $('#custom-ower').append($target.css("font-size", "24px").addClass('tab-ower'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     $('#tab-ower-field').val("");
+    this.renderAmountField(id);
   },
 
   createOrUpdateTab: function (event) {

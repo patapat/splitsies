@@ -2,7 +2,10 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
   template: JST['tabs/form_even'],
 
   events: {
-    "submit form": "createOrUpdateTab",
+    "submit form": function (e) {
+      this.createOrUpdateTab(e);
+      this.renderLoadingButton(e);
+    },
     "change #tab_total_amount": "updateAmount",
     'click .glyphicon-plus': "putFriendInTab",
     'click .glyphicon-remove-circle': "removeFriendFromTab",
@@ -38,7 +41,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     today = yyyy+'-'+mm+'-'+dd;
     return today;
   },
-  
+
   render: function () {
     var content = this.template({
       tab: this.model,
@@ -61,17 +64,25 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     this.addSubview("#tab-friends", friendView);
   },
 
+  renderLoadingButton: function (event) {
+    var $button = $('.btn-primary');
+    var $animate = $('<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>')
+    $button.text(" Loading...").prepend($animate);
+  },
+
   putFriendInTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
-    $('.even-ower').append($target.addClass('tab-ower').removeClass("friend-item"));
+    // var $formattedTarget = $(<li style="font-size:24px"class="tab-ower" data-id="<%= CURRENT_USER.id %>"><span data-icon-id="<%= CURRENT_USER.id %>" class="glyphicon glyphicon-remove-circle"></span> <%= CURRENT_USER.email %></li>);
+    $('.even-ower').append($target.css("font-size", "24px").addClass('tab-ower').removeClass("friend-item").removeClass("checked"));
+
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
   },
 
   removeFriendFromTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
-    $('#tab-friends').append($target.removeClass('tab-ower').addClass("friend-item"));
+    $('#tab-friends').append($target.css("font-size", "").removeClass('tab-ower').addClass("friend-item"));
     $iconTarget.addClass("glyphicon-plus").removeClass('glyphicon-remove-circle');
   },
 
@@ -93,7 +104,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
   updateOwers: function (event) {
     var $target = $('#tab-friends').find('li:visible:first');
     var $iconTarget = $('[data-icon-id=' + $target.data('id') + ']');
-    $('.even-ower').append($target.addClass('tab-ower'));
+    $('.even-ower').append($target.css("font-size", "24px").addClass('tab-ower'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     $('#tab-ower-field').val("");
   },
@@ -119,7 +130,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
           if (CURRENT_USER.id === id) {
             return;
           }
-          debugger;
+
           if (needNewTab) {
             var newTab = new TabSplitter.Models.UsersTab();
           } else {
@@ -136,7 +147,6 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
 
           newTab.save({}, {
             success: function () {
-              debugger;
               if (!TabSplitter.Collections.usersTabs.contains(newTab)) {
                 TabSplitter.Collections.usersTabs.add(newTab);
               }

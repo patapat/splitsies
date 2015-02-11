@@ -26,7 +26,7 @@
           <td><span class="glyphicon glyphicon-chevron-right" data-id="<%= tab.id %>"></span></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('date') %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('title') %></td>
-          <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= tab.escape('total_amount') %></td>
+          <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(tab.escape('total_amount')).toFixed(2) %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('tag') %></td>
           <td><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
         </tr>
