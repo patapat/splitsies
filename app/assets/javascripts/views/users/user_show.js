@@ -10,11 +10,23 @@ TabSplitter.Views.UserShow = Backbone.CompositeView.extend({
   render: function () {
     var content = this.template({ user: this.model });
     this.$el.html(content);
-
     this.addSearchResults();
     this.renderFriends();
+    this.renderTabs();
 
     return this;
+  },
+
+  renderTabs: function () {
+    var that = this;
+    debugger;
+    TabSplitter.Collections.usersTabs.fetch({
+      success: function () {
+        console.log(TabSplitter.Collections.usersTabs);
+        console.log(that.model.userTabs());
+      }
+    })
+    $("#all-owed-tabs")
   },
 
   addSearchResults: function () {

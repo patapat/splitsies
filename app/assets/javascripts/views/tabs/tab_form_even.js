@@ -146,7 +146,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
   },
 
   setOwedTabs: function () {
-
+    $(".tab-ower")
   },
 
   createOrUpdateTab: function (event) {
@@ -167,7 +167,12 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
         }
         $('.tab-ower').each(function (index) {
           var id = $(this).data('id');
+          var targetAmount = that.strToNum($('[data-each-id=' + id + ']').text());
           if (CURRENT_USER.id === id) {
+            var currentUser = TabSplitter.Collections.users.getOrFetch(id);
+            var totalAmount = parseFloat($("#tab_total_amount").val());
+            var newAccountBalance = CURRENT_USER.account_balance + totalAmount
+            // currentUser.set({  })
             return;
           }
 
@@ -177,12 +182,12 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
             var newTab = TabSplitter.Collections.usersTabs.getOrFetch(that.model.id);
           }
           var user = TabSplitter.Collections.users.getOrFetch(id);
-          var amountEach = parseFloat($('.amount-owed').text().replace(/\$/g, ''));
+          // var targetAmount = that.strToNum($('[data-each-id=' + id + ']').text());
 
           newTab.set({
             "user_id": user.id,
             "tab_id": that.model.id,
-            "amount_owed": amountEach
+            "amount_owed": targetAmount
           });
 
           newTab.save({}, {
