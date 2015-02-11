@@ -103,20 +103,33 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     if (isNaN(amountEach)) {
       amountEach = 0;
     }
-    this.ensureAccurateSum();
     $('.amount-each-field').html("$" + amountEach.toFixed(2));
+    this.ensureAccurateSum();
+  },
+
+  strToNum: function (str) {
+    var num = str.replace(/\$/g, '') * 1;
+    return num;
   },
 
   ensureAccurateSum: function () {
+    var that = this;
     var numOwers = $('.amount-each-field').length
     var actualTotal = parseFloat($("#tab_total_amount").val()).toFixed(2);
     var dumbSplitTotal = ((actualTotal / numOwers).toFixed(2) * numOwers);
-    debugger;
+    var numTimes = dumbSplitTotal - actualTotal;
     if (dumbSplitTotal > actualTotal) {
       $('.amount-each-field').each(function (amountStr) {
-        debugger;
-        var parsedStr = $(this).text().replace(/\$/g, '');
-        // var amount = parseFloat(amountStr.replace(/\$/g, ''));
+        var newSum = 0;
+        $('.amount-each-field').each(function (index) {
+          var parsedNum = that.strToNum($(this).text());
+          newSum += parsedNum;
+        });
+        if (newSum == actualTotal) {
+          return;
+        }
+        parsedNum = that.strToNum($(this).text());
+        $(this).text("$" + (parsedNum - 0.01).toFixed(2));
       });
     }
 
@@ -130,6 +143,10 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     $('#tab-ower-field').val("");
     this.renderAmountField(id);
+  },
+
+  setOwedTabs: function () {
+
   },
 
   createOrUpdateTab: function (event) {
