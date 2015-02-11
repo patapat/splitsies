@@ -73,7 +73,6 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
   putFriendInTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
-    // var $formattedTarget = $(<li style="font-size:24px"class="tab-ower" data-id="<%= CURRENT_USER.id %>"><span data-icon-id="<%= CURRENT_USER.id %>" class="glyphicon glyphicon-remove-circle"></span> <%= CURRENT_USER.email %></li>);
     $('.even-ower').append($target.css("font-size", "24px").addClass('tab-ower').removeClass("friend-item").removeClass("checked"));
 
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
@@ -84,6 +83,10 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
     $('#tab-friends').append($target.css("font-size", "").removeClass('tab-ower').addClass("friend-item"));
     $iconTarget.addClass("glyphicon-plus").removeClass('glyphicon-remove-circle');
+  },
+
+  renderAmountField: function (id) {
+    $('.amount-each').append($('<input type="text" class="form-control amount-each-field" data-each-id="'+ id + '">'));
   },
 
   updateAmount: function (event) {

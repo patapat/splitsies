@@ -12,12 +12,12 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     'keypress #tab-ower-field': function (e) {
       var code = e.keyCode || e.which;
       if (code == 13) {
-        this.updateAmount(e);
+        // this.updateAmount(e);
         this.enterPressInput(e);
         this.updateOwers(e);
       }
     },
-    "change .each-amount": "updateAmount"
+    "change .amount-each-field": "updateAmount"
   },
 
   initialize: function () {
@@ -97,9 +97,8 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   },
 
   updateAmount: function (event) {
-    var allPaidAmounts = $('.each-amount');
+    var allPaidAmounts = $('.amount-each-field');
     var totalPaid = 0;
-
     allPaidAmounts.each(function() {
       if ($(this).val() !== "") {
         totalPaid += parseFloat($(this).val()).toFixed(2);

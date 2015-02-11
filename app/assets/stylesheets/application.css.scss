@@ -19,6 +19,10 @@
 @import "custom-dashboard";
 // @import "custom-cover";
 
+#axe:hover ~ .backdrop {
+  background-image: url('https://hosstools.com/wp-content/uploads/splitting_axe3.jpg');
+}
+
 html, body {
   height: 100%;
 }
