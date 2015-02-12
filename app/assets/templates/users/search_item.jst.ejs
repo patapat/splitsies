@@ -1,3 +1,8 @@
 <% var id = user.get('id') %>
+<% var email = user.escape('email') %>
+<% var url = "https://secure.gravatar.com/avatar/" + md5(email) %>
 
-<li class="search-items list-group-item" data-id="<%= id %>"><span data-icon-id="<%= id %>" class="glyphicon glyphicon-unchecked"></span> <%= user.escape('email') %></li>
+<li class="search-items list-group-item" data-id="<%= id %>">
+  <span data-icon-id="<%= id %>" class="glyphicon glyphicon-unchecked"></span>
+  <img class="search-pic" src="<%= url %>"> <%= email %> 
+</li>

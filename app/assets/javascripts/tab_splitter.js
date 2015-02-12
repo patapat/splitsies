@@ -12,6 +12,6 @@ window.TabSplitter = {
 };
 
 $(document).ready(function(){
-  $('#tabsTable').dataTable()
+  $('#tabs-table').dataTable()
   // TabSplitter.initialize();
 });

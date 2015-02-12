@@ -8,8 +8,10 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
   events: {
     "click .glyphicon-chevron-right": "renderDetails",
     "click .glyphicon-chevron-down": "hideDetails",
-    "click .tab-row-item": "tabShow",
-    "click .table-header": "sortTable"
+    "click button": "tabShow",
+    "click .table-header": "sortTable",
+    "click #owed-tabs": "renderOwedTabs",
+    "click #your-tabs": "render"
   },
 
   sortTable: function (event) {
@@ -19,27 +21,17 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    var content = this.template({
-      tabs: this.collection,
-      paid: false
-    });
+    var content = this.template({ tabs: this.collection, paid: false });
     this.$el.html(content);
-    this.addSearchResults();
 
     return this;
   },
 
-  addSearchResults: function () {
-    var that = this;
-    TabSplitter.Collections.users.fetch({
-      success: function () {
-        var searchView = new TabSplitter.Views.UserSearch({
-          collection: TabSplitter.Collections.users
-        });
+  renderOwedTabs: function () {
+    var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
+    var owedTabView = new TabSplitter.Views.OwedTab({ model: this.model });
 
-        $('.search').html(searchView.render().$el);
-      }
-    });
+    this._swapTabView(owedTabView);
   },
 
   renderDetails: function (event) {
@@ -56,7 +48,11 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
 
   tabShow: function (event) {
     var $target = $(event.currentTarget);
-    var id = $target.data('row-id');
+    var id = $target.data('id');
     Backbone.history.navigate("tabs/" + id, { trigger: true })
+  },
+
+  _swapTabView: function (view) {
+    $("#tabs-table").html(view.render().$el);
   }
 })

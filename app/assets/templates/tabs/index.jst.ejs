@@ -4,11 +4,11 @@
 <% } %>
 
 <ul class="nav nav-tabs" role="tablist">
-  <li class="active"><a href="#" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Your Tabs</h4></a></li>
-  <li><a href="#" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Owed Tabs</h4></a></li>
+  <li class="active"><a id="your-tabs" href="#" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Your Tabs</h4></a></li>
+  <li><a id="owed-tabs" href="#" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Owed Tabs</h4></a></li>
 </ul>
 
-<div id="tabsTable" class="table-responsive">
+<div id="tabs-table" class="table-responsive">
   <table class="table table-striped" data-sort-name="title" data-sort-order="desc">
     <thead>
       <tr>
@@ -17,20 +17,22 @@
         <th class="table-header" data-align="left" data-sortable="true">Total</th>
         <th class="table-header" data-align="left" data-sortable="true">Notes</th>
         <th class="table-header" data-align="left" data-sortable="true">Status</th>
-        <th class="table-header" data-align="left" data-sortable="true">Edit</th>
-        <th class="table-header" data-align="left" data-sortable="true">Delete</th>
+        <th class="table-header" data-align="left" data-sortable="true"></th>
       </tr>
     </thead>
     <tbody>
       <% tabs.each (function (tab) { %>
-        <tr id="tab-row-<%= tab.id %>">
-          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('date') %></td>
+        <% var date = tab.escape('date') %>
+        <% var newDate = date.slice(5) + "-" + date.slice(0,4) %>
+
+        <tr class="tab-row" id="tab-row-<%= tab.id %>">
+          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= newDate %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('title') %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(tab.escape('total_amount')).toFixed(2) %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('tag') %></td>
           <td><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
-          <td><span class="glyphicon glyphicon-pencil"></span></td>
-          <td><span class="glyphicon glyphicon-trash"></span></td>
+          <td><button data-id="<%= tab.id %>" id="details" class="btn btn-primary">Details</button></span></td>
+          <!-- <td><a class="push_button" href="#">Push Me</a></td> -->
         </tr>
       <% }); %>
     </tbody>

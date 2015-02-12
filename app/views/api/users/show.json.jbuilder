@@ -14,12 +14,15 @@ end
 
 json.userTabs do
   json.array! @user.users_tabs do |users_tab|
-    json.extract! users_tab, :id, :tab_id, :amount_owed, :paid, :created_at, :updated_at
+    json.extract! users_tab, :id, :user_id, :tab_id, :amount_owed, :paid, :created_at, :updated_at
+    json.extract! users_tab.tab.user, :email
+    json.extract! users_tab.tab, :date
   end
 end
 
 json.owedTabs do
   json.array! @user.owed_tabs do |owed_tab|
     json.extract! owed_tab, :id, :title, :date, :total_amount, :tag, :created_at, :updated_at
+    json.extract! owed_tab.user, :email
   end
 end

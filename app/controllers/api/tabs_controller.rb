@@ -25,12 +25,12 @@ module Api
 
     def show
       @tab = Tab.find(params[:id])
-
-      if current_user.tabs.include?(@tab)
-        render :show
-      else
-        render json: ["You are not an owner or participant of this tab."]
-      end
+      render :show
+      # if current_user.tabs.include?(@tab)
+      #   render :show
+      # else
+      #   render json: ["You are not an owner or participant of this tab."]
+      # end
     end
 
     def index

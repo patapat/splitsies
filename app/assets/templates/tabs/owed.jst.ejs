@@ -1,0 +1,26 @@
+<table class="table table-striped" data-sort-name="title" data-sort-order="desc">
+  <thead>
+    <tr>
+      <th class="table-header" data-align="left" data-sortable="true">Date</th>
+      <th class="table-header" data-align="left" data-sortable="true">Email</th>
+      <th class="table-header" data-align="left" data-sortable="true">Amount Owed</th>
+      <th class="table-header" data-align="left" data-sortable="true">Status</th>
+      <th class="table-header" data-align="left" data-sortable="true">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% usersTabs.each (function (usersTab) { %>
+      <% var thumb = "down" %>
+      <% if (usersTab.get('paid')) { %>
+        <% thumb = "up" %>
+      <% } %>
+      <tr class="tab-row" id="tab-row-<%= usersTab.id %>">
+        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><%= usersTab.escape('date') %></td>
+        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><%= usersTab.escape('email') %></td>
+        <td class="tab-row-item" data-row-id="<%= usersTab.id %>">$<%= parseFloat(usersTab.escape('amount_owed')).toFixed(2) %></td>
+        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
+        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><%= usersTab.escape('user_id') %></td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>

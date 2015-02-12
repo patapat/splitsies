@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
   attr_reader :password
 
   has_many :tabs
-  
+
   has_many :users_tabs
   has_many :owed_tabs,
             through: :users_tabs,

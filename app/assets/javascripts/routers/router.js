@@ -38,10 +38,11 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
 
   tabHistory: function () {
     var that = this;
-
+    var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
     TabSplitter.Collections.tabs.fetch({
       success: function () {
         var indexView = new TabSplitter.Views.TabsIndex({
+          model: currentUser,
           collection: TabSplitter.Collections.tabs
         });
 
@@ -49,6 +50,8 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
       }
     });
 
+    $(".active").toggleClass("active");
+    $('#history').toggleClass("active");
   },
 
   overview: function () {
@@ -58,6 +61,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     TabSplitter.Collections.tabs.fetch({
       success: function () {
         var indexView = new TabSplitter.Views.TabsIndex({
+          model: currentUser,
           collection: TabSplitter.Collections.tabs
         });
 
@@ -67,8 +71,6 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
       }
     });
 
-    // var sidebarView = new TabSplitter.Views.Sidebar({ $selector: $('#account')});
-    // $('#sidebar-nav').append(sidebarView.render().$el);
     $(".active").removeClass("active");
     $('#account').addClass("active");
   },

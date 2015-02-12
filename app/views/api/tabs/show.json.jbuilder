@@ -5,3 +5,8 @@ json.users_tabs do
     json.email users_tab.user.email
   end
 end
+json.owers do
+  json.array! @tab.owers do |ower|
+    json.extract! ower, :id, :email, :account_balance
+  end
+end

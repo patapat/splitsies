@@ -1,16 +1,17 @@
 TabSplitter.Collections.Tabs = Backbone.Collection.extend({
   url: "api/tabs",
-
-  comparator: function (tab1, tab2) {
-    if (tab1.get('title') < tab2.get('title')) {
-      return -1 * this._sortOrder;
-    } else if (tab1.get('title') > tab2.get('title')) {
-      return 1  * this._sortOrder;
-    } else {
-      return 0  * this._sortOrder;
-    }
-  },
-
+  //
+  // comparator: function (tab1, tab2) {
+  //   if (tab1.get('title') < tab2.get('title')) {
+  //     return -1 * this._sortOrder;
+  //   } else if (tab1.get('title') > tab2.get('title')) {
+  //     return 1  * this._sortOrder;
+  //   } else {
+  //     return 0  * this._sortOrder;
+  //   }
+  // },
+  comparator: "date",
+  
   model: TabSplitter.Models.Tab,
 
   getOrFetch: function (id) {

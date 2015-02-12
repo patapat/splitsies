@@ -19,6 +19,7 @@
 //= require jquery.serializejson
 //= require jquery.dataTables
 //= require tab_splitter
+//= require md5
 //= require_tree ../templates
 //= require_tree ./utils
 //= require_tree ./models
