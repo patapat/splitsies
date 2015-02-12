@@ -37,36 +37,3 @@
     </tbody>
   </table>
 </div>
-
-
-
-<div class="row">
-  <div class="col-md-12">
-  <h2 class="subheader">Activity</h2>
-    <div class="table-responsive">
-      <table id="tabs-table" class="table table-bordred table-striped">
-        <thead>
-          <th class="table-header" data-align="left" data-sortable="true">Date</th>
-          <th class="table-header" data-align="left" data-sortable="true">Title</th>
-          <th class="table-header" data-align="left" data-sortable="true">Total</th>
-          <th class="table-header" data-align="left" data-sortable="true">Notes</th>
-          <th class="table-header" data-align="left" data-sortable="true">Status</th>
-          <th>Edit</th>
-          <th>Delete</th>
-        </thead>
-        <tbody>
-          <% tabs.each (function (tab) { %>
-            <tr id="tab-row-<%= tab.id %>">
-              <td><span class="glyphicon glyphicon-chevron-right" data-id="<%= tab.id %>"></span></td>
-              <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('date') %></td>
-              <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('title') %></td>
-              <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(tab.escape('total_amount')).toFixed(2) %></td>
-              <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('tag') %></td>
-              <td><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
-            </tr>
-          <% }); %>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>

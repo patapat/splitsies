@@ -12,7 +12,6 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     'keypress #tab-ower-field': function (e) {
       var code = e.keyCode || e.which;
       if (code == 13) {
-        // this.updateAmount(e);
         this.enterPressInput(e);
         this.updateOwers(e);
       }
