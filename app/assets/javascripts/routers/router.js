@@ -4,7 +4,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
   },
 
   routes: {
-    "": "account",
+    "": "overview",
     "tabs/new": "new",
     "tabs/new-even": "newEven",
     "tabs/new-custom": "newCustom",
@@ -14,7 +14,16 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     "tabs/:id/edit-custom": "editCustom",
     "users/new": "userNew",
     "users/:id": "userShow",
-    "account": "account"
+    "tabs": "tabHistory"
+  },
+
+  owedBalance: function () {
+    var user = TabSplitter.Collections.users.get(CURRENT_USER.id);
+    user.tabs();
+  },
+
+  balanceToPay: function () {
+
   },
 
   checkBalance: function () {
@@ -27,12 +36,12 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     }
   },
 
-  homepage: function () {
+  tabHistory: function () {
     var homepageView = new TabSplitter.Views.Homepage();
 
   },
 
-  account: function () {
+  overview: function () {
     var that = this;
     var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
     var accountView = new TabSplitter.Views.Account({ model: currentUser })

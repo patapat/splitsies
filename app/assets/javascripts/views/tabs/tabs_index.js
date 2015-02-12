@@ -19,7 +19,6 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    debugger;
     var content = this.template({
       tabs: this.collection,
       paid: false

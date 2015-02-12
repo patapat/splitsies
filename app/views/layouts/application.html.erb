@@ -18,11 +18,12 @@
   <body>
     <% if logged_in? %>
       <% gravatar_id = Digest::MD5::hexdigest(current_user.email.downcase) %>
+      <% gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}" %>
       <script>window.CURRENT_USER = {
         "id": <%= current_user.id %>,
         "email": "<%= current_user.email %>",
         "account_balance": <%= current_user.account_balance %>,
-        "gravatar_url": "https://secure.gravatar.com/avatar/<%= gravatar_id %>"
+        "gravatar_url": "<%= gravatar_url %>"
       }
       </script>
       <!-- <a class="venmo-pay-button" data-recipient-id="1366807004839936586" data-amount=".5"></a> -->
@@ -45,7 +46,7 @@
           <ul class="nav navbar-nav navbar-right">
 
             <% if logged_in? %>
-              <li><a href="#/account"><%= current_user.email %></a></li>
+              <li><a href="#/account"><img style="height:22px; border-radius:15px;" src="<%= gravatar_url %>"> <%= current_user.email %></a></li>
               <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> Tabs</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
               <li><a href="http://www.fiddler.io/">Help</a></li>
@@ -57,6 +58,9 @@
               <li><a href="/users/new">Sign Up</a></li>
             <% end %>
           </ul>
+          <form class="navbar-form navbar-right">
+            <input id="nav-search" type="text" class="form-control" placeholder="Search for friends...">
+          </form>
         </div>
       </div>
     </nav>

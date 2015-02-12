@@ -1,11 +1,5 @@
 TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
   initialize: function () {
-   $('input').keyup(function(e){
-     if(e.keyCode == 13){
-        $(this).trigger('enter');
-     }
-   });
-
   },
 
   className: "tab-form-main",
