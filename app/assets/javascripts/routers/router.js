@@ -14,7 +14,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     "tabs/:id/edit-custom": "editCustom",
     "users/new": "userNew",
     "users/:id": "userShow",
-    "tabs": "tabHistory"
+    "history": "tabHistory"
   },
 
   owedBalance: function () {
@@ -37,7 +37,18 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
   },
 
   tabHistory: function () {
-    var homepageView = new TabSplitter.Views.Homepage();
+    debugger;
+    var that = this;
+
+    TabSplitter.Collections.tabs.fetch({
+      success: function () {
+        var indexView = new TabSplitter.Views.TabsIndex({
+          collection: TabSplitter.Collections.tabs
+        });
+
+        that._swapView(indexView);
+      }
+    });
 
   },
 
