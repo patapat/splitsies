@@ -8,10 +8,10 @@ TabSplitter.Models.Tab = Backbone.Model.extend({
 
     return this._userTabs;
   },
-  
+
   parse: function (response) {
-    if (response.userTabs) {
-      this.userTabs().set(response.userTabs, { parse: true });
+    if (response.users_tabs) {
+      this.userTabs().set(response.users_tabs, { parse: true });
       delete response.userTabs;
     }
 

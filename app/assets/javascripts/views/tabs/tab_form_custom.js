@@ -50,8 +50,22 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     });
     this.$el.html(content);
     this.renderFriends();
+    this.addSearchResults();
 
     return this;
+  },
+
+  addSearchResults: function () {
+    var that = this;
+    TabSplitter.Collections.users.fetch({
+      success: function () {
+        var searchView = new TabSplitter.Views.UserSearch({
+          collection: TabSplitter.Collections.users
+        });
+
+        $('.search').html(searchView.render().$el);
+      }
+    });
   },
 
   renderFriends: function () {
@@ -72,7 +86,7 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
     var id = $target.data('id');
-    $('#custom-ower').append($target.css("font-size", "24px").addClass('tab-ower').removeClass('friend-item checked'));
+    $('#custom-ower').append($target.css("font-size", "24px").toggleClass('list-group-item').addClass('tab-ower').removeClass('friend-item checked'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     this.renderAmountField(id);
   },
@@ -80,14 +94,14 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
   renderLoadingButton: function (event) {
     var $button = $('.btn-primary');
     var $animate = $('<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>')
-    $button.text(" Loading...").prepend($animate);
+    $button.text(" Creating...").prepend($animate);
   },
 
   removeFriendFromTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
     var id = $target.data('id');
-    $('#tab-friends').append($target.css("font-size", "").removeClass('tab-ower').addClass('friend-item'));
+    $('#tab-friends').append($target.css("font-size", "").toggleClass('list-group-item').removeClass('tab-ower').addClass('friend-item'));
     $iconTarget.addClass("glyphicon-plus").removeClass('glyphicon-remove-circle');
     $('[data-each-id="' + id + '"]').remove();
   },
@@ -101,10 +115,9 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     var totalPaid = 0;
     allPaidAmounts.each(function() {
       if ($(this).val() !== "") {
-        totalPaid += parseFloat($(this).val()).toFixed(2);
+        totalPaid += parseFloat($(this).val()).toFixed(2) * 1;
       }
     });
-
     var initialTotal = $('#tab_total_amount').val();
     var amountLeft = initialTotal - totalPaid;
     $('#custom-total').html("$" + amountLeft.toFixed(2));
@@ -114,7 +127,7 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     var $target = $('#tab-friends').find('li:visible:first');
     var $iconTarget = $('[data-icon-id=' + $target.data('id') + ']');
     var id = $target.data('id');
-    $('#custom-ower').append($target.css("font-size", "24px").addClass('tab-ower'));
+    $('#custom-ower').append($target.css("font-size", "24px").toggleClass('list-group-item').addClass('tab-ower'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     $('#tab-ower-field').val("");
     this.renderAmountField(id);

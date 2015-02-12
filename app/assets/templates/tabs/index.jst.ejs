@@ -2,35 +2,71 @@
 <% if (paid) { %>
   <% thumb = "up" %>
 <% } %>
-<a href="#/tabs/new">Create New Tab</a>
 
-<h2 class="sub-header">Latest Activity</h2>
+<h2 class="sub-header">Activity</h2>
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Your Tabs</h4></a></li>
+  <li><a href="#" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Owed Tabs</h4></a></li>
+</ul>
+
 <div id="tabsTable" class="table-responsive">
   <table class="table table-striped" data-sort-name="title" data-sort-order="desc">
     <thead>
       <tr>
-        <th>&nbsp;</th>
         <th class="table-header" data-align="left" data-sortable="true">Date</th>
         <th class="table-header" data-align="left" data-sortable="true">Title</th>
         <th class="table-header" data-align="left" data-sortable="true">Total</th>
         <th class="table-header" data-align="left" data-sortable="true">Notes</th>
         <th class="table-header" data-align="left" data-sortable="true">Status</th>
+        <th class="table-header" data-align="left" data-sortable="true">Edit</th>
+        <th class="table-header" data-align="left" data-sortable="true">Delete</th>
       </tr>
     </thead>
-
     <tbody>
       <% tabs.each (function (tab) { %>
         <tr id="tab-row-<%= tab.id %>">
-          <td><span class="glyphicon glyphicon-chevron-right" data-id="<%= tab.id %>"></span></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('date') %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('title') %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(tab.escape('total_amount')).toFixed(2) %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('tag') %></td>
           <td><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
+          <td><span class="glyphicon glyphicon-pencil"></span></td>
+          <td><span class="glyphicon glyphicon-trash"></span></td>
         </tr>
       <% }); %>
     </tbody>
   </table>
 </div>
 
-<!-- <div class="search"></div> -->
+
+
+<div class="row">
+  <div class="col-md-12">
+  <h2 class="subheader">Activity</h2>
+    <div class="table-responsive">
+      <table id="tabs-table" class="table table-bordred table-striped">
+        <thead>
+          <th class="table-header" data-align="left" data-sortable="true">Date</th>
+          <th class="table-header" data-align="left" data-sortable="true">Title</th>
+          <th class="table-header" data-align="left" data-sortable="true">Total</th>
+          <th class="table-header" data-align="left" data-sortable="true">Notes</th>
+          <th class="table-header" data-align="left" data-sortable="true">Status</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </thead>
+        <tbody>
+          <% tabs.each (function (tab) { %>
+            <tr id="tab-row-<%= tab.id %>">
+              <td><span class="glyphicon glyphicon-chevron-right" data-id="<%= tab.id %>"></span></td>
+              <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('date') %></td>
+              <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('title') %></td>
+              <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(tab.escape('total_amount')).toFixed(2) %></td>
+              <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('tag') %></td>
+              <td><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

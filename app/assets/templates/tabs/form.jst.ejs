@@ -1,9 +1,7 @@
-<h1 class="page-header"><%= tab.id ? "Edit " + tab.escape('title') : "Create New Tab" %></h1>
+<!-- <h1 class="page-header"><%= tab.id ? "Edit " + tab.escape('title') : "Create New Tab" %></h1> -->
 <ul class="nav nav-tabs" role="tablist">
   <li class="active"><a href="#" id=<%= tab.id ? "edit-even" : "new-even" %> role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Even</h4></a></li>
   <li><a href="#" id=<%= tab.id ? "edit-custom" : "new-custom" %> role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Custom</h4></a></li>
 </ul>
 
-<!-- <%= tab.id ? '<a href="#/tabs/' + tab.id + '/edit-even" class="btn btn-default" role="button">Even</a>' : '<a href="#/tabs/new-even" class="btn btn-default" role="button">Even</a>' %>
-<%= tab.id ? '<a href="#/tabs/' + tab.id + '/edit-custom" class="btn btn-default" role="button">Custom</a>' : '<a href="#/tabs/new-custom" class="btn btn-default" role="button">Custom</a>' %> -->
 <div id="tab-type-main"></div>

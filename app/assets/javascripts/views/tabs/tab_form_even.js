@@ -86,14 +86,14 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
   renderLoadingButton: function (event) {
     var $button = $('.btn-primary');
     var $animate = $('<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>')
-    $button.text(" Loading...").prepend($animate);
+    $button.text(" Creating...").prepend($animate);
   },
 
   putFriendInTab: function (event) {
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
     var id = $target.data('id');
-    $('.even-ower').append($target.css("font-size", "24px").addClass('tab-ower').removeClass("friend-item").removeClass("checked"));
+    $('.even-ower').append($target.css("font-size", "24px").toggleClass('list-group-item').addClass('tab-ower').removeClass("friend-item").removeClass("checked"));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     this.renderAmountField(id);
   },
@@ -102,7 +102,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
     var id = $target.data('id');
-    $('#tab-friends').append($target.css("font-size", "").removeClass('tab-ower').addClass("friend-item"));
+    $('#tab-friends').append($target.css("font-size", "").toggleClass('list-group-item').removeClass('tab-ower').addClass("friend-item"));
     $iconTarget.addClass("glyphicon-plus").removeClass('glyphicon-remove-circle');
     $('[data-each-id="' + id + '"]').remove();
   },
@@ -158,7 +158,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     var $target = $('#tab-friends').find('li:visible:first');
     var id = $target.data('id')
     var $iconTarget = $('[data-icon-id=' + id + ']');
-    $('.even-ower').append($target.css("font-size", "24px").addClass('tab-ower'));
+    $('.even-ower').append($target.css("font-size", "24px").toggleClass('list-group-item').addClass('tab-ower'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     $('#tab-ower-field').val("");
     this.renderAmountField(id);
@@ -189,7 +189,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
           var targetAmount = that.strToNum($('[data-each-id=' + id + ']').text());
           if (CURRENT_USER.id === id) {
             var currentUser = TabSplitter.Collections.users.getOrFetch(id);
-            var totalAmount = parseFloat($p("#tab_total_amount").val());
+            var totalAmount = parseFloat($("#tab_total_amount").val());
             var newAccountBalance = CURRENT_USER.account_balance + totalAmount
             // currentUser.set({  })
             return;

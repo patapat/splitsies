@@ -1,8 +1,20 @@
+<% var str = tab.escape('title') %>
 <div class="tab-heading" data-tab-id="<%= tab.id %>">
-  <h1 class="page-header"><%= tab.escape('title') %> <span class="glyphicon glyphicon-pencil"></span></h1>
+  <h1 class="page-header"><%= str.charAt(0).toUpperCase() + str.slice(1) %> Details <span class="glyphicon glyphicon-pencil"></span></h1>
 </div>
+
+<h2 class="sub-header">Details</h2>
 
 <a href="#/tabs/<%= tab.id %>/edit">Edit Tab</a>
 <br>
 <br>
 <button id="delete-tab">Delete Tab</button>
+
+<ul>
+  <% tab.userTabs().each(function (userTab) { %>
+    <li>User id: <%= userTab.escape('user_id') %></li>
+    <li>Tab id: <%= userTab.escape('tab_id') %></li>
+    <li>Amount owed: <%= userTab.escape('amount_owed') %></li>
+    <li>Paid: <%= userTab.escape('paid') %></li>
+  <% }); %>
+</ul>
