@@ -14,25 +14,19 @@
   <table class="table table-striped" data-sort-name="title" data-sort-order="desc">
     <thead>
       <tr>
-        <th class="table-header" data-align="left" data-sortable="true">Date</th>
-        <th class="table-header" data-align="left" data-sortable="true">Title</th>
-        <th class="table-header" data-align="left" data-sortable="true">Total</th>
-        <th class="table-header" data-align="left" data-sortable="true">Notes</th>
+        <th class="table-header" data-align="left" data-sortable="true">Email</th>
+        <th class="table-header" data-align="left" data-sortable="true">Amount Owed</th>
         <th class="table-header" data-align="left" data-sortable="true">Status</th>
-        <th class="table-header" data-align="left" data-sortable="true">Edit</th>
-        <th class="table-header" data-align="left" data-sortable="true">Delete</th>
+        <th class="table-header" data-align="left" data-sortable="true">Email Reminder</th>
       </tr>
     </thead>
     <tbody>
-      <% tabs.each (function (tab) { %>
+      <% tab.userTabs().each (function (userTab) { %>
         <tr id="tab-row-<%= tab.id %>">
-          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('date') %></td>
-          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('title') %></td>
-          <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(tab.escape('total_amount')).toFixed(2) %></td>
-          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('tag') %></td>
-          <td><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
-          <td><span class="glyphicon glyphicon-pencil"></span></td>
-          <td><span class="glyphicon glyphicon-trash"></span></td>
+          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= userTab.escape('email') %></td>
+          <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(userTab.escape('amount_owed')).toFixed(2) %></td>
+          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= userTab.escape('paid') %></td>
+          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= userTab.escape('tab_id') %></td>
         </tr>
       <% }); %>
     </tbody>

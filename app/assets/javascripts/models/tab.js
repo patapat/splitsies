@@ -9,6 +9,14 @@ TabSplitter.Models.Tab = Backbone.Model.extend({
     return this._userTabs;
   },
 
+  owers: function () {
+    if (!this._owers) {
+      this._owers = new TabSplitter.Collections.UsersTabs([], { user: this });
+    }
+
+    return this._owers;
+  },
+
   parse: function (response) {
     if (response.users_tabs) {
       this.userTabs().set(response.users_tabs, { parse: true });

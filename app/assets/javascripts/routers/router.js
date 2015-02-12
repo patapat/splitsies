@@ -37,7 +37,6 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
   },
 
   tabHistory: function () {
-    debugger;
     var that = this;
 
     TabSplitter.Collections.tabs.fetch({

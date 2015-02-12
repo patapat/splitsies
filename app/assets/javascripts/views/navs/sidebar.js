@@ -22,4 +22,6 @@ TabSplitter.Views.Sidebar = Backbone.CompositeView.extend({
     $target.addClass("active");
   }
 
+
+
 });

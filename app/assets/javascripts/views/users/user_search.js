@@ -35,6 +35,13 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
   toggleDisplay: function () {
     if ($('#search-field').val() === "") {
       $('#search-results').css("display", "none");
+      var $currentResults = $('.search-items');
+      $currentResults.each(function (index) {
+        $(this).removeClass("checked");
+        var id = $(this).data('id')
+        var $iconTarget = $('[data-icon-id='+ id + ']');
+        $iconTarget.addClass("glyphicon-unchecked").removeClass("glyphicon-check");
+      });
     } else {
       $('#search-results').css("display", "block");
     }
@@ -63,10 +70,6 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
 
     $currentResults.each(function (index) {
       if ($(this).text().indexOf(currentSearch) === -1) {
-        $(this).removeClass("checked");
-        var id = $(this).data('id')
-        var $iconTarget = $('[data-icon-id='+ id + ']');
-        $iconTarget.addClass("glyphicon-unchecked").removeClass("glyphicon-check");
         $(this).hide();
       } else {
         $(this).show();
@@ -104,7 +107,7 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
       "user_id": $target.data('id'),
       "friend_id": CURRENT_USER.id
     });
-    
+
     newFriendship.save({}, {
       success: function () {
         var friend = that.collection.get(newFriendship.get('friend_id'));
