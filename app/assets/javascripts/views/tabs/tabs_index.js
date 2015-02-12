@@ -8,10 +8,18 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
   events: {
     "click .glyphicon-chevron-right": "renderDetails",
     "click .glyphicon-chevron-down": "hideDetails",
-    "click .tab-row-item": "tabShow"
+    "click .tab-row-item": "tabShow",
+    "click .table-header": "sortTable"
+  },
+
+  sortTable: function (event) {
+    console.log("sort");
+    TabSplitter.Collections.tabs._comparator = $(event.currentTarget).html().toLowerCase();
+    TabSplitter.Collections.tabs.sort();
   },
 
   render: function () {
+    debugger;
     var content = this.template({
       tabs: this.collection,
       paid: false

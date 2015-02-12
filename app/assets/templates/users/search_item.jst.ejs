@@ -1,1 +1,3 @@
-<li class="search-items" data-id="<%= user.escape('id') %>"><%= user.escape('email') %></li>
+<% var id = user.get('id') %>
+
+<li class="search-items list-group-item" data-id="<%= id %>"><span data-icon-id="<%= id %>" class="glyphicon glyphicon-unchecked"></span> <%= user.escape('email') %></li>

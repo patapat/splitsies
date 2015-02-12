@@ -16,7 +16,25 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
         this.updateOwers(e);
         this.updateAmount(e);
       }
-    }
+    },
+    'click #add-friend': "highlightFriendField"
+  },
+
+  highlightFriendField: function () {
+    $("#tab-friends").fadeOut(100).fadeIn(100)
+  },
+
+  addSearchResults: function () {
+    var that = this;
+    TabSplitter.Collections.users.fetch({
+      success: function () {
+        var searchView = new TabSplitter.Views.UserSearch({
+          collection: TabSplitter.Collections.users
+        });
+
+        $('.search').html(searchView.render().$el);
+      }
+    });
   },
 
   initialize: function (options) {
@@ -49,6 +67,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     });
     this.$el.html(content);
     this.renderFriends();
+    this.addSearchResults();
 
     return this;
   },
@@ -170,7 +189,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
           var targetAmount = that.strToNum($('[data-each-id=' + id + ']').text());
           if (CURRENT_USER.id === id) {
             var currentUser = TabSplitter.Collections.users.getOrFetch(id);
-            var totalAmount = parseFloat($("#tab_total_amount").val());
+            var totalAmount = parseFloat($p("#tab_total_amount").val());
             var newAccountBalance = CURRENT_USER.account_balance + totalAmount
             // currentUser.set({  })
             return;

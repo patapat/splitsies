@@ -1,6 +1,8 @@
 TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
   template: JST['users/search'],
 
+  className: "search-view",
+
   initialize: function () {
     this.friendCollection = TabSplitter.Collections.usersFriends
     this.listenTo(this.friendCollection, "add remove", this.render);
@@ -9,7 +11,7 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
 
   events: {
     'keyup #search-field': "updateResults",
-    'click .search-items': "selectUser",
+    'click .search-items': "toggleUser",
     'click button': "addUser"
   },
 
@@ -33,7 +35,7 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
       var userItemView = new TabSplitter.Views.SearchItem({ model: user });
 
       if (currentFriends.indexOf(user.id) === -1) {
-        that.addSubview('#search-items', userItemView);
+        that.addSubview('#search-item-field', userItemView);
       }
     })
   },
@@ -51,14 +53,12 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
     });
   },
 
-  selectUser: function (event) {
+  toggleUser: function (event) {
     var $target = $(event.currentTarget);
-
-    if ($target.attr('class').indexOf("checked") > -1) {
-      $target.removeClass("checked");
-    } else {
-      $target.addClass("checked");
-    }
+    var id = $target.data('id');
+    var $iconTarget = $('[data-icon-id='+ id + ']');
+    $target.toggleClass("checked");
+    $iconTarget.toggleClass("glyphicon-check glyphicon-unchecked")
   },
 
   addUser: function (event) {
