@@ -7,8 +7,13 @@ json.friends do
 end
 
 json.tabs do
-  json.array! @user.tabs do |tab|
+  json.array! @tabs do |tab|
     json.extract! tab, :id, :title, :date, :total_amount, :tag, :created_at, :updated_at
+    json.userTabs do
+      json.array! tab.users_tabs do |users_tab|
+        json.extract! users_tab, :id, :user_id, :tab_id, :amount_owed, :paid
+      end
+    end
   end
 end
 

@@ -187,12 +187,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
         $('.tab-ower').each(function (index) {
           var id = $(this).data('id');
           var targetAmount = that.strToNum($('[data-each-id=' + id + ']').text());
-          debugger;
           if (CURRENT_USER.id === id) {
-            // var currentUser = TabSplitter.Collections.users.getOrFetch(id);
-            // var totalAmount = parseFloat($("#tab_total_amount").val());
-            // var newAccountBalance = CURRENT_USER.account_balance + totalAmount
-            // currentUser.set({  })
             return;
           }
 

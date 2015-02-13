@@ -2,7 +2,7 @@ TabSplitter.Views.Account = Backbone.View.extend({
   template: JST['users/account'],
 
   initialize: function () {
-    this.listenTo(this.model, "sync", this.render);
+    // this.listenTo(this.model, "sync", this.render);
   },
 
   render: function () {
@@ -32,13 +32,12 @@ TabSplitter.Views.Account = Backbone.View.extend({
 
   balanceOwed: function () {
     var totalOwed = 0;
-    debugger;
     this.model.tabs().each(function (tab) {
-      tab.userTabs().each(function (userTab) {
-        if (userTab.get('paid')) {
+      tab.attributes.userTabs.forEach(function (userTab) {
+        if (userTab.paid) {
           return;
         } else {
-          totalOwed += userTab.get('amount_owed');
+          totalOwed += userTab.amount_owed * 1;
         }
       });
     });
@@ -49,7 +48,6 @@ TabSplitter.Views.Account = Backbone.View.extend({
 
   balanceToPay: function () {
     var totalToPay = 0;
-    debugger;
     this.model.userTabs().each(function (userTab) {
       if (userTab.get('paid')) {
         return;

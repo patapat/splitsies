@@ -1,3 +1,7 @@
 <% friends.each(function (friend) { %>
-  <li class="friend-item list-group-item" data-id="<%= friend.id %>"><span data-icon-id="<%= friend.id %>" class="glyphicon glyphicon-plus"></span> <%= friend.escape('email') %></li>
+  <% var id = friend.get('id') %>
+  <% var email = friend.escape('email') %>
+  <% var url = "https://secure.gravatar.com/avatar/" + md5(email) %>
+  <li class="friend-item list-group-item" data-id="<%= id %>"><span data-icon-id="<%= id %>"
+    class="glyphicon glyphicon-plus"></span> <img class="search-pic" src="<%= url %>"> <%= friend.escape('email') %></li>
 <% }); %>

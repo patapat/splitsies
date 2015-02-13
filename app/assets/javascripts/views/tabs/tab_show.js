@@ -2,7 +2,8 @@ TabSplitter.Views.TabShow = Backbone.CompositeView.extend({
   template: JST['tabs/show'],
 
   events: {
-    'click button': "deleteTab"
+    'click .glyphicon-trash': "deleteTab",
+    'click .glyphicon-pencil': "editTab"
   },
 
   initialize: function () {
@@ -17,8 +18,17 @@ TabSplitter.Views.TabShow = Backbone.CompositeView.extend({
   },
 
   deleteTab: function () {
-    this.collection.remove(this.model);
-    this.model.destroy();
-    Backbone.history.navigate("", { trigger: true });
+    var response = confirm("Are you sure you want to delete" + this.model.escape('title') + "?");
+    if (response === true) {
+      this.collection.remove(this.model);
+      this.model.destroy();
+      Backbone.history.navigate("", { trigger: true });
+    } else {
+      return;
+    }
+  },
+
+  editTab: function () {
+    Backbone.history.navigate("#/tabs/" + this.model.id + "/edit", { trigger: true });
   }
 });

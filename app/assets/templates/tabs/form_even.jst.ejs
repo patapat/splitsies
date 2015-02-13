@@ -1,3 +1,6 @@
+<% var email = CURRENT_USER.email %>
+<% var url = "https://secure.gravatar.com/avatar/" + md5(email) %>
+
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="col-sm-4">
@@ -46,11 +49,11 @@
 
 
           <div class="form-group">
-            <div class="col-sm-9 even-ower">
+            <div class="col-sm-10 even-ower">
               <h4>Owers</h4>
-              <li class="tab-ower" data-id="<%= CURRENT_USER.id %>"><span data-icon-id="<%= CURRENT_USER.id %>" class="glyphicon glyphicon-remove-circle"></span> <%= CURRENT_USER.email %></li>
+              <li class="tab-ower" data-id="<%= CURRENT_USER.id %>"><span data-icon-id="<%= CURRENT_USER.id %>" class="glyphicon glyphicon-remove-circle"></span> <img class="search-pic" src="<%= url %>"> <%= CURRENT_USER.email %></li>
             </div>
-            <div class="col-sm-3 amount-each">
+            <div class="col-sm-2 amount-each">
               <h4>Amount</h4>
               <li class="amount-each-field" data-each-id="<%= CURRENT_USER.id %>"></li>
             </div>
@@ -68,8 +71,8 @@
       </form>
     </div>
 
-    <div class="col-sm-1">
-    </div>
+    <div class="col-sm-1"></div>
+
     <div class="col-sm-3">
       <!-- <input type="text" id="tab-ower-field" placeholder="Search friends..."> -->
       <!-- <div id="tab-friends"></div> -->

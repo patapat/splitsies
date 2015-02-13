@@ -1,14 +1,11 @@
 <% var str = tab.escape('title') %>
 <% var date = tab.escape('date') %>
 <% var newDate = date.slice(5) + "-" + date.slice(0,4) %>
-<div class="tab-heading" data-tab-id="<%= tab.id %>">
-  <h1 class="page-header"><%= str.charAt(0).toUpperCase() + str.slice(1) %> <%= newDate %> <span class="glyphicon glyphicon-pencil"></span></h1>
-</div>
 
-<a href="#/tabs/<%= tab.id %>/edit">Edit Tab</a>
-<br>
-<br>
-<button id="delete-tab">Delete Tab</button>
+<div class="tab-heading" data-tab-id="<%= tab.id %>">
+  <h1 class="page-header"><%= str.charAt(0).toUpperCase() + str.slice(1) %> <%= newDate %>
+    <span class="glyphicon glyphicon-pencil"></span> <span class="glyphicon glyphicon-trash"></span></h1>
+</div>
 
 <div id="tabs-table" class="table-responsive">
   <table class="table table-striped" data-sort-name="title" data-sort-order="desc">
@@ -17,7 +14,7 @@
         <th class="table-header" data-align="left" data-sortable="true">Email</th>
         <th class="table-header" data-align="left" data-sortable="true">Amount Owed</th>
         <th class="table-header" data-align="left" data-sortable="true">Status</th>
-        <th class="table-header" data-align="left" data-sortable="true">Email Reminder</th>
+        <th class="table-header" data-align="left" data-sortable="true">Notify</th>
       </tr>
     </thead>
     <tbody>
@@ -25,8 +22,8 @@
         <tr id="tab-row-<%= tab.id %>">
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= userTab.escape('email') %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(userTab.get('amount_owed')).toFixed(2) %></td>
-          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= userTab.escape('paid') %></td>
-          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= userTab.escape('tab_id') %></td>
+          <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= userTab.get('paid') ? '<span class="glyphicon glyphicon-ok"></span>' : '<span class="glyphicon glyphicon-remove"></span>' %></td>
+          <td class="tab-row-item" data-row-id="<%= tab.id %>"><span class="glyphicon glyphicon-envelope"></span></td>
         </tr>
       <% }); %>
     </tbody>
