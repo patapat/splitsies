@@ -18,7 +18,7 @@ TabSplitter.Views.TabShow = Backbone.CompositeView.extend({
   },
 
   deleteTab: function () {
-    var response = confirm("Are you sure you want to delete" + this.model.escape('title') + "?");
+    var response = confirm("Are you sure you want to delete " + this.model.escape('title') + "?");
     if (response === true) {
       this.collection.remove(this.model);
       this.model.destroy();

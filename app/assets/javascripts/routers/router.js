@@ -14,7 +14,21 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     "tabs/:id/edit-custom": "editCustom",
     "users/new": "userNew",
     "users/:id": "userShow",
-    "history": "tabHistory"
+    "history": "tabHistory",
+    "itsy": "itsySplitsy"
+  },
+
+  itsySplitsy: function () {
+    var tab = new TabSplitter.Models.Tab();
+
+    var itsyView = new TabSplitter.Views.Itsy({
+      model: tab,
+      collection: TabSplitter.Collections.tabs
+    });
+
+    this._swapView(itsyView);
+    $(".active").toggleClass("active");
+    $('#itsy').toggleClass("active");
   },
 
   checkBalance: function () {
@@ -116,6 +130,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     $('#tabs').addClass("active");
     this._swapView(newView);
     this.newEven();
+    $('#tab_title').focus();
   },
 
   newEven: function () {

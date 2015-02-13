@@ -55,6 +55,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     });
 
     this._swapFormView(newEvenView);
+    $('#tab_title').focus();
   },
 
   renderNewCustom: function () {
@@ -66,6 +67,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     });
 
     this._swapFormView(newCustomView);
+    $('#tab_title').focus();
   },
 
   renderEditEven: function () {
@@ -77,6 +79,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     });
 
     this._swapFormView(editEvenView);
+    $('#tab_title').focus();
   },
 
   renderEditCustom: function () {
@@ -88,6 +91,7 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     });
 
     this._swapFormView(editCustomView);
+    $('#tab_title').focus();
   },
 
   createOrUpdateTab: function (event) {

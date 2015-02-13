@@ -30,7 +30,7 @@
 }
 
 .amount-each-field {
-  padding-top: 2px;
+  padding-top: 3px;
 }
 
 .amount-each-field,
@@ -290,4 +290,15 @@ a:hover {
   position: absolute;
   top: 30px;
   right: 630px;
+}
+
+#payment-alert {
+  position: absolute;
+  right: 270px;
+  top: 15px;
+}
+
+.large-gravatar {
+  height: 500px;
+  border-radius: 500px;
 }

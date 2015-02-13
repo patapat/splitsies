@@ -137,9 +137,10 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     var actualTotal = parseFloat($("#tab_total_amount").val()).toFixed(2);
     var dumbSplitTotal = ((actualTotal / numOwers).toFixed(2) * numOwers);
     var numTimes = dumbSplitTotal - actualTotal;
-    if (dumbSplitTotal > actualTotal) {
+    if (dumbSplitTotal !== actualTotal) {
       $('.amount-each-field').each(function (amountStr) {
         var newSum = 0;
+        debugger;
         $('.amount-each-field').each(function (index) {
           var parsedNum = that.strToNum($(this).text());
           newSum += parsedNum;
@@ -148,7 +149,11 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
           return;
         }
         parsedNum = that.strToNum($(this).text());
-        $(this).text("$" + (parsedNum - 0.01).toFixed(2));
+        if (dumbSplitTotal > actualTotal) {
+          $(this).text("$" + (parsedNum - 0.01).toFixed(2));
+        } else if (dumbSplitTotal < actualTotal) {
+          $(this).text("$" + (parsedNum + 0.01).toFixed(2));
+        }
       });
     }
 
@@ -213,7 +218,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
           });
         });
 
-        Backbone.history.navigate("#/tabs/" + that.model.id, { trigger: true });
+        Backbone.history.navigate("#", { trigger: true });
       }
     });
   }

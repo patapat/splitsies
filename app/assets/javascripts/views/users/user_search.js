@@ -60,7 +60,8 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
       if (currentFriends.indexOf(user.id) === -1) {
         that.addSubview('#search-item-field', userItemView);
       }
-    })
+    });
+    $('#search-field').focus();
   },
 
   updateResults: function () {
@@ -95,30 +96,29 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
     var forcedFriendship = new TabSplitter.Models.UsersFriend()
     var that = this;
 
-    $('.checked').each(function () {
-      newFriendship.set({
-        "user_id": CURRENT_USER.id,
-        "friend_id": $(this).data('id')
-      });
+    var $target = $('#search-item-field').find('li:visible:first')
+    newFriendship.set({
+      "user_id": CURRENT_USER.id,
+      "friend_id": $target.data('id')
+    });
 
-      forcedFriendship.set({
-        "user_id": $(this).data('id'),
-        "friend_id": CURRENT_USER.id
-      });
+    forcedFriendship.set({
+      "user_id": $target.data('id'),
+      "friend_id": CURRENT_USER.id
+    });
 
-      newFriendship.save({}, {
-        success: function () {
-          var friend = that.collection.get(newFriendship.get('friend_id'));
-          that.collection.get(CURRENT_USER.id).friends().add(friend);
-          TabSplitter.Collections.usersFriends.add(newFriendship);
-        }
-      });
+    newFriendship.save({}, {
+      success: function () {
+        var friend = that.collection.get(newFriendship.get('friend_id'));
+        that.collection.get(CURRENT_USER.id).friends().add(friend);
+        TabSplitter.Collections.usersFriends.add(newFriendship);
+      }
+    });
 
-      forcedFriendship.save({}, {
-        success: function () {
-          TabSplitter.Collections.usersFriends.add(forcedFriendship);
-        }
-      });
-    })
+    forcedFriendship.save({}, {
+      success: function () {
+        TabSplitter.Collections.usersFriends.add(forcedFriendship);
+      }
+    });
   }
 })

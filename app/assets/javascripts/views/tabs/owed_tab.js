@@ -15,6 +15,7 @@ TabSplitter.Views.OwedTab = Backbone.CompositeView.extend({
   },
 
   makePayment: function (event) {
+    this.renderAlert();
     var that = this;
     var $target = $(event.currentTarget)
     var id = $target.data('id');
@@ -27,6 +28,10 @@ TabSplitter.Views.OwedTab = Backbone.CompositeView.extend({
         });
       }
     });
+  },
+
+  renderAlert: function () {
+    $('#payment-alert').fadeIn(2000).fadeOut(1000);
   }
 
 
