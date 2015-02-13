@@ -28,7 +28,7 @@
           <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(tab.escape('total_amount')).toFixed(2) %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>">
             <% tab.owers().each( function (ower) { %>
-              <% str += '<img id="popover" data-trigger="hover" class="search-pic" src="https://secure.gravatar.com/avatar/' + md5(ower.escape('email')) + '"> ' %>
+              <% str += '<img class="email-popover search-pic" data-id="'+ ower.id + '" data-trigger="hover" data-toggle="popover" data-content="' + ower.escape('email') + '" data-placement="top" src="https://secure.gravatar.com/avatar/' + md5(ower.escape('email')) + '"> ' %>
             <% }); %>
             <%= str %>
           </td>
@@ -44,7 +44,6 @@
             <%= paid ? '<span class="glyphicon glyphicon-ok"></span>' : '<span class="glyphicon glyphicon-remove"></span>' %>
           </td>
           <td><button data-id="<%= tab.id %>" id="details" class="btn btn-sm btn-primary">Details</button></span></td>
-          <!-- <td><a class="push_button" href="#">Push Me</a></td> -->
         </tr>
       <% }); %>
     </tbody>

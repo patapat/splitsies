@@ -10,16 +10,22 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     // "submit form": "createOrUpdateTab",
     "keyup .new-form": function(e) {
       var code = e.keyCode || e.which;
-      if (code  == 13) {
+      if (code == 13) {
         e.preventDefault();
         return false;
       }
     },
     "keypress .new-form": function(e) {
       var code = e.keyCode || e.which;
-      if (code  == 13) {
+      if (code == 13) {
         e.preventDefault();
         return false;
+      }
+    },
+    'keydown #search-field': function (e) {
+      var code = e.keyCode || e.which;
+      if (code == 13) {
+        this.renderAlert();
       }
     },
     'keyup #tab-ower-field': "updateResults",
@@ -34,6 +40,10 @@ TabSplitter.Views.TabForm = Backbone.CompositeView.extend({
     this.$el.html(content);
 
     return this;
+  },
+
+  renderAlert: function () {
+    $('#friend-alert').fadeIn(2000).fadeOut(1000);
   },
 
   renderNewEven: function () {

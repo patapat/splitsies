@@ -11,7 +11,10 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
     "click button": "tabShow",
     "click .table-header": "sortTable",
     "click #owed-tabs": "renderOwedTabs",
-    "click #your-tabs": "render"
+    "click #your-tabs": "render",
+    "mouseenter .email-popover": "renderPopover",
+    // "mouseover .email-popover": "renderPopover",
+    "mouseleave .email-popover": "hidePopover"
   },
 
   sortTable: function (event) {
@@ -25,6 +28,16 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
     this.$el.html(content);
 
     return this;
+  },
+
+  renderPopover: function (event) {
+    var $target = $(event.currentTarget);
+    $target.popover()
+  },
+
+  hidePopover: function (event) {
+    var $target = $(event.currentTarget);
+    $target.popover("hide");
   },
 
   allTabsPaid: function () {

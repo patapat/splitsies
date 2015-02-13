@@ -1,7 +1,11 @@
-<!-- <h1 class="page-header"><%= tab.id ? "Edit " + tab.escape('title') : "Create New Tab" %></h1> -->
 <ul class="nav nav-tabs" role="tablist">
   <li class="active"><a href="#" id=<%= tab.id ? "edit-even" : "new-even" %> role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Even</h4></a></li>
   <li><a href="#" id=<%= tab.id ? "edit-custom" : "new-custom" %> role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Custom</h4></a></li>
-</ul>
 
-<div id="tab-type-main"></div>
+</ul>
+<div id="friend-alert" style="display: none;" class="alert alert-success alert-dismissable">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+  <strong>Nice!</strong> You've made a new friend!
+</div>
+<div id="tab-type-main">
+</div>

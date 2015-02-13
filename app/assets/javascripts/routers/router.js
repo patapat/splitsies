@@ -46,22 +46,10 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
   },
 
   overview: function () {
-    var that = this;
     var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
     var accountView = new TabSplitter.Views.Account({ model: currentUser })
-    TabSplitter.Collections.tabs.fetch({
-      success: function () {
-        var indexView = new TabSplitter.Views.TabsIndex({
-          model: currentUser,
-          collection: TabSplitter.Collections.tabs
-        });
 
-        that._swapView(accountView);
-        that.checkBalance();
-        $('#latest-activity').append(indexView.render().$el);
-      }
-    });
-
+    this._swapView(accountView);
     $(".active").removeClass("active");
     $('#account').addClass("active");
   },

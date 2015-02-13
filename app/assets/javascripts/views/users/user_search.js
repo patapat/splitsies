@@ -14,15 +14,13 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
       this.toggleDisplay(e);
       this.updateResults(e);
     },
-    'keypress #search-field': function (e) {
+    'keydown #search-field': function (e) {
       var code = e.keyCode || e.which;
       if (code == 13) {
         this.addUser(e);
-        this.renderAlert();
       }
     },
     'click .search-items': "toggleUser"
-    // 'click button': "addUser"
   },
 
   render: function () {
@@ -32,11 +30,6 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
 
     return this;
   },
-
-  renderAlert: function () {
-    $('.alert-success').fadeIn(100);
-  },
-
 
   toggleDisplay: function () {
     if ($('#search-field').val() === "") {

@@ -5,6 +5,10 @@ TabSplitter.Views.Account = Backbone.View.extend({
     // this.listenTo(this.model, "sync", this.render);
   },
 
+  events: {
+    "click a": "balanceToPay"
+  },
+
   render: function () {
     var content = this.template({
       user: this.model,
@@ -13,8 +17,31 @@ TabSplitter.Views.Account = Backbone.View.extend({
     });
     this.$el.html(content);
     this.addSearchResults();
+    this.addIndexView();
 
     return this;
+  },
+
+  addIndexView: function () {
+    var that = this;
+    var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
+
+    TabSplitter.Collections.tabs.fetch({
+      success: function () {
+        var indexView = new TabSplitter.Views.TabsIndex({
+          model: currentUser,
+          collection: TabSplitter.Collections.tabs
+        });
+
+        $('#latest-activity').html(indexView.render().$el);
+      }
+    });
+    // var indexView = new TabSplitter.Views.TabsIndex({
+    //   model: currentUser,
+    //   collection: TabSplitter.Collections.tabs
+    // });
+    //
+    // $('#latest-activity').html(indexView.render().$el);
   },
 
   addSearchResults: function () {
@@ -46,6 +73,7 @@ TabSplitter.Views.Account = Backbone.View.extend({
   },
 
   balanceToPay: function () {
+    console.log("balance");
     var totalToPay = 0;
     this.model.userTabs().each(function (userTab) {
       if (userTab.get('paid')) {
