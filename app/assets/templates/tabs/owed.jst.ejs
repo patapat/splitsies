@@ -2,24 +2,21 @@
   <thead>
     <tr>
       <th class="table-header" data-align="left" data-sortable="true">Date</th>
-      <th class="table-header" data-align="left" data-sortable="true">Email</th>
       <th class="table-header" data-align="left" data-sortable="true">Amount Owed</th>
+      <th class="table-header" data-align="left" data-sortable="true">To</th>
       <th class="table-header" data-align="left" data-sortable="true">Status</th>
-      <th class="table-header" data-align="left" data-sortable="true">Notes</th>
+      <th class="table-header" data-align="left" data-sortable="true">Pay</th>
     </tr>
   </thead>
   <tbody>
     <% usersTabs.each (function (usersTab) { %>
-      <% var thumb = "down" %>
-      <% if (usersTab.get('paid')) { %>
-        <% thumb = "up" %>
-      <% } %>
       <tr class="tab-row" id="tab-row-<%= usersTab.id %>">
         <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><%= usersTab.escape('date') %></td>
-        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><%= usersTab.escape('email') %></td>
         <td class="tab-row-item" data-row-id="<%= usersTab.id %>">$<%= parseFloat(usersTab.escape('amount_owed')).toFixed(2) %></td>
-        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
-        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><%= usersTab.escape('user_id') %></td>
+        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><%= usersTab.escape('email') %></td>
+        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><%= usersTab.get('paid') ? '<span class="glyphicon glyphicon-ok"></span>' : '<span class="glyphicon glyphicon-remove"></span>' %></td>
+        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"><a data-id="<%= usersTab.id %>" class="btn btn-xs btn-primary ladda-button" data-style="expand-left"><span class="glyphicon glyphicon-credit-card ladda-label"></span> Make Payment</a></td>
+        <td class="tab-row-item" data-row-id="<%= usersTab.id %>"></td>
       </tr>
     <% }); %>
   </tbody>

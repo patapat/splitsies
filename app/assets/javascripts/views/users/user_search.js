@@ -16,7 +16,6 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
     },
     'keypress #search-field': function (e) {
       var code = e.keyCode || e.which;
-      console.log(code);
       if (code == 13) {
         this.addUser(e);
         this.renderAlert();

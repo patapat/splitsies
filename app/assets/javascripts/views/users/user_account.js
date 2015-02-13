@@ -42,7 +42,6 @@ TabSplitter.Views.Account = Backbone.View.extend({
       });
     });
 
-    console.log(totalOwed);
     return totalOwed;
   },
 
@@ -56,7 +55,6 @@ TabSplitter.Views.Account = Backbone.View.extend({
       }
     });
 
-    console.log(totalToPay);
     return totalToPay;
   },
 

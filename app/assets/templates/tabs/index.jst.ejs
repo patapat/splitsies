@@ -31,7 +31,7 @@
           <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(tab.escape('total_amount')).toFixed(2) %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('tag') %></td>
           <td><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
-          <td><button data-id="<%= tab.id %>" id="details" class="btn btn-primary">Details</button></span></td>
+          <td><button data-id="<%= tab.id %>" id="details" class="btn btn-sm btn-primary">Details</button></span></td>
           <!-- <td><a class="push_button" href="#">Push Me</a></td> -->
         </tr>
       <% }); %>

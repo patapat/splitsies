@@ -21,10 +21,23 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    var content = this.template({ tabs: this.collection, paid: false });
+    var content = this.template({ tabs: this.collection, paid: this.allTabsPaid() });
     this.$el.html(content);
 
     return this;
+  },
+
+  allTabsPaid: function () {
+    var paid = true;
+    this.model.userTabs().each(function (userTab) {
+      if (userTab.get('paid')) {
+        return;
+      } else {
+        paid = false;
+      }
+    });
+
+    return paid;
   },
 
   renderOwedTabs: function () {
