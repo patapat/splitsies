@@ -60,6 +60,7 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
   },
 
   tabShow: function (event) {
+    event.preventDefault();
     var $target = $(event.currentTarget);
     var id = $target.data('id');
     Backbone.history.navigate("tabs/" + id, { trigger: true })

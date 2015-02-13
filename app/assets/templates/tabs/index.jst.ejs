@@ -1,8 +1,3 @@
-<% var thumb = "down" %>
-<% if (paid) { %>
-  <% thumb = "up" %>
-<% } %>
-
 <ul class="nav nav-tabs" role="tablist">
   <li class="active"><a id="your-tabs" href="#" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Your Tabs</h4></a></li>
   <li><a id="owed-tabs" href="#" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Owed Tabs</h4></a></li>
@@ -14,8 +9,9 @@
       <tr>
         <th class="table-header" data-align="left" data-sortable="true">Date</th>
         <th class="table-header" data-align="left" data-sortable="true">Title</th>
-        <th class="table-header" data-align="left" data-sortable="true">Total</th>
         <th class="table-header" data-align="left" data-sortable="true">Notes</th>
+        <th class="table-header" data-align="left" data-sortable="true">Total</th>
+        <th class="table-header" data-align="left" data-sortable="true">Offenders</th>
         <th class="table-header" data-align="left" data-sortable="true">Status</th>
         <th class="table-header" data-align="left" data-sortable="true"></th>
       </tr>
@@ -24,13 +20,19 @@
       <% tabs.each (function (tab) { %>
         <% var date = tab.escape('date') %>
         <% var newDate = date.slice(5) + "-" + date.slice(0,4) %>
-
+        <% var str = "" %>
         <tr class="tab-row" id="tab-row-<%= tab.id %>">
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= newDate %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('title') %></td>
-          <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(tab.escape('total_amount')).toFixed(2) %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= tab.escape('tag') %></td>
-          <td><span class="glyphicon glyphicon-thumbs-<%= thumb %>"></span></td>
+          <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(tab.escape('total_amount')).toFixed(2) %></td>
+          <td class="tab-row-item" data-row-id="<%= tab.id %>">
+            <% tab.owers().each( function (ower) { %>
+              <% str += '<img id="popover" data-trigger="hover" class="search-pic" src="https://secure.gravatar.com/avatar/' + md5(ower.escape('email')) + '"> ' %>
+            <% }); %>
+            <%= str %>
+          </td>
+          <td><%= paid ? '<span class="glyphicon glyphicon-ok"></span>' : '<span class="glyphicon glyphicon-remove"></span>' %></td>
           <td><button data-id="<%= tab.id %>" id="details" class="btn btn-sm btn-primary">Details</button></span></td>
           <!-- <td><a class="push_button" href="#">Push Me</a></td> -->
         </tr>

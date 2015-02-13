@@ -15,15 +15,14 @@ TabSplitter.Views.OwedTab = Backbone.CompositeView.extend({
   },
 
   makePayment: function (event) {
+    var that = this;
     var $target = $(event.currentTarget)
     var id = $target.data('id');
-    debugger;
     this.model.userTabs().each(function (userTab) {
       if (userTab.get('id') === id) {
         userTab.save({paid: true}, {
           success: function () {
-            console.log('paid');
-            debugger;
+            that.render();
           }
         });
       }

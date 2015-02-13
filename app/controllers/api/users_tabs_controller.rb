@@ -23,10 +23,10 @@ module Api
     def update
       @users_tab = UsersTab.find(params[:id])
 
-      if @tab.update(tab_params)
-        render json: @tab
+      if @users_tab.update(users_tab_params)
+        render json: @users_tab
       else
-        flash.now[:errors] = @tab.errors.full_messages
+        flash.now[:errors] = @users_tab.errors.full_messages
         render :edit
       end
     end

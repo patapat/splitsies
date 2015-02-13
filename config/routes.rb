@@ -9,6 +9,6 @@ Rails.application.routes.draw do
     resources :tabs
     resources :users, only: [:create, :show, :index]
     resources :users_friends, only: [:create, :destroy, :show, :index]
-    resources :users_tabs, only: [:create, :destroy, :show, :index]
+    resources :users_tabs
   end
 end

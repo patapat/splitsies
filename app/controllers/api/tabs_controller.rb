@@ -35,7 +35,7 @@ module Api
 
     def index
       @tabs = current_user.tabs
-      render json: @tabs
+      render :index
     end
 
     def edit
