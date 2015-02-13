@@ -3,7 +3,7 @@ TabSplitter.Models.Tab = Backbone.Model.extend({
 
   userTabs: function () {
     if (!this._userTabs) {
-      this._userTabs = new TabSplitter.Collections.UsersTabs([], { user: this });
+      this._userTabs = new TabSplitter.Collections.UsersTabs([], { tab: this });
     }
 
     return this._userTabs;
@@ -11,7 +11,7 @@ TabSplitter.Models.Tab = Backbone.Model.extend({
 
   owers: function () {
     if (!this._owers) {
-      this._owers = new TabSplitter.Collections.UsersTabs([], { user: this });
+      this._owers = new TabSplitter.Collections.UsersTabs([], { tab: this });
     }
 
     return this._owers;
@@ -20,11 +20,11 @@ TabSplitter.Models.Tab = Backbone.Model.extend({
   parse: function (response) {
     if (response.users_tabs) {
       this.userTabs().set(response.users_tabs, { parse: true });
-      delete response.user_tabs;
+      delete response.users_tabs;
     }
 
     if (response.owers) {
-      this.userTabs().set(response.owers, { parse: true });
+      this.owers().set(response.owers, { parse: true });
       delete response.owers;
     }
 

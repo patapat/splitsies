@@ -17,15 +17,6 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
     "history": "tabHistory"
   },
 
-  owedBalance: function () {
-    var user = TabSplitter.Collections.users.get(CURRENT_USER.id);
-    user.tabs();
-  },
-
-  balanceToPay: function () {
-
-  },
-
   checkBalance: function () {
     var balance = CURRENT_USER.account_balance;
     var $target = $('#account-balance');
@@ -119,6 +110,7 @@ TabSplitter.Routers.Router = Backbone.Router.extend({
           model: tab,
           collection: TabSplitter.Collections.tabs
         });
+
         that._swapView(showView);
       }
     });

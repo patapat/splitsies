@@ -24,7 +24,7 @@
       <% tab.userTabs().each (function (userTab) { %>
         <tr id="tab-row-<%= tab.id %>">
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= userTab.escape('email') %></td>
-          <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(userTab.escape('amount_owed')).toFixed(2) %></td>
+          <td class="tab-row-item" data-row-id="<%= tab.id %>">$<%= parseFloat(userTab.get('amount_owed')).toFixed(2) %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= userTab.escape('paid') %></td>
           <td class="tab-row-item" data-row-id="<%= tab.id %>"><%= userTab.escape('tab_id') %></td>
         </tr>

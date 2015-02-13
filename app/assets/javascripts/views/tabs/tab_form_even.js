@@ -93,7 +93,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
     var id = $target.data('id');
-    $('.even-ower').append($target.css("font-size", "24px").toggleClass('list-group-item').addClass('tab-ower').removeClass("friend-item").removeClass("checked"));
+    $('.even-ower').append($target.toggleClass('list-group-item').addClass('tab-ower').removeClass("friend-item").removeClass("checked"));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     this.renderAmountField(id);
   },
@@ -108,7 +108,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
   },
 
   renderAmountField: function (id) {
-    $('.amount-each').append($('<li style="font-size:24px" class="amount-each-field" data-each-id="'+ id + '"></li>'));
+    $('.amount-each').append($('<li class="amount-each-field" data-each-id="'+ id + '"></li>'));
   },
 
   updateAmount: function (event) {
@@ -158,7 +158,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     var $target = $('#tab-friends').find('li:visible:first');
     var id = $target.data('id')
     var $iconTarget = $('[data-icon-id=' + id + ']');
-    $('.even-ower').append($target.css("font-size", "24px").toggleClass('list-group-item').addClass('tab-ower'));
+    $('.even-ower').append($target.toggleClass('list-group-item').addClass('tab-ower'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     $('#tab-ower-field').val("");
     this.renderAmountField(id);
@@ -187,10 +187,11 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
         $('.tab-ower').each(function (index) {
           var id = $(this).data('id');
           var targetAmount = that.strToNum($('[data-each-id=' + id + ']').text());
+          debugger;
           if (CURRENT_USER.id === id) {
-            var currentUser = TabSplitter.Collections.users.getOrFetch(id);
-            var totalAmount = parseFloat($("#tab_total_amount").val());
-            var newAccountBalance = CURRENT_USER.account_balance + totalAmount
+            // var currentUser = TabSplitter.Collections.users.getOrFetch(id);
+            // var totalAmount = parseFloat($("#tab_total_amount").val());
+            // var newAccountBalance = CURRENT_USER.account_balance + totalAmount
             // currentUser.set({  })
             return;
           }
@@ -201,7 +202,6 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
             var newTab = TabSplitter.Collections.usersTabs.getOrFetch(that.model.id);
           }
           var user = TabSplitter.Collections.users.getOrFetch(id);
-          // var targetAmount = that.strToNum($('[data-each-id=' + id + ']').text());
 
           newTab.set({
             "user_id": user.id,

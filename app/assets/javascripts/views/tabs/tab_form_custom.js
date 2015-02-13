@@ -85,7 +85,7 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     var $iconTarget = $(event.currentTarget);
     var $target = $('[data-id=' + $iconTarget.data('icon-id') + ']');
     var id = $target.data('id');
-    $('#custom-ower').append($target.css("font-size", "24px").toggleClass('list-group-item').addClass('tab-ower').removeClass('friend-item checked'));
+    $('#custom-ower').append($target.toggleClass('list-group-item').addClass('tab-ower').removeClass('friend-item checked'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     this.renderAmountField(id);
   },
@@ -126,7 +126,7 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
     var $target = $('#tab-friends').find('li:visible:first');
     var $iconTarget = $('[data-icon-id=' + $target.data('id') + ']');
     var id = $target.data('id');
-    $('#custom-ower').append($target.css("font-size", "24px").toggleClass('list-group-item').addClass('tab-ower'));
+    $('#custom-ower').append($target.toggleClass('list-group-item').addClass('tab-ower'));
     $iconTarget.removeClass("glyphicon-plus").addClass('glyphicon-remove-circle');
     $('#tab-ower-field').val("");
     this.renderAmountField(id);
