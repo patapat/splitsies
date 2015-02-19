@@ -29,12 +29,18 @@ ActiveRecord::Schema.define(version: 20150205011714) do
   add_index "tabs", ["user_id"], name: "index_tabs_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
-    t.string   "email",                                                 null: false
-    t.string   "password_digest",                                       null: false
-    t.string   "session_token",                                         null: false
-    t.decimal  "account_balance", precision: 6, scale: 2, default: 0.0
-    t.datetime "created_at",                                            null: false
-    t.datetime "updated_at",                                            null: false
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "session_token"
+    t.decimal  "account_balance",  precision: 6, scale: 2, default: 0.0
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.string   "image_url"
+    t.datetime "created_at",                                             null: false
+    t.datetime "updated_at",                                             null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

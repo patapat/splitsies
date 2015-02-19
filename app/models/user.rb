@@ -12,9 +12,9 @@
 #
 
 class User < ActiveRecord::Base
-  validates :email, presence: true, uniqueness: true
-  validates :password, length: { minimum: 6, allow_nil: true}
-  validates :password_digest, :session_token, presence: true
+  # validates :email, presence: true, uniqueness: true
+  # validates :password, length: { minimum: 6, allow_nil: true}
+  # validates :password_digest, :session_token, presence: true
 
   attr_reader :password
 
@@ -51,6 +51,23 @@ class User < ActiveRecord::Base
     self.session_token = SecureRandom.urlsafe_base64(16)
     self.save!
     self.session_token
+  end
+
+  def self.from_omniauth(auth)
+    puts auth.info
+    puts "----------------------------------------------"
+    puts auth.info.image
+    where(auth.slice(:provider, :uid).permit!).first_or_initialize.tap do |user|
+      user.provider = auth.provider
+      user.uid = auth.uid
+      user.name = auth.info.name
+      user.oauth_token = auth.credentials.token
+      user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+      user.email = auth.info.email
+      user.image_url = auth.info.image
+      # user.friends = auth.user_friends
+      user.save!
+    end
   end
 
   private

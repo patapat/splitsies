@@ -1,14 +1,16 @@
 class SessionsController < ApplicationController
 
   def new
-    @user = User.new
+    
   end
 
   def create
-    @user = User.find_by_credentials(
-      params[:user][:email],
-      params[:user][:password]
-    )
+    # @user = User.find_by_credentials(
+    #   params[:user][:email],
+    #   params[:user][:password]
+    # )
+
+    @user = User.from_omniauth(env["omniauth.auth"])
 
     if @user
       log_in(@user)

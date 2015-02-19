@@ -153,7 +153,6 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
           if (CURRENT_USER.id === id) {
             return;
           }
-          debugger;
           if (needNewTab) {
             var newTab = new TabSplitter.Models.UsersTab();
           } else {
