@@ -126,7 +126,8 @@
         "image_url": "<%= current_user.image_url %>"
       }
       </script>
-
+      <% url = gravatar_url %>
+      <% url = current_user.image_url if current_user.image_url %>
     <% end %>
 
 
@@ -146,7 +147,7 @@
 
             <% if logged_in? %>
               <li><a href="#"><span class="glyphicon glyphicon-usd"></span></a></li>
-              <li><a href="#/account"><img style="height:22px; border-radius:15px;" src="<%= current_user.image_url %>"> <%= current_user.name %></a></li>
+              <li><a href="#/account"><img style="height:22px; border-radius:15px;" src="<%= url %>"> <%= current_user.name %></a></li>
               <li><a href="#/history"><span class="glyphicon glyphicon-credit-card"></span> Tabs</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
               <li><a href="#">Help</a></li>

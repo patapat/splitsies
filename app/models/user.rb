@@ -54,9 +54,6 @@ class User < ActiveRecord::Base
   end
 
   def self.from_omniauth(auth)
-    puts auth.info
-    puts "----------------------------------------------"
-    puts auth.info.image
     where(auth.slice(:provider, :uid).permit!).first_or_initialize.tap do |user|
       user.provider = auth.provider
       user.uid = auth.uid
