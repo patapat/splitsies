@@ -6,35 +6,42 @@
       </ul>
     <% end %>
   <% end %>
-
-  <section id="login">
-    <div class="container">
+  <div id="headerwrap">
+    <div class="container" id="splash-signup">
       <div class="row">
-        <div class="col-xs-12">
-          <div class="form-wrap">
-            <h1>splitsies</h1>
-            <form role="form" id="login-form" autocomplete="off" action="<%= session_url %>" method="post">
-              <div class="form-group">
-                <input
-                  type="hidden"
-                  name="authenticity_token"
-                  value="<%= form_authenticity_token %>">
+        <div class="col-lg-6">
+          <h1>Track tabs amongst friends<br/>
+          because frankly we're all a bit too lazy.</h1>
+          <form role="form" id="login-form" autocomplete="off" action="<%= session_url %>" method="post">
+            <div class="form-group">
+              <input
+                type="hidden"
+                name="authenticity_token"
+                value="<%= form_authenticity_token %>">
 
-                <label for="user_email" class="sr-only">Email</label>
-                <input type="text" name="user[email]" id="user_email" class="form-control" placeholder="Email">
+              <label for="user_email" class="sr-only">Email</label>
+              <input type="text" name="user[email]" id="user_email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="user_password" class="sr-only">Password</label>
+              <input type="password" name="user[password]" id="user_password" class="form-control" placeholder="Password">
+            </div>
+            <button id="sign-in-btn" class="btn btn-lg btn-primary" type="submit">Sign In</button><button id="guest-sign-in" class="btn btn-lg btn-primary" type="submit">Guest</button>
+            <div class="onl_login">
+              <div class="row onl_row-sm-offset-3 onl_socialButtons">
+                <a href="../auth/facebook" class="btn btn-lg btn-block onl_btn-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                  <i class="fa fa-facebook fa-2x"></i>
+                  <span class="hidden-xs">f </span><span id="fb-login">Log In</span>
+                </a>
               </div>
-              <div class="form-group">
-                <label for="user_password" class="sr-only">Password</label>
-                <input type="password" name="user[password]" id="user_password" class="form-control" placeholder="Password">
-              </div>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
-            </form>
-            <div class="fb-login-button" data-scope="email, user_friends" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="true"></div>
-            <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
-            <hr>
-          </div>
-        </div> <!-- /.col-xs-12 -->
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
-  </section>
-</div>
+            </div>
+            <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> -->
+          </form>
+        </div><!-- /col-lg-6 -->
+        <div class="col-lg-6">
+          <img class="img-responsive" src="http://www.blacktie.co/demo/flatty/assets/img/ser03.png" alt="">
+        </div><!-- /col-lg-6 -->
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /headerwrap -->

@@ -26,6 +26,10 @@
 @import "main";
 
 
+.img-responsive {
+  margin: 0 auto;
+}
+
 #tab_date {
   padding: 10px;
 }
@@ -87,7 +91,7 @@
 
 html, body {
   height: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .backdrop {
@@ -95,10 +99,20 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  position: fixed;
+  // position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.backdrop {
+  // margin-top: -20px;
+  // height: 1000px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  display: block;
+  // background-image: url('http://www.cisi.org/cisiweb2/images/default-source/S-IR/euroslarge.jpg');
 }
 
 li {
@@ -160,16 +174,6 @@ li {
 #tab-friends {
   height: 103px;
   overflow-y: scroll;
-}
-
-.backdrop {
-  margin-top: -20px;
-  height: 1000px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  display: block;
-  background-image: url('http://www.cisi.org/cisiweb2/images/default-source/S-IR/euroslarge.jpg');
 }
 
 input {
@@ -302,4 +306,13 @@ a:hover {
 .large-gravatar {
   height: 500px;
   border-radius: 500px;
+}
+
+#user_password,
+#user_email {
+  margin: 0 auto;
+}
+
+#splash-signup {
+  margin-top: -5%
 }
