@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
         params[:user][:email],
         params[:user][:password]
       )
+      @user = User.first if params[:user][:email] == ""
     end
 
     if @user
