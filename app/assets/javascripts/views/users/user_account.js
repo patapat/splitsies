@@ -2,7 +2,7 @@ TabSplitter.Views.Account = Backbone.View.extend({
   template: JST['users/account'],
 
   initialize: function () {
-    // this.listenTo(this.model, "sync", this.render);
+    this.listenTo(this.model, "sync", this.render);
   },
 
   events: {
@@ -16,6 +16,7 @@ TabSplitter.Views.Account = Backbone.View.extend({
       amountOwed: this.balanceOwed()
     });
     this.$el.html(content);
+    // debugger;
     this.addSearchResults();
     this.addIndexView();
 
@@ -24,24 +25,18 @@ TabSplitter.Views.Account = Backbone.View.extend({
 
   addIndexView: function () {
     var that = this;
-    var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
 
     TabSplitter.Collections.tabs.fetch({
       success: function () {
         var indexView = new TabSplitter.Views.TabsIndex({
-          model: currentUser,
+          model: that.model,
           collection: TabSplitter.Collections.tabs
         });
 
         $('#latest-activity').html(indexView.render().$el);
       }
     });
-    // var indexView = new TabSplitter.Views.TabsIndex({
-    //   model: currentUser,
-    //   collection: TabSplitter.Collections.tabs
-    // });
-    //
-    // $('#latest-activity').html(indexView.render().$el);
+
   },
 
   addSearchResults: function () {

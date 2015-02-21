@@ -2,7 +2,7 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
   template: JST['tabs/index'],
 
   initialize: function () {
-    this.listenTo(this.collection, "remove sync add change:title", this.render)
+    // this.listenTo(this.collection, "remove sync add change:title", this.render)
   },
 
   events: {
@@ -41,7 +41,7 @@ TabSplitter.Views.TabsIndex = Backbone.CompositeView.extend({
   },
 
   renderOwedTabs: function () {
-    var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
+    // var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
     var owedTabView = new TabSplitter.Views.OwedTab({ model: this.model });
 
     this._swapTabView(owedTabView);

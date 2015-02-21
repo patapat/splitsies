@@ -6,34 +6,64 @@
       </ul>
     <% end %>
   <% end %>
+  <div id="headerwrap">
+    <div class="container" id="splash-signup">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 id="splash-message">Track tabs amongst friends<br/>
+          because frankly we're all a bit too lazy.</h1>
+          <form role="form" id="login-form" autocomplete="off" action="<%= users_url %>" method="post">
+            <div class="form-group">
+              <input
+                type="hidden"
+                name="authenticity_token"
+                value="<%= form_authenticity_token %>">
 
-  <section id="login">
-    <div class="container">
-    	<div class="row">
-  	    <div class="col-xs-12">
-    	    <div class="form-wrap">
-            <h1>splitsies</h1>
-            <form role="form" id="login-form" autocomplete="off" action="<%= users_url %>" method="post">
-              <div class="form-group">
-                <input
-                  type="hidden"
-                  name="authenticity_token"
-                  value="<%= form_authenticity_token %>">
+              <label for="user_email" class="sr-only">Email</label>
+              <input type="email" name="user[email]" id="user_email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="user_password" class="sr-only">Password</label>
+              <input type="password" name="user[password]" id="user_password" class="form-control" placeholder="Password">
+            </div>
+            <button style="width:50%; margin-left:25%;" class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+          </form>
+        </div><!-- /col-lg-6 -->
+        <div class="col-lg-6">
+          <img class="img-responsive" src="http://www.blacktie.co/demo/flatty/assets/img/ser03.png" alt="">
+        </div><!-- /col-lg-6 -->
 
-                <label for="user_email" class="sr-only">Email</label>
-                <input type="email" name="user[email]" id="user_email" class="form-control" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="user_password" class="sr-only">Password</label>
-                <input type="password" name="user[password]" id="user_password" class="form-control" placeholder="Password">
-              </div>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
-              <!-- <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Sign Up"> -->
-            </form>
-            <hr>
-    	    </div>
-    		</div> <!-- /.col-xs-12 -->
-    	</div> <!-- /.row -->
-    </div> <!-- /.container -->
-  </section>
-</div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /headerwrap -->
+
+  <div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>Your Landing Page<br/>Looks Wonderful Now.</h1>
+				<h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+			</div>
+		</div><!-- /row -->
+
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<img src="assets/img/ser01.png" width="180" alt="">
+				<h4>1 - Browser Compatibility</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<img src="assets/img/ser02.png" width="180" alt="">
+				<h4>2 - Email Campaigns</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<img src="assets/img/ser03.png" width="180" alt="">
+				<h4>3 - Gather Your Notes</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+
+			</div><!--/col-lg-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->

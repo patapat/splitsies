@@ -1,5 +1,3 @@
-
-
 <div class="backdrop">
   <% if flash[:errors] %>
     <% flash[:errors].each do |error| %>
@@ -12,7 +10,7 @@
     <div class="container" id="splash-signup">
       <div class="row">
         <div class="col-lg-6">
-          <h1>Track tabs amongst friends<br/>
+          <h1 id="splash-message">Track tabs amongst friends<br/>
           because frankly we're all a bit too lazy.</h1>
           <form role="form" id="login-form" autocomplete="off" action="<%= session_url %>" method="post">
             <div class="form-group">

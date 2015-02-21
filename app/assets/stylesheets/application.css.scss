@@ -110,9 +110,13 @@ html, body {
   // height: 1000px;
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  // text-shadow: 0 1px 3px rgba(0,0,0,.5);
   display: block;
   // background-image: url('http://www.cisi.org/cisiweb2/images/default-source/S-IR/euroslarge.jpg');
+}
+
+#splash-message {
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 li {
