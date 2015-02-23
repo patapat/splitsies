@@ -169,7 +169,6 @@ TabSplitter.Views.TabFormCustom = Backbone.CompositeView.extend({
 
           newTab.save({}, {
             success: function () {
-              debugger;
               if (!TabSplitter.Collections.usersTabs.contains(newTab)) {
                 TabSplitter.Collections.usersTabs.add(newTab);
               }

@@ -24,6 +24,7 @@ TabSplitter.Views.OwedTab = Backbone.CompositeView.extend({
         userTab.save({paid: true}, {
           success: function () {
             that.render();
+            // AuthMailer.signup_email(userTab.attributes.email).deliver
           }
         });
       }
