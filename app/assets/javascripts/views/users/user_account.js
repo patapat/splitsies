@@ -68,7 +68,6 @@ TabSplitter.Views.Account = Backbone.View.extend({
   },
 
   balanceToPay: function () {
-    console.log("balance");
     var totalToPay = 0;
     this.model.userTabs().each(function (userTab) {
       if (userTab.get('paid')) {

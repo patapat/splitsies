@@ -54,10 +54,15 @@ TabSplitter.Views.UserSearch = Backbone.CompositeView.extend({
     });
 
     var users = this.collection;
+    var currentOwers = [];
+    $('.tab-ower').each(function (ower) {
+      currentOwers.push($(this).data('id'))
+    });
+
     users.each(function (user) {
       var userItemView = new TabSplitter.Views.SearchItem({ model: user });
 
-      if (currentFriends.indexOf(user.id) === -1) {
+      if (currentFriends.indexOf(user.id) === -1 && currentOwers.indexOf(user.id) === -1) {
         that.addSubview('#search-item-field', userItemView);
       }
     });

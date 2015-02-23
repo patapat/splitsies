@@ -1,7 +1,9 @@
 <% friends.each(function (friend) { %>
   <% var id = friend.get('id') %>
-  <% var email = friend.escape('email') %>
-  <% var url = "https://secure.gravatar.com/avatar/" + md5(email) %>
-  <li class="friend-item list-group-item" data-id="<%= id %>"><span data-icon-id="<%= id %>"
-    class="glyphicon glyphicon-plus"></span> <img class="search-pic" src="<%= url %>"> <%= friend.escape('email') %></li>
+  <% if (owers.indexOf(id) === -1 ) { %>
+    <% var email = friend.escape('email') %>
+    <% var url = "https://secure.gravatar.com/avatar/" + md5(email) %>
+    <li class="friend-item list-group-item" data-id="<%= id %>"><span data-icon-id="<%= id %>"
+      class="glyphicon glyphicon-plus"></span> <img class="search-pic" src="<%= url %>"> <%= friend.escape('email') %></li>
+  <% } %>
 <% }); %>

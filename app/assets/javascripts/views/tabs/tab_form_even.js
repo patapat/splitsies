@@ -73,11 +73,9 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
   },
 
   renderFriends: function () {
-
     var currentUser = TabSplitter.Collections.users.getOrFetch(CURRENT_USER.id);
     var friendView = new TabSplitter.Views.UserFriends({
-      model: currentUser,
-      collection: TabSplitter.Collections.usersFriends
+      model: currentUser
     });
 
     this.addSubview("#tab-friends", friendView);
@@ -140,7 +138,7 @@ TabSplitter.Views.TabFormEven = Backbone.CompositeView.extend({
     if (dumbSplitTotal !== actualTotal) {
       $('.amount-each-field').each(function (amountStr) {
         var newSum = 0;
-        debugger;
+        // debugger;
         $('.amount-each-field').each(function (index) {
           var parsedNum = that.strToNum($(this).text());
           newSum += parsedNum;
