@@ -92,6 +92,7 @@
 html, body {
   height: 100%;
   overflow-x: hidden;
+  // background-color: #46A895;
 }
 
 .backdrop {
@@ -99,7 +100,8 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  // position: fixed;
+  position: fixed;
+  background-color: #46A895;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
