@@ -167,7 +167,6 @@
               <li><%= link_to "Log Out", session_url, method: :delete %></li>
             <% else %>
               <li><a href="">Home</a></li>
-              <li><a href="/help">About</a></li>
               <li><a href="/session/new">Sign In</a></li>
               <li><a href="/users/new">Sign Up</a></li>
             <% end %>
@@ -188,4 +187,5 @@
   <%= yield %>
 
   </body>
+  
 </html>
