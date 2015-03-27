@@ -160,7 +160,6 @@
           <ul class="nav navbar-nav navbar-right">
 
             <% if logged_in? %>
-              <li><a href="#"><span class="glyphicon glyphicon-usd"></span></a></li>
               <li><a href="#/account"><img style="height:22px; border-radius:15px;" src="<%= url %>"> <%= display_name %></a></li>
               <li><a href="#/history"><span class="glyphicon glyphicon-credit-card"></span> Tabs</a></li>
               <!-- <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li> -->
@@ -187,5 +186,5 @@
   <%= yield %>
 
   </body>
-  
+
 </html>
